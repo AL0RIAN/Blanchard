@@ -1,0 +1,111 @@
+/* COLORS AND FONTS */
+
+@font-face {
+  font-family: 'OpenSans';
+  src: local("OpenSans-Regular"),
+  url("../fonts/OpenSans-Regular.woff2") format("woff2"),
+  url("../fonts/OpenSans-Regular.ttf") format("ttf");
+  font-display: swap;
+  font-style: normal;
+  font-weight: 400;
+}
+
+:root {
+  --purple-1: #D1A9F0;
+  --purple-2: #C283F3;
+  --purple-3: #9D5CD0;
+  --purple-4: #7943A4;
+}
+
+/* MAIN */
+
+.flex {
+  display: flex;
+}
+
+.list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.link-reset {
+  text-decoration: none;
+  color: inherit;
+  outline: none;
+}
+
+/* HEADER */
+
+.header {
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 30px 160px;
+  background-color: #000;
+}
+
+.header-list {
+  align-items: center;
+  margin-left: 173px;
+}
+
+.header-list__item:not(:last-child) {
+  margin-right: 52px;
+}
+
+.header-list__link {
+  padding: 8px 6px;
+  font-family: "OpenSans";
+  color: #fff;
+  transition: background-color .3s ease-in-out, color .3s ease-in-out;
+}
+
+.header-list__link:focus {
+  background-color: var(--purple-4);
+}
+
+.header-list__link:hover {
+   color: var(--purple-2);
+}
+
+.header-list__link:active {
+  background-color: initial;
+  color: var(--purple-4);
+}
+
+.header-enter {
+  padding: 8px 6px;
+  margin-left: 413px;
+  transition: background-color .3s ease-in-out;
+}
+
+.header-enter:focus {
+  outline: none;
+  background-color: var(--purple-4);
+}
+
+.header-enter__link {
+  font-family: "OpenSans";
+  color: #fff;
+  padding-left: 20px;
+  background-image: url("../img/header/enter.svg");
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 13px 13px;
+  transition: background-image .2s ease-in-out, background-size .3s ease-in-out, color .3s ease-in-out;
+}
+
+.header-enter__link:hover {
+  color: var(--purple-2);
+  background-image: url("../img/header/enter-2.svg");
+  background-size: 17.5px 13px;
+}
+
+.header-enter__link:active {
+  color: var(--purple-3);
+  background-image: url("../img/header/enter-3.svg");
+  background-size: 17.5px 13px;
+  background-color: initial;
+}
+
+
