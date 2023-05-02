@@ -3,11 +3,29 @@
 @font-face {
   font-family: 'OpenSans';
   src: local("OpenSans-Regular"),
-  url("../fonts/OpenSans-Regular.woff2") format("woff2"),
-  url("../fonts/OpenSans-Regular.ttf") format("ttf");
+    url("../fonts/OpenSans-Regular.woff2") format("woff2"),
+    url("../fonts/OpenSans-Regular.ttf") format("ttf");
   font-display: swap;
   font-style: normal;
   font-weight: 400;
+}
+
+@font-face {
+  font-family: 'OpenSans';
+  src: local("OpenSans-SemiBold"),
+    url("../fonts/OpenSans-SemiBold.woff2") format("woff2");
+  font-display: swap;
+  font-style: normal;
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'OpenSans';
+  src: local("OpenSans-Bold"),
+    url("../fonts/OpenSans-Bold.woff2") format("woff2");
+  font-display: swap;
+  font-style: normal;
+  font-weight: 700;
 }
 
 :root {
@@ -19,8 +37,18 @@
 
 /* MAIN */
 
+button {
+  cursor: pointer;
+}
+
 .flex {
   display: flex;
+}
+
+.btn-reset {
+  padding: 0;
+  background-color: transparent;
+  border: none;
 }
 
 .list-reset {
@@ -35,57 +63,90 @@
   outline: none;
 }
 
+.text-reset {
+  margin: 0;
+}
+
 /* HEADER */
 
-.header {
-  flex-wrap: wrap;
+.hh-container {
+  background-image: url("../img/hero/birmingham-museums-trust.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header__top {
   align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
   padding: 30px 160px;
   background-color: #000;
 }
 
-.header-list {
+.header-burger {
+  display: none;
+}
+
+.header-searcher {
+  display: none;
+}
+
+.header-logo {
   align-items: center;
-  margin-left: 173px;
+  margin-right: 173px;
 }
 
-.header-list__item:not(:last-child) {
-  margin-right: 52px;
+.header-nav__list {
+  align-items: center;
 }
 
-.header-list__link {
+.header-nav__item:not(:last-child) {
+  margin-right: 56px;
+}
+
+.header-nav__link {
   padding: 8px 6px;
   font-family: "OpenSans";
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
   color: #fff;
   transition: background-color .3s ease-in-out, color .3s ease-in-out;
 }
 
-.header-list__link:focus {
+.header-nav__link:focus {
   background-color: var(--purple-4);
 }
 
-.header-list__link:hover {
-   color: var(--purple-2);
+.header-nav__link:hover {
+  color: var(--purple-2);
 }
 
-.header-list__link:active {
+.header-nav__link:active {
   background-color: initial;
   color: var(--purple-4);
 }
 
 .header-enter {
+  margin-left: 373px;
+  justify-content: flex-end;
+}
+
+.header-enter__btn {
   padding: 8px 6px;
-  margin-left: 413px;
   transition: background-color .3s ease-in-out;
 }
 
-.header-enter:focus {
+.header-enter__btn:focus {
   outline: none;
   background-color: var(--purple-4);
 }
 
 .header-enter__link {
   font-family: "OpenSans";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
   color: #fff;
   padding-left: 20px;
   background-image: url("../img/header/enter.svg");
@@ -108,4 +169,139 @@
   background-color: initial;
 }
 
+/* HEADER MENU */
 
+.header__bottom {
+  margin-bottom: 63px;
+  padding: 15px 154px 20px 154px;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.header-menu {
+  justify-content: space-between;
+  width: 100%;
+}
+
+.header-menu__item:not(:last-child) {
+  margin-right: 91px;
+}
+
+.header-menu__select {
+  padding: 8px 6px;
+  width: fit-content;
+  text-align-last: left;
+  background-color: transparent;
+  border: none;
+  font-family: "OpenSans";
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  color: #fff;
+  transition: background-color .3s ease-in-out, color .3s ease-in-out;
+}
+
+.header-menu__select:focus {
+  outline: none;
+  background-color: var(--purple-4);
+}
+
+.header-menu__select:hover {
+  color: var(--purple-3);
+}
+
+.header-menu__select:active {
+  background-color: transparent;
+  color: var(--purple-4);
+}
+
+.header-form {
+  align-items: center;
+}
+
+.header-form__btn {
+  margin-right: 9px;
+}
+
+.header-form__input {
+  background-color: transparent;
+  border: none;
+  font-family: 'Open Sans';
+  font-size: 18px;
+  line-height: 25px;
+  color: #fff;
+  border-bottom: 1px solid #fff;
+  transition: border-bottom .3s ease-in-out;
+}
+
+.header-form__input::placeholder {
+  font-family: 'Open Sans';
+  font-size: 18px;
+  line-height: 25px;
+  color: #fff;
+}
+
+.header-form__input:focus {
+  outline: none;
+  border-bottom: 1px solid var(--purple-2);
+}
+
+.header-form__input:hover {
+  border-bottom: 1px solid var(--purple-2);
+}
+
+.header-form__input:active {
+  border-bottom: 1px solid var(--purple-4);
+}
+
+/* HERO */
+
+.hero {
+  width: 597px;
+  padding-left: 160px;
+  padding-bottom: 122px;
+}
+
+.hero__titile {
+  font-family: "OpenSans";
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 98px;
+  color: #fff;
+}
+
+.hero__text {
+  margin-bottom: 92px;
+  font-family: "OpenSans";
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+  color: #fff;
+}
+
+.hero__btn {
+  padding: 22.5px 35px;
+  font-family: "OpenSans";
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  color: #fff;
+  background-color: var(--purple-3);
+  border-radius: 100px;
+  transition: outline 0.05s ease-in-out, background-color .3s ease-in-out, outline-offset .1s ease-in-out;
+}
+
+.hero__btn:focus {
+  outline: 2px solid var(--purple-2);
+  outline-offset: 5px;
+}
+
+.hero__btn:hover {
+  outline: 3px solid var(--purple-1);
+}
+
+.hero__btn:active {
+  outline-offset: 0;
+  background-color: var(--purple-4);
+  outline: 3px solid var(--purple-1);
+}

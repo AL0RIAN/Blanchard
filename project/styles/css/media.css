@@ -1,0 +1,177 @@
+@media (max-width: 1200px) {
+  /* HEADER */
+  .hh-container {
+    background-image: url("../img/hero/birmingham-museums-trust-1024.jpg");
+  }
+
+  .header__top {
+    justify-content: space-between;
+    margin-bottom: 105px;
+    padding: 29px 50px;
+  }
+
+  .header-logo {
+    margin: 0;
+  }
+
+  .header-logo__logo {
+    width: 188px;
+    height: 42px;
+  }
+
+  .header-nav {
+    display: none;
+  }
+
+  .header-enter {
+    display: none;
+  }
+
+  .header-burger {
+    display: block;
+  }
+
+  .header-searcher {
+    display: block;
+  }
+
+  .header-burger__line {
+    display: block;
+    height: 3.65px;
+  }
+
+  .header-burger__line:not(:last-child) {
+    margin-bottom: 8.5px;
+  }
+
+  .header-burger__line:nth-child(1) {
+    width: 36px;
+    background-color: #fff;
+  }
+
+  .header-burger__line:nth-child(2) {
+    width: 28px;
+    background-color: #fff;
+  }
+
+  .header-burger__line:nth-child(3) {
+    width: 24px;
+    background-color: #fff;
+  }
+
+  /* HEADER MENU */
+
+  .header__bottom {
+    display: none;
+  }
+
+  /* HOVER */
+
+  .hero {
+    padding-left: 50px;
+    padding-bottom: 114px;
+  }
+
+  .hero__text {
+    margin-bottom: 108px;
+  }
+}
+
+@media (max-width: 992px) {
+  /* HEADER */
+  .hh-container {
+    background-image: url("../img/hero/birmingham-museums-trust-768.jpg");
+  }
+
+  .header-burger__line {
+    display: block;
+    height: 3px;
+  }
+
+  .header-burger__line:not(:last-child) {
+    margin-bottom: 9px;
+  }
+
+  .header-searcher img {
+    width: 27px;
+    height: 27px;
+  }
+
+}
+
+@media (max-width: 320px) {
+  /* HEADER */
+  .hh-container {
+    background-image: url("../img/hero/birmingham-museums-trust-320.jpg");
+  }
+
+  .header__top {
+    padding: 12px 15px;
+    margin-bottom: 30px;
+  }
+
+  .header-logo__logo {
+    width: 97px;
+    height: 22px;
+  }
+
+  .header-burger__line {
+    display: block;
+    height: 2px;
+  }
+
+  .header-burger__line:not(:last-child) {
+    margin-bottom: 6px;
+  }
+
+  .header-burger__line:nth-child(1) {
+    width: 25px;
+  }
+
+  .header-burger__line:nth-child(2) {
+    width: 16px;
+  }
+
+  .header-burger__line:nth-child(3) {
+    width: 10px;
+  }
+
+  .header-searcher img {
+    width: 16px;
+    height: 16px;
+  }
+
+  /* HERO */
+
+  .hero {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 258px;
+    padding-left: 32px;
+    padding-bottom: 45px;
+  }
+
+  .hero__titile {
+    margin-bottom: 16px;
+    font-size: 32px;
+    line-height: 44px;
+    text-align: center;
+  }
+
+  .hero__text {
+    margin-bottom: 20px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+  }
+
+  .hero__btn {
+    padding: 11px 16px 14.45px 19px;
+    font-size: 12px;
+    line-height: 16px;
+  }
+}

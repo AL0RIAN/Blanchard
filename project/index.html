@@ -7,28 +7,120 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles/css/normalize.css">
   <link rel="stylesheet" href="styles/css/style.css">
+  <link rel="stylesheet" href="styles/css/media.css">
   <title>Blanchard</title>
 </head>
 
 <body>
-  <header class="header flex">
-    <img src="styles/img/header/logo.svg" alt="">
+  <div class="hh-container">
+    <header class="header">
+      <div class="header__top flex">
+        <button class="header-burger btn-reset">
+          <span class="header-burger__line"></span>
+          <span class="header-burger__line"></span>
+          <span class="header-burger__line"></span>
+        </button>
 
-    <nav>
-      <ul class="header-list list-reset flex">
-        <li class="header-list__item"><a class="header-list__link link-reset" href="#">О нас</a></li>
-        <li class="header-list__item"><a class="header-list__link link-reset" href="#">Галерея</a></li>
-        <li class="header-list__item"><a class="header-list__link link-reset" href="#">Каталог</a></li>
-        <li class="header-list__item"><a class="header-list__link link-reset" href="#">События</a></li>
-        <li class="header-list__item"><a class="header-list__link link-reset" href="#">Проекты</a></li>
-        <li class="header-list__item"><a class="header-list__link link-reset" href="#">Контакты</a></li>
-      </ul>
-    </nav>
 
-    <div tabindex="0" class="header-enter">
-      <a class="header-enter__link link-reset" href="#">Войти</a>
-    </div>
-  </header>
+        <div class="header-logo flex">
+          <img class="header-logo__logo" src="styles/img/header/logo.svg" alt="">
+        </div>
+
+        <nav class="header-nav">
+          <ul class="header-nav__list list-reset flex">
+            <li class="header-nav__item"><a class="header-nav__link link-reset" href="#">О нас</a></li>
+            <li class="header-nav__item"><a class="header-nav__link link-reset" href="#">Галерея</a></li>
+            <li class="header-nav__item"><a class="header-nav__link link-reset" href="#">Каталог</a></li>
+            <li class="header-nav__item"><a class="header-nav__link link-reset" href="#">События</a></li>
+            <li class="header-nav__item"><a class="header-nav__link link-reset" href="#">Проекты</a></li>
+            <li class="header-nav__item"><a class="header-nav__link link-reset" href="#">Контакты</a></li>
+          </ul>
+        </nav>
+
+        <div class="header-enter flex">
+          <button class="header-enter__btn btn-reset">
+            <a class="header-enter__link link-reset" href="#">Войти</a>
+          </button>
+        </div>
+
+
+        <button class="header-searcher btn-reset">
+          <img src="styles/img/header/Search.svg" alt="">
+        </button>
+      </div>
+
+      <div class="header__bottom">
+        <nav class="header-menu flex">
+          <ul class="header-menu__list list-reset flex">
+            <li class="header-menu__item">
+              <select class="header-menu__select" name="realism" id="realism">
+                <option value="Реализм" selected disabled>Реализм</option>
+                <option value="Тинторетто">Тинторетто</option>
+                <option value="Фридрих">Фридрих</option>
+                <option value="Леонардо">Леонардо</option>
+                <option value="Верроккьо">Верроккьо</option>
+              </select>
+            </li>
+            <li class="header-menu__item">
+              <select class="header-menu__select" name="impressionism" id="impressionism">
+                <option value="Импрессионизм" selected disabled>Импрессионизм</option>
+                <option value="Моне">Тинторетто</option>
+                <option value="Сислей">Фридрих</option>
+                <option value="Мане">Леонардо</option>
+                <option value="Ренуар">Верроккьо</option>
+              </select>
+            </li>
+            <li class="header-menu__item">
+              <select class="header-menu__select" name="post-impressionism" id="post-impressionism">
+                <option value="Постимпрессионизм" selected disabled>Постимпрессионизм</option>
+                <option value="Ван Гог">Тинторетто</option>
+                <option value="Сезанн">Фридрих</option>
+                <option value="Гоген">Леонардо</option>
+                <option value="Сёра">Верроккьо</option>
+              </select>
+            </li>
+            <li class="header-menu__item">
+              <select class="header-menu__select" name="vanguard" id="vanguard">
+                <option value="Авангард" selected disabled>Авангард</option>
+                <option value="Кандинский">Тинторетто</option>
+                <option value="Маринетти">Фридрих</option>
+                <option value="Малевич">Леонардо</option>
+                <option value="Пикассо">Верроккьо</option>
+              </select>
+            </li>
+            <li class="header-menu__item">
+              <select class="header-menu__select" name="futurism" id="futurism">
+                <option value="Футуризм" selected disabled>Футуризм</option>
+                <option value="Карра">Тинторетто</option>
+                <option value="Прателла">Фридрих</option>
+                <option value="Северини">Леонардо</option>
+                <option value="Балла">Верроккьо</option>
+              </select>
+            </li>
+          </ul>
+
+          <form action="" class="header-form flex">
+            <button class="header-form__btn btn-reset flex">
+              <img src="styles/img/header/search_menu.svg" alt="">
+            </button>
+            <input class="header-form__input" type="text" id="searching" name="search" placeholder="Поиск по сайту">
+          </form>
+        </nav>
+      </div>
+    </header>
+
+    <section class="hero">
+      <h1 class="hero__titile text-reset">
+        Прикоснитесь к&nbsp;прекрасному
+      </h1>
+      <p class="hero__text text-reset">
+        Мы&nbsp;вынуждены отталкиваться от&nbsp;того, что реализация намеченных плановых заданий создаёт предпосылки для
+        новых предложений
+      </p>
+
+      <button class="hero__btn btn-reset">Подписаться на&nbsp;рассылку</button>
+    </section>
+  </div>
 </body>
 
 </html>
