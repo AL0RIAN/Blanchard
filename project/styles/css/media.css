@@ -1,4 +1,5 @@
-@media (max-width: 1200px) {
+@media (max-width: 1600px) {
+
   /* HEADER */
   .hh-container {
     background-image: url("../img/hero/birmingham-museums-trust-1024.jpg");
@@ -65,7 +66,7 @@
     display: none;
   }
 
-  /* HOVER */
+  /* HERO */
 
   .hero {
     padding-left: 50px;
@@ -75,10 +76,78 @@
   .hero__text {
     margin-bottom: 108px;
   }
+
+  /* ABOUT US */
+
+  .about-us {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  /* GALLERY */
+
+  .gallery {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .gallery__img-list {
+    justify-content: space-between;
+  }
+
+  .gallery__img-block {
+    width: calc((100% - 34px) / 2);
+  }
+}
+
+@media (max-width: 1200px) {
+  /* GALLERY */
+
+  .gallery {
+    background-image: url("../img/gallery/gallery-1024.jpg");
+  }
+
+  .gallery__btn-text span {
+    display: none;
+  }
+
+  .gallery__btn-text::after {
+    content: "1 / 3";
+    font-family: "OpenSans";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    color: #fff;
+  }
+
+  .gallery__select {
+    width: 280px;
+  }
+
+  .gallery__img-list {
+    justify-content: initial;
+  }
+
+  .gallery__img-block {
+    width: calc((100% - 34px) / 2);
+  }
+
+  .gallery__img-block:last-child {
+    display: none;
+  }
+
+  .gallery__img-block {
+    margin-right: 34px;
+  }
+
+  .gallery__img-block:nth-child(2) {
+    margin-right: 0;
+  }
 }
 
 @media (max-width: 992px) {
   /* HEADER */
+
   .hh-container {
     background-image: url("../img/hero/birmingham-museums-trust-768.jpg");
   }
@@ -97,9 +166,64 @@
     height: 27px;
   }
 
+  /* GALLERY */
+
+  .gallery {
+    flex-direction: column;
+    padding: 80px 50px;
+    background-image: url("../img/gallery/gallery-768.jpg");
+  }
+
+  .gallery__left-panel {
+    margin-bottom: 40px;
+    padding: 0;
+  }
+
+  .gallery__text {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .gallery__select {
+    margin-bottom: 40px;
+  }
+
+  .gallery__right-panel {
+    padding: 0;
+  }
+
+  .gallery__img-block {
+    width: calc((100% - 38px) / 2);
+    margin-right: 38px;
+  }
+
+  .gallery__hover {
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+  }
+
 }
 
 @media (max-width: 320px) {
+  /* OTHER */
+
+  section {
+    margin-bottom: 50px;
+  }
+
+  .section-title {
+    margin-bottom: 12px;
+    font-size: 28px;
+    line-height: 38px;
+  }
+
+  .section-text {
+    font-size: 14px;
+    line-height: 28px;
+  }
+
   /* HEADER */
   .hh-container {
     background-image: url("../img/hero/birmingham-museums-trust-320.jpg");
@@ -143,6 +267,10 @@
 
   /* HERO */
 
+  .hh-container {
+    margin-bottom: 50px;
+  }
+
   .hero {
     width: 100%;
     display: flex;
@@ -173,5 +301,52 @@
     padding: 11px 16px 14.45px 19px;
     font-size: 12px;
     line-height: 16px;
+  }
+
+  /* ABOUT US */
+
+  .about-us {
+    padding-left: 15px;
+  }
+
+  /* GALLERY */
+
+  .gallery {
+    padding: 50px 15px;
+  }
+
+  .gallery__left-panel {
+    margin: 0;
+    margin-bottom: 30px;
+  }
+
+  .gallery__select {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .gallery__img-block {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+
+  .gallery__img-block:nth-child(2) {
+    display: none;
+  }
+
+  .gallery__arrows:nth-of-type(1) {
+    display: none;
+  }
+
+  .gallery__arrows:nth-of-type(2) {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin: 0;
+  }
+
+  .gallery__btn-text::after {
+    content: "1 / 6";
   }
 }

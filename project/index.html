@@ -26,7 +26,7 @@
           <img class="header-logo__logo" src="styles/img/header/logo.svg" alt="">
         </div>
 
-        <nav class="header-nav">
+        <nav class="header-nav flex">
           <ul class="header-nav__list list-reset flex">
             <li class="header-nav__item"><a class="header-nav__link link-reset" href="#">О нас</a></li>
             <li class="header-nav__item"><a class="header-nav__link link-reset" href="#">Галерея</a></li>
@@ -35,14 +35,13 @@
             <li class="header-nav__item"><a class="header-nav__link link-reset" href="#">Проекты</a></li>
             <li class="header-nav__item"><a class="header-nav__link link-reset" href="#">Контакты</a></li>
           </ul>
+
+          <div class="header-enter flex">
+            <button class="header-enter__btn btn-reset">
+              <a class="header-enter__link link-reset" href="#">Войти</a>
+            </button>
+          </div>
         </nav>
-
-        <div class="header-enter flex">
-          <button class="header-enter__btn btn-reset">
-            <a class="header-enter__link link-reset" href="#">Войти</a>
-          </button>
-        </div>
-
 
         <button class="header-searcher btn-reset">
           <img src="styles/img/header/Search.svg" alt="">
@@ -121,6 +120,142 @@
       <button class="hero__btn btn-reset">Подписаться на&nbsp;рассылку</button>
     </section>
   </div>
+
+  <main>
+    <section class="about-us">
+      <h2 class="about-us__title section-title text-reset">О нас</h2>
+      <p class="about-us__text section-text text-reset flex">
+        Ясность нашей позиции очевидна: семантический разбор внешних
+        противодействий однозначно определяет каждого
+        участника как способного принимать собственные решения касаемо распределения внутренних резервов
+        и&nbsp;ресурсов. Не&nbsp;следует, однако, забывать, что высококачественный прототип будущего проекта влечёт
+        за&nbsp;собой процесс внедрения и&nbsp;модернизации модели развития. Повседневная практика показывает, что
+        высокое качество позиционных исследований создаёт необходимость включения в&nbsp;производственный план целого
+        ряда внеочередных мероприятий с&nbsp;учётом комплекса распределения внутренних резервов и&nbsp;ресурсов.
+        В&nbsp;рамках спецификации современных стандартов, действия представителей оппозиции набирают популярность среди
+        определённых слоёв населения, а&nbsp;значит, должны быть разоблачены.
+      </p>
+    </section>
+
+    <section class="gallery flex">
+      <div class="gallery__left-panel">
+        <h2 class="gallery__titile section-title  text-reset">Галерея</h2>
+
+        <form action="#" class="gallery__filter flex">
+          <label class="gallery__text text-reset">Фильтр:
+            <select class="gallery__select" name="filter" id="filter">
+              <option value="Живопись" selected>Живопись</option>
+              <option value="Рисунок" selected>Рисунок</option>
+              <option value="Скульптура" selected>Скульптура</option>
+            </select>
+          </label>
+
+          <div class="gallery__checkboxes flex">
+            <label class="gallery__label">
+              XIX век
+              <input type="radio" class="gallery__radio" name="ages" value="XIX век" checked="checked">
+              <span class="gallery__custom-radio"></span>
+            </label>
+            <label class="gallery__label">
+              XX век
+              <input type="radio" class="gallery__radio" name="ages" value="XX век">
+              <span class="gallery__custom-radio"></span>
+            </label>
+            <label class="gallery__label">
+              Современность
+              <input type="radio" class="gallery__radio" name="ages" value="Современность">
+              <span class="gallery__custom-radio"></span>
+            </label>
+          </div>
+        </form>
+      </div>
+
+      <div class="gallery__right-panel">
+        <form action="#" class="gallery__arrows flex">
+          <button class="gallery__btn btn-reset">
+            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M15 30C6.71573 30 8.89561e-07 23.2843 1.25168e-06 15C1.61379e-06 6.71573 6.71573 -1.01779e-06 15 -6.55671e-07C23.2843 -2.93554e-07 30 6.71573 30 15C30 23.2843 23.2843 30 15 30Z" />
+              <path
+                d="M15 30C6.71573 30 8.89561e-07 23.2843 1.25168e-06 15C1.61379e-06 6.71573 6.71573 -1.01779e-06 15 -6.55671e-07C23.2843 -2.93554e-07 30 6.71573 30 15C30 23.2843 23.2843 30 15 30Z"
+                stroke="black" />
+              <path d="M16 20L11 15L16 10" stroke="white" />
+            </svg>
+          </button>
+          <div class="gallery__btn-text"><span>1 / 2</span></div>
+          <button class="gallery__btn btn-reset">
+            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M15 30C23.2843 30 30 23.2843 30 15C30 6.71573 23.2843 -1.01779e-06 15 -6.55671e-07C6.71573 -2.93554e-07 2.93554e-07 6.71573 6.55671e-07 15C1.01779e-06 23.2843 6.71573 30 15 30Z"
+                fill="#666666" />
+              <path
+                d="M15 30C23.2843 30 30 23.2843 30 15C30 6.71573 23.2843 -1.01779e-06 15 -6.55671e-07C6.71573 -2.93554e-07 2.93554e-07 6.71573 6.55671e-07 15C1.01779e-06 23.2843 6.71573 30 15 30Z"
+                stroke="black" />
+              <path d="M14 20L19 15L14 10" stroke="white" />
+            </svg>
+          </button>
+        </form>
+
+        <div class="gallery__images">
+          <ul class="gallery__img-list list-reset flex">
+            <li tabindex="0" class="gallery__img-block">
+              <picture>
+                <source srcset="./styles/img/gallery/gallery-img-1-320.jpg" media="(max-width: 320px)">
+                <source srcset="./styles/img/gallery/gallery-img-1-768.jpg" media="(max-width: 992px)">
+                <source srcset="./styles/img/gallery/gallery-img-1-1024.jpg" media="(max-width: 1600px)">
+                <img class="gallery__img" src="./styles/img/gallery/gallery-img-1.jpg" alt="">
+              </picture>
+              <span class="gallery__hover"><button class="gallery__searcher btn-reset"></button></span>
+              <span class="gallery__active-effect"></span>
+            </li>
+            <li tabindex="0" class="gallery__img-block">
+              <picture>
+                <source srcset="./styles/img/gallery/gallery-img-2-768.jpg" media="(max-width: 992px)">
+                <source srcset="./styles/img/gallery/gallery-img-2-1024.jpg" media="(max-width: 1600px)">
+                <img class="gallery__img" src="./styles/img/gallery/gallery-img-2.jpg" alt="">
+              </picture>
+              <span class="gallery__hover"><button class="gallery__searcher btn-reset"></button></span>
+              <span class="gallery__active-effect"></span>
+            </li>
+            <li tabindex="0" class="gallery__img-block">
+              <picture>
+                <source srcset="./styles/img/gallery/gallery-img-3-768.jpg" media="(max-width: 992px)">
+                <source srcset="./styles/img/gallery/gallery-img-3 -1024.jpg" media="(max-width: 1600px)">
+                <img class="gallery__img" src="./styles/img/gallery/gallery-img-3.jpg" alt="">
+              </picture>
+              <span class="gallery__hover"><button class="gallery__searcher btn-reset"></button></span>
+              <span class="gallery__active-effect"></span>
+            </li>
+          </ul>
+        </div>
+
+        <form action="#" class="gallery__arrows flex">
+          <button class="gallery__btn btn-reset">
+            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M15 30C6.71573 30 8.89561e-07 23.2843 1.25168e-06 15C1.61379e-06 6.71573 6.71573 -1.01779e-06 15 -6.55671e-07C23.2843 -2.93554e-07 30 6.71573 30 15C30 23.2843 23.2843 30 15 30Z" />
+              <path
+                d="M15 30C6.71573 30 8.89561e-07 23.2843 1.25168e-06 15C1.61379e-06 6.71573 6.71573 -1.01779e-06 15 -6.55671e-07C23.2843 -2.93554e-07 30 6.71573 30 15C30 23.2843 23.2843 30 15 30Z"
+                stroke="black" />
+              <path d="M16 20L11 15L16 10" stroke="white" />
+            </svg>
+          </button>
+          <div class="gallery__btn-text"><span>1 / 6</span></div>
+          <button class="gallery__btn btn-reset">
+            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M15 30C23.2843 30 30 23.2843 30 15C30 6.71573 23.2843 -1.01779e-06 15 -6.55671e-07C6.71573 -2.93554e-07 2.93554e-07 6.71573 6.55671e-07 15C1.01779e-06 23.2843 6.71573 30 15 30Z"
+                fill="#666666" />
+              <path
+                d="M15 30C23.2843 30 30 23.2843 30 15C30 6.71573 23.2843 -1.01779e-06 15 -6.55671e-07C6.71573 -2.93554e-07 2.93554e-07 6.71573 6.55671e-07 15C1.01779e-06 23.2843 6.71573 30 15 30Z"
+                stroke="black" />
+              <path d="M14 20L19 15L14 10" stroke="white" />
+            </svg>
+          </button>
+        </form>
+      </div>
+    </section>
+  </main>
 </body>
 
 </html>

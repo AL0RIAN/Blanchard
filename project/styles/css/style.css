@@ -37,6 +37,15 @@
 
 /* MAIN */
 
+/* img {
+  height: 100%;
+  width: 100%;
+} */
+
+section {
+  margin-bottom: 80px;
+}
+
 button {
   cursor: pointer;
 }
@@ -67,9 +76,25 @@ button {
   margin: 0;
 }
 
+.section-title {
+  margin-bottom: 16px;
+  font-family: "OpenSans";
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 65px;
+}
+
+.section-text {
+  font-family: "OpenSans";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+}
+
 /* HEADER */
 
 .hh-container {
+  margin-bottom: 80px;
   background-image: url("../img/hero/birmingham-museums-trust.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -77,10 +102,9 @@ button {
 
 .header__top {
   align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
   padding: 30px 160px;
   background-color: #000;
+  transition: padding .3s ease-in-out;
 }
 
 .header-burger {
@@ -94,6 +118,12 @@ button {
 .header-logo {
   align-items: center;
   margin-right: 173px;
+  transition: margin-right .3s ease-in-out;
+ }
+
+.header-nav {
+  width: 100%;
+  justify-content: space-between;
 }
 
 .header-nav__list {
@@ -116,6 +146,11 @@ button {
 
 .header-nav__link:focus {
   background-color: var(--purple-4);
+  color: #fff;
+}
+
+.header-nav__link:focus:hover {
+  color: #fff;
 }
 
 .header-nav__link:hover {
@@ -128,7 +163,7 @@ button {
 }
 
 .header-enter {
-  margin-left: 373px;
+  /* margin-left: 373px; */
   justify-content: flex-end;
 }
 
@@ -177,8 +212,8 @@ button {
   background: rgba(0, 0, 0, 0.5);
 }
 
-.header-menu {
-  justify-content: space-between;
+.header-menu__list {
+  margin-right: 20px;
   width: 100%;
 }
 
@@ -222,6 +257,10 @@ button {
   margin-right: 9px;
 }
 
+.header-form__btn {
+  width: 20px;
+}
+
 .header-form__input {
   background-color: transparent;
   border: none;
@@ -256,7 +295,7 @@ button {
 /* HERO */
 
 .hero {
-  width: 597px;
+  max-width: 597px;
   padding-left: 160px;
   padding-bottom: 122px;
 }
@@ -305,3 +344,236 @@ button {
   background-color: var(--purple-4);
   outline: 3px solid var(--purple-1);
 }
+
+/* ABOUT US */
+
+.about-us {
+  padding-left: 160px;
+}
+
+.about-us__title {
+  color: #333;
+}
+
+.about-us__text {
+  max-width: 1080px;
+}
+
+/* GALLERY */
+
+.gallery {
+  padding-left: 160px;
+  padding-right: 160px;
+  background-image: url("../img/gallery/gallery.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: padding-left .3s ease-in-out, padding-right .3s ease-in-out;
+}
+
+.gallery__left-panel {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  max-width: 400px;
+  margin-right: 50px;
+  transition: padding .3s ease-in-out;
+}
+
+.gallery__titile {
+  color: #fff;
+}
+
+.gallery__filter {
+  flex-direction: column;
+  height: calc(100% - 80px);
+  justify-content: space-between;
+ }
+
+.gallery__text {
+  display: block;
+  font-family: "OpenSans";
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 32px;
+  color: #fff;
+}
+
+.gallery__select {
+  width: 400px;
+  margin-top: 10px;
+  /* margin-bottom: 176px; */
+  padding: 5px 15px;
+  font-family: "OpenSans";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  background-color: transparent;
+  border: 1px solid #fff;
+  border-radius: 6px;
+  color: #fff;
+  transition: width .3s ease-in-out;
+}
+
+.gallery__checkboxes {
+  flex-direction: column;
+}
+
+.gallery__label {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  padding-left: 24px;
+  font-family: "OpenSans";
+  font-weight: 400;
+  font-size: 16px;
+  color: #fff;
+}
+
+.gallery__label:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.gallery__radio {
+  opacity: 0;
+  cursor: pointer;
+}
+
+.gallery__custom-radio {
+  position: absolute;
+  left: 0;
+  top: 3px;
+  height: 12px;
+  width: 12px;
+  border: 1px solid #fff;
+  text-align: center;
+  transition: border .3s ease-in-out;
+}
+
+.gallery__custom-radio:after {
+  content: "";
+  position: absolute;
+  display: none;
+  transition: width .3s ease-in-out;
+}
+
+.gallery__radio:checked ~ .gallery__custom-radio {
+  border: 1px solid var(--purple-2);
+}
+
+.gallery__radio:checked ~ .gallery__custom-radio:after {
+  content: url("../img/gallery/radio-dot.svg");
+  display: block;
+  top: -6.5px;
+  left: 4px;
+  width: 4px;
+  height: 4px;
+}
+
+.gallery__right-panel {
+  width: 100%;
+  padding-top: 105px;
+  padding-bottom: 80px;
+}
+
+.gallery__btn {
+  width: 30px;
+  height: 30px;
+  border-radius: 100px;
+}
+
+.gallery__btn svg {
+  fill: #666;
+  transition: fill .3s ease-in-out;
+}
+
+.gallery__btn:focus {
+  outline: 2px solid #000;
+}
+
+.gallery__btn:hover svg {
+  fill: var(--purple-3)
+}
+
+.gallery__btn:active svg {
+  fill: var(--purple-4);
+}
+
+.gallery__btn-text {
+  margin-left: 12px;
+  margin-right: 12px;
+  font-family: "OpenSans";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  color: #fff;
+}
+
+.gallery__arrows {
+  margin-bottom: 30px;
+}
+
+.gallery__arrows:nth-of-type(2) {
+  display: none;
+}
+
+.gallery__img-block{
+  position: relative;
+  width: calc((100% - 50px) / 2);
+  margin-right: 50px;
+  transition: outline .1s ease-in-out;
+}
+
+.gallery__img-block:last-child {
+  margin-right: 0;
+}
+
+.gallery__img {
+  width: 100%;
+  height: 100%;
+}
+
+.gallery__hover {
+  position: absolute;
+  display: none;
+  width: calc(100% - 50px);
+  height: calc(100% - 50px);
+  background: rgba(0, 0, 0, 0.5);
+  left: 25px;
+  top: 20px;
+}
+
+.gallery__searcher {
+  position: absolute;
+  width: 81px;
+  height: 79px;
+  left: calc(50% - 40.5px);
+  top: calc(50% - 39.5px);
+  background-image: url("../img/gallery/searcher.svg");
+}
+
+.gallery__img-block:focus {
+  outline: 3px solid var(--purple-4)
+}
+
+.gallery__img-block:hover .gallery__hover {
+  display: block;
+}
+
+.gallery__active-effect {
+  display: none;
+  position: absolute;
+  background: linear-gradient(0deg, rgba(194, 131, 243, 0.4), rgba(194, 131, 243, 0.4));
+  width: 100%;
+  height: 100%;
+  top: 0;
+  transition: linear-gradient .3s ease-in-out;
+}
+
+.gallery__img-block:active {
+  outline: none;
+}
+
+.gallery__img-block:active .gallery__active-effect {
+  display: block;
+}
+
+
