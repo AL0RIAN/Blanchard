@@ -1053,3 +1053,140 @@ button {
 .projects__arrow:active {
   background-image: url("../img/projects/arrow-active.svg");
 }
+
+/* CONTACTS */
+
+.contacts {
+  border: 1px solid #CACACA;
+}
+
+.contacts__container {
+  justify-content: space-between;
+  align-items: center;
+  width: 1600px;
+  margin: 0 auto;
+  padding: 45px 0;
+  transition: padding .3s ease-in-out;
+}
+
+.contacts__address {
+  font-style: initial;
+}
+
+.contacts__title {
+  font-family: "OpenSans";
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  color: #333;
+}
+
+.contacts__form {
+  align-items: center;
+}
+
+.contacts__input {
+  width: 201px;
+  height: 30px;
+  margin-right: 20px;
+  padding: 9px 43px 9px 24px;
+  border: 1px solid #333;
+  border-radius: 100px;
+  transition: background-color .3s ease-in-out;
+}
+
+.contacts__input::placeholder {
+  font-family: "OpenSans";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  color: #999;
+}
+
+.contacts__input:focus {
+  outline: none;
+  background-color: #ECECEC;
+}
+
+.contacts__input:hover {
+  background-color: #ECECEC;
+}
+
+.contatcs__input:active {
+  background-color: #ECECEC;
+}
+
+.contacts__btn {
+  height: 50px;
+  padding: 12.5px 35px;
+  border: 2px solid var(--purple-3);
+  border-radius: 100px;
+  font-family: "OpenSans";
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  color: var(--purple-3);
+  transition: outline .1s linear, outline-offset .1s ease-in-out, background-color .3s ease-in-out, color .3s ease-in-out;
+}
+
+.contacts__btn:nth-of-type(2) {
+  display: none;
+}
+
+.contacts__btn:focus {
+  outline-offset: 5px;
+  outline: 2px solid var(--purple-2);
+}
+
+.contacts__btn:hover {
+  background-color: var(--purple-3);
+  color: #fff;
+}
+
+.contacts__btn:active {
+  outline-offset: 0;
+  outline: 3px solid var(--purple-1);
+  background-color: var(--purple-3);
+  color: #fff;
+}
+
+.social__title {
+  margin-bottom: 6px;
+}
+
+.contacts__social-link {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border-radius: 100px;
+  transition: opacity .3s ease-in-out;
+}
+
+.contacts__social-link:not(:last-child) {
+  max-width: 275px;
+  margin-right: 20.6px;
+}
+
+.contacts-social-1 {
+  background-image: url("../img/contacts/whatsapp.svg");
+}
+
+.contacts-social-2 {
+  background-image: url("../img/contacts/telegram.svg");
+}
+
+.contacts__social-link:focus {
+  opacity: 0.5;
+}
+
+.contacts__social-link:hover {
+  opacity: 0.5;
+}
+
+.contacts__social-link:active {
+  opacity: 0.5;
+  outline: 1px solid var(--purple-3);
+}
+
+/* FOOTER */
+

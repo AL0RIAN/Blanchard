@@ -517,29 +517,51 @@
         <ul class="projects__list list-reset flex">
           <li class="projects__list-item project__partner-img flex">
               <a href="#" class="projects__partner-link link-reset"></a>
-              <!-- <img class="projects__partner-img" src="./styles/img/projects/partner-1.jpg" alt=""> -->
           </li>
 
           <li class="projects__list-item flex project__partner-img">
               <a href="#" class="projects__partner-link link-reset"></a>
-              <!-- <img class="projects__partner-img" src="./styles/img/projects/partner-2.jpg" alt=""> -->
           </li>
 
           <li class="projects__list-item flex project__partner-img">
               <a href="#" class="projects__partner-link link-reset"></a>
-              <!-- <img class="projects__partner-img" src="./styles/img/projects/partner-3.jpg" alt=""> -->
           </li>
         </ul>
 
         <button class="projects__arrow btn-reset"> </button>
       </div>
     </section>
-  </main>
-</body>
 
-<script>
-  var size = document.getElementsByClassName("projects__list");
-  console.log(size[0]);
-</script>
+    <section class="contacts">
+      <div class="contacts__container flex">
+        <address class="contacts__address">
+          <h3 class="text-reset contacts__title">Шоурум №4</h3>
+          <p class="text-reset section-text">Леонтьевский переулок, дом 5/1</p>
+        </address>
+
+        <form class="contacts__form flex" action="#">
+          <input class="contacts__input" type="text" placeholder="Имя*">
+          <input class="contacts__input" type="number" placeholder="Телефон*">
+          <button class="contacts__btn btn-reset">Заказать обратный звонок</button>
+          <button class="contacts__btn btn-reset">Заказать</button>
+        </form>
+
+        <div class="social">
+          <h3 class="text-reset social__title contacts__title">Связаться в один клик</h3>
+          <a href="#" class="contacts__social-link contacts-social-1 link-reset"></a>
+          <a href="#" class="contacts__social-link contacts-social-2 link-reset"></a>
+        </div>
+      </div>
+
+      <div class="map"></div>
+    </section>
+  </main>
+
+  <footer class="footer flex">
+    <div class="footer__container">
+      <img class="footer__logo" src="./styles/img/footer/logo.svg" alt="">
+    </div>
+  </footer>
+</body>
 
 </html>

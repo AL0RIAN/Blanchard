@@ -192,6 +192,13 @@
   .project__partner-img:nth-of-type(2) {
     background-size: 283px 49px;
   }
+
+  /* CONTACTS */
+
+  .contacts__container {
+    max-width: 1500px;
+    padding: 43px 0;
+  }
 }
 
 @media (max-width: 1200px) {
@@ -236,6 +243,25 @@
 
   .gallery__img-block:nth-child(2) {
     margin-right: 0;
+  }
+
+  /* CONTACTS */
+
+  .contacts__container {
+    flex-direction: column;
+    align-items: start;
+    max-width: 924px;
+    margin: 0 auto;
+    padding: 43px 0;
+    transition: padding .3s ease-in-out;
+  }
+
+  .contacts__address {
+    margin-bottom: 30px;
+  }
+
+  .contacts__form {
+    margin-bottom: 30px;
   }
 }
 
@@ -381,8 +407,44 @@
     background-size: 216px 38px;
   }
 
+  /* CONTACTS */
+
+  .contacts__container {
+    max-width: 668px;
+  }
+
+  .contacts__title {
+    margin-bottom: 10px;
+  }
+
+  .social__title {
+    margin-bottom: 6px;
+  }
+
+  .contacts__form {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .contacts__input {
+    box-sizing: border-box;
+    width: calc((100% - 22px) / 2);
+    height: 50px;
+    margin-bottom: 12px;
+  }
+
+
+  .contacts__input:nth-child(2) {
+    margin-right: 0;
+  }
+
+  .contacts__btn {
+    box-sizing: border-box;
+    padding: 12.5px 27.5px;
+  }
  }
 
+ /* TRY MORE BP */
 @media (max-width: 576px) {
   /* OTHER */
 
@@ -591,4 +653,37 @@
   .project__partner-img:nth-of-type(1) {
     background-size: 105px 25px;
   }
+
+  /* CONTACTS */
+
+
+  .contacts__container {
+    max-width: 290px;
+  }
+
+  .contacts__form {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .contacts__input {
+    width: 100%;
+    height: 40px;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+
+  .contacts__btn:nth-of-type(1) {
+    display: none;
+  }
+
+  .contacts__btn:nth-of-type(2) {
+    display: block;
+    height: 40px;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+  }
+
 }
