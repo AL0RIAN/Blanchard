@@ -37,12 +37,16 @@
 
 /* MAIN */
 
+html {
+  scroll-behavior: smooth;
+}
+
 section {
   margin-left: auto;
   margin-right: auto;
   /* margin-bottom: 80px; */
   margin-bottom: 74px;
- }
+}
 
 button {
   cursor: pointer;
@@ -92,10 +96,30 @@ button {
 /* HEADER */
 
 .hh-container {
+  position: relative;
   margin-bottom: 80px;
-  background-image: url("../img/hero/birmingham-museums-trust.jpg");
+  /* background-image: url("../img/hero/birmingham-museums-trust.jpg"); */
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.hh-container .swiper {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+#header-slide1 {
+  background-image: url("../img/hero/birmingham-museums-trust.jpg");
+}
+
+#header-slide2 {
+  background-image: url("../img/hero/birmingham-museums-trust-2.jpg");
+}
+
+#header-slide3 {
+  background-image: url("../img/hero/birmingham-museums-trust-3.jpg");
 }
 
 .header__top {
@@ -113,7 +137,7 @@ button {
 
 .header-burger {
   display: none;
-  z-index: 1;
+  z-index: 2;
 }
 
 .header__burger-menu {
@@ -128,6 +152,7 @@ button {
   background: rgba(0, 0, 0, 0.9);
   transform: translateX(-100%);
   transition: transform .5s ease-in-out, visibility .5s ease-in-out;
+  z-index: 1;
 }
 
 .header__burger-menu--active {
@@ -432,7 +457,7 @@ button {
   transition: background-color .3s ease-in-out, color .3s ease-in-out;
 }
 
-.header-menu__select:focus + span {
+.header-menu__select:focus+span {
   visibility: visible;
   background-color: var(--purple-4);
 }
@@ -445,7 +470,7 @@ button {
   color: var(--purple-3);
 }
 
-.header-menu__select:active + span {
+.header-menu__select:active+span {
   visibility: hidden;
 }
 
@@ -594,8 +619,8 @@ button {
 
 .gallery__filter {
   flex-direction: column;
-  /* height: calc(100% - 80px); */
-  /* justify-content: space-between; */
+  height: calc(100% - 80px);
+  justify-content: space-between;
 }
 
 .gallery__text {
@@ -620,7 +645,17 @@ button {
   border: 1px solid #fff;
   border-radius: 6px;
   color: #fff;
-  transition: width .3s ease-in-out;
+  cursor: pointer;
+  transition: width .3s ease-in-out, background-color .3s ease-in-out;
+}
+
+.gallery__select:hover, .gallery__select:focus {
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.gallery__option {
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
 .gallery__checkboxes {
@@ -689,7 +724,7 @@ button {
   margin-bottom: 28px;
 }
 
-.gallery__arrows:nth-last-of-type(1){
+.gallery__arrows:nth-last-of-type(1) {
   display: none;
 }
 
