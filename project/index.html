@@ -8,11 +8,22 @@
   <link rel="stylesheet" href="styles/css/normalize.css">
   <link rel="stylesheet" href="styles/css/style.css">
   <link rel="stylesheet" href="styles/css/media.css">
+  <link rel="stylesheet" href="styles/css/choices.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
   <title>Blanchard</title>
 </head>
 
 <body>
   <div class="hh-container">
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide" id="header-slide1"></div>
+        <div class="swiper-slide" id="header-slide2"></div>
+        <div class="swiper-slide" id="header-slide3"></div>
+      </div>
+    </div>
+
     <header class="header">
       <div class="header__top">
         <div class="header__top-container  flex">
@@ -26,12 +37,18 @@
             <div class="header__burger-container flex">
               <nav class="header-burger__nav flex">
                 <ul class="header-burger__list list-reset flex">
-                  <li class="header-burger__item"><a class="header-burger__link link-reset" href="#">О нас</a></li>
-                  <li class="header-burger__item"><a class="header-burger__link link-reset" href="#">Галерея</a></li>
-                  <li class="header-burger__item"><a class="header-burger__link link-reset" href="#">Каталог</a></li>
-                  <li class="header-burger__item"><a class="header-burger__link link-reset" href="#">События</a></li>
-                  <li class="header-burger__item"><a class="header-burger__link link-reset" href="#">Проекты</a></li>
-                  <li class="header-burger__item"><a class="header-burger__link link-reset" href="#">Контакты</a></li>
+                  <li class="header-burger__item"><a class="header-burger__link link-reset" href="#about-us">О нас</a>
+                  </li>
+                  <li class="header-burger__item"><a class="header-burger__link link-reset" href="#gallery">Галерея</a>
+                  </li>
+                  <li class="header-burger__item"><a class="header-burger__link link-reset" href="#catalog">Каталог</a>
+                  </li>
+                  <li class="header-burger__item"><a class="header-burger__link link-reset" href="#events">События</a>
+                  </li>
+                  <li class="header-burger__item"><a class="header-burger__link link-reset" href="#projects">Проекты</a>
+                  </li>
+                  <li class="header-burger__item"><a class="header-burger__link link-reset"
+                      href="#contacts">Контакты</a></li>
                 </ul>
               </nav>
 
@@ -47,12 +64,12 @@
 
           <nav class="header-nav flex">
             <ul class="header-nav__list list-reset flex">
-              <li class="header-nav__item"><a class="header-nav__link link-reset" href="#">О нас</a></li>
-              <li class="header-nav__item"><a class="header-nav__link link-reset" href="#">Галерея</a></li>
-              <li class="header-nav__item"><a class="header-nav__link link-reset" href="#">Каталог</a></li>
-              <li class="header-nav__item"><a class="header-nav__link link-reset" href="#">События</a></li>
-              <li class="header-nav__item"><a class="header-nav__link link-reset" href="#">Проекты</a></li>
-              <li class="header-nav__item"><a class="header-nav__link link-reset" href="#">Контакты</a></li>
+              <li class="header-nav__item"><a class="header-nav__link link-reset" href="#about-us">О нас</a></li>
+              <li class="header-nav__item"><a class="header-nav__link link-reset" href="#gallery">Галерея</a></li>
+              <li class="header-nav__item"><a class="header-nav__link link-reset" href="#catalog">Каталог</a></li>
+              <li class="header-nav__item"><a class="header-nav__link link-reset" href="#events">События</a></li>
+              <li class="header-nav__item"><a class="header-nav__link link-reset" href="#projects">Проекты</a></li>
+              <li class="header-nav__item"><a class="header-nav__link link-reset" href="#contacts">Контакты</a></li>
             </ul>
 
             <button class="header-enter__btn btn-reset">
@@ -81,51 +98,54 @@
             <ul class="header-menu__list list-reset flex">
               <li class="header-menu__item">
                 <select class="header-menu__select" name="realism" id="realism">
-                  <option value="Реализм" selected disabled>Реализм</option>
+                  <option value="" selected>Реализм</option>
                   <option value="Тинторетто">Тинторетто</option>
                   <option value="Фридрих">Фридрих</option>
                   <option value="Леонардо">Леонардо</option>
                   <option value="Верроккьо">Верроккьо</option>
+                  <option value="Тинторетто">Тинторетто</option>
                 </select>
                 <span class="select-focus"></span>
               </li>
               <li class="header-menu__item">
                 <select class="header-menu__select" name="impressionism" id="impressionism">
-                  <option value="Импрессионизм" selected disabled>Импрессионизм</option>
-                  <option value="Моне">Тинторетто</option>
-                  <option value="Сислей">Фридрих</option>
-                  <option value="Мане">Леонардо</option>
-                  <option value="Ренуар">Верроккьо</option>
+                  <option value="" selected>Импрессионизм</option>
+                  <option value="Моне">Моне</option>
+                  <option value="Сислей">Сислей</option>
+                  <option value="Мане">Мане</option>
+                  <option value="Ренуар">Ренуар</option>
                 </select>
                 <span class="select-focus"></span>
               </li>
               <li class="header-menu__item">
                 <select class="header-menu__select" name="post-impressionism" id="post-impressionism">
-                  <option value="Постимпрессионизм" selected disabled>Постимпрессионизм</option>
-                  <option value="Ван Гог">Тинторетто</option>
-                  <option value="Сезанн">Фридрих</option>
-                  <option value="Гоген">Леонардо</option>
-                  <option value="Сёра">Верроккьо</option>
+                  <option value="" selected>Постимпрессионизм</option>
+                  <option value="ВанГог">Ван Гог</option>
+                  <option value="Сезанн">Сезанн</option>
+                  <option value="Гоген">Гоген</option>
+                  <option value="Сёра">Сёра</option>
+                  <option value="ВанГог">Ван Гог</option>
+                  <option value="Сезанн">Сезанн</option>
                 </select>
                 <span class="select-focus"></span>
               </li>
               <li class="header-menu__item">
                 <select class="header-menu__select" name="vanguard" id="vanguard">
-                  <option value="Авангард" selected disabled>Авангард</option>
-                  <option value="Кандинский">Тинторетто</option>
-                  <option value="Маринетти">Фридрих</option>
-                  <option value="Малевич">Леонардо</option>
-                  <option value="Пикассо">Верроккьо</option>
+                  <option value="" selected>Авангард</option>
+                  <option value="Кандинский">Кандинский</option>
+                  <option value="Маринетти">Маринетти</option>
+                  <option value="Малевич">Малевич</option>
+                  <option value="Пикассо">Пикассо</option>
                 </select>
                 <span class="select-focus"></span>
               </li>
               <li class="header-menu__item">
                 <select class="header-menu__select" name="futurism" id="futurism">
-                  <option value="Футуризм" selected disabled>Футуризм</option>
-                  <option value="Карра">Тинторетто</option>
-                  <option value="Прателла">Фридрих</option>
-                  <option value="Северини">Леонардо</option>
-                  <option value="Балла">Верроккьо</option>
+                  <option value="" selected>Футуризм</option>
+                  <option value="Карра">Карра</option>
+                  <option value="Прателла">Прателла</option>
+                  <option value="Северини">Северини</option>
+                  <option value="Балла">Балла</option>
                 </select>
                 <span class="select-focus"></span>
               </li>
@@ -156,7 +176,7 @@
   </div>
 
   <main>
-    <section class="about-us">
+    <section id="about-us" class="about-us">
       <h2 class="about-us__title section-title text-reset">О нас</h2>
       <p class="about-us__text section-text text-reset flex">
         Ясность нашей позиции очевидна: семантический разбор внешних
@@ -171,7 +191,7 @@
       </p>
     </section>
 
-    <section class="gallery">
+    <section id="gallery" class="gallery">
       <div class="gallery__container flex">
         <div class="gallery__left-panel">
           <h2 class="gallery__titile section-title  text-reset">Галерея</h2>
@@ -179,9 +199,9 @@
           <form action="#" class="gallery__filter flex">
             <label class="gallery__text text-reset">Фильтр:
               <select class="gallery__select" name="filter" id="filter">
-                <option value="Живопись" selected>Живопись</option>
-                <option value="Рисунок" selected>Рисунок</option>
-                <option value="Скульптура" selected>Скульптура</option>
+                <option class="gallery__option" value="Живопись" selected>Живопись</option>
+                <option class="gallery__option" value="Рисунок" selected>Рисунок</option>
+                <option class="gallery__option" value="Скульптура" selected>Скульптура</option>
               </select>
             </label>
 
@@ -206,6 +226,7 @@
         </div>
 
         <div class="gallery__right-panel">
+
           <div class="gallery__arrows flex">
             <button class="gallery__btn btn-reset"></button>
             <div class="gallery__btn-text"><span>1 / 2</span></div>
@@ -267,7 +288,7 @@
       </div>
     </section>
 
-    <section class="catalog">
+    <section id="catalog" class="catalog">
       <h2 class="catalog__title section-title text-reset">
         Каталог
       </h2>
@@ -370,7 +391,7 @@
       </div>
     </section>
 
-    <section class="events">
+    <section id="events" class="events">
       <h2 class="section-title text-reset">События</h2>
 
       <article class="events__articles">
@@ -459,7 +480,7 @@
       </article>
     </section>
 
-    <section class="projects">
+    <section id="projects" class="projects">
       <h2 class="section-title text-reset">Проекты</h2>
       <p class="projects__text section-text text-reset">
         Предварительные выводы: постоянное информационно-пропагандистское обеспечение нашей деятельности однозначно
@@ -505,7 +526,7 @@
       </div>
     </section>
 
-    <section class="contacts">
+    <section id="contacts" class="contacts">
       <div class="contacts__container flex">
         <address class="contacts__address">
           <h3 class="text-reset contacts__title">Шоурум №4</h3>
@@ -579,8 +600,41 @@
     </div>
   </footer>
 
-  <script src="./js/burger.js"></script>
-  <script src="./js/searcher.js"></script>
+  <script src="js/burger.js"></script>
+  <script src="js/searcher.js"></script>
+  <script src="js/choices.min.js"></script>
+  <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
+  <script src="js/headerScroll.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+
+  <script>
+    const headerSelectors = document.querySelectorAll(".header-menu__select");
+    const gallerySelectors = document.querySelectorAll(".gallery__select");
+
+
+    headerSelectors.forEach(element => {
+      new Choices(element, {
+        shouldSort: false,
+      });
+    });
+
+    gallerySelectors.forEach(element => {
+      new Choices(element, {
+        shouldSort: false,
+      });
+    });
+  </script>
+
+  <script>
+    const swiper = new Swiper(".swiper", {
+      direction: 'horizontal',
+      loop: true,
+      autoplay: {
+        delay: 6500,
+      },
+    });
+  </script>
 </body>
 
 </html>
