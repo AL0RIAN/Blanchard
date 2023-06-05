@@ -706,7 +706,7 @@
   z-index: 1;
   position: absolute;
   /* width: 100%; */
-  width: 400px;
+  width: 100%;
   /* background-color: #fff; */
   border: 1px solid #ddd;
   top: initial;
