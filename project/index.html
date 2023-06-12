@@ -10,11 +10,12 @@
   <link rel="stylesheet" href="styles/css/choices.min.css">
   <link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/accordion-js@3.3.4/dist/accordion.min.css">
   <link rel="stylesheet" href="styles/css/media.css">
   <title>Blanchard</title>
 </head>
 
-<body>
+<body id="body">
   <div class="hh-container">
     <div class="hh-swiper swiper">
       <div class="swiper-wrapper">
@@ -238,19 +239,19 @@
 
             <div class="swiper-wrapper">
               <div class="swiper-slide">
-                <div tabindex="0" class="gallery__img-block">
+                <div tabindex="0" data-number="1" class="gallery__img-block">
                   <img class="gallery__img" src="./styles/img/gallery/gallery-img-1.jpg" alt="">
                   <span class="gallery__hover"><button class="gallery__searcher btn-reset"></button></span>
                   <span class="gallery__active-effect"></span>
                 </div>
 
-                <div tabindex="0" class="gallery__img-block">
+                <div tabindex="0" data-number="2" class="gallery__img-block">
                   <img class="gallery__img" src="./styles/img/gallery/gallery-img-2.jpg" alt="">
                   <span class="gallery__hover"><button class="gallery__searcher btn-reset"></button></span>
                   <span class="gallery__active-effect"></span>
                 </div>
 
-                <div tabindex="0" class="gallery__img-block">
+                <div tabindex="0" data-number="3" class="gallery__img-block">
                   <img class="gallery__img" src="./styles/img/gallery/gallery-img-3.jpg" alt="">
                   <span class="gallery__hover"><button class="gallery__searcher btn-reset"></button></span>
                   <span class="gallery__active-effect"></span>
@@ -258,19 +259,19 @@
               </div>
 
               <div class="swiper-slide">
-                <div tabindex="0" class="gallery__img-block">
+                <div tabindex="0" data-number="4" class="gallery__img-block">
                   <img class="gallery__img" src="./styles/img/gallery/gallery-img-4.jpg" alt="">
                   <span class="gallery__hover"><button class="gallery__searcher btn-reset"></button></span>
                   <span class="gallery__active-effect"></span>
                 </div>
 
-                <div tabindex="0" class="gallery__img-block">
+                <div tabindex="0" data-number="5" class="gallery__img-block">
                   <img class="gallery__img" src="./styles/img/gallery/gallery-img-5.jpg" alt="">
                   <span class="gallery__hover"><button class="gallery__searcher btn-reset"></button></span>
                   <span class="gallery__active-effect"></span>
                 </div>
 
-                <div tabindex="0" class="gallery__img-block">
+                <div tabindex="0" data-number="6" class="gallery__img-block">
                   <img class="gallery__img" src="./styles/img/gallery/gallery-img-6.jpg" alt="">
                   <span class="gallery__hover"><button class="gallery__searcher btn-reset"></button></span>
                   <span class="gallery__active-effect"></span>
@@ -292,56 +293,42 @@
 
             <div class="swiper-wrapper">
               <div class="swiper-slide">
-                <div tabindex="0" class="gallery__img-block">
-                  <picture>
-                    <img class="gallery__img" src="./styles/img/gallery/gallery-img-1-1024.jpg" alt="">
-                  </picture>
+                <div tabindex="0" data-number="1" class="gallery__img-block">
+                  <img class="gallery__img" src="./styles/img/gallery/gallery-img-1-1024.jpg" alt="">
                   <span class="gallery__hover"><button class="gallery__searcher btn-reset"></button></span>
                   <span class="gallery__active-effect"></span>
                 </div>
 
-                <div tabindex="0" class="gallery__img-block">
-                  <picture>
-                    <source srcset="./styles/img/gallery/gallery-img-2-768.jpg" media="(max-width: 992px)">
-                    <source srcset="./styles/img/gallery/gallery-img-2-1024.jpg" media="(max-width: 1600px)">
-                    <img class="gallery__img" src="./styles/img/gallery/gallery-img-2-1024.jpg" alt="">
-                  </picture>
+                <div tabindex="0" data-number="2" class="gallery__img-block">
+                  <img class="gallery__img" src="./styles/img/gallery/gallery-img-2-1024.jpg" alt="">
                   <span class="gallery__hover"><button class="gallery__searcher btn-reset"></button></span>
                   <span class="gallery__active-effect"></span>
                 </div>
               </div>
 
               <div class="swiper-slide">
-                <div tabindex="0" class="gallery__img-block">
-                  <picture>
-                    <img class="gallery__img" src="./styles/img/gallery/gallery-img-3-1024.jpg" alt="">
-                  </picture>
+                <div tabindex="0" data-number="3" class="gallery__img-block">
+                  <img class="gallery__img" src="./styles/img/gallery/gallery-img-3-1024.jpg" alt="">
                   <span class="gallery__hover"><button class="gallery__searcher btn-reset"></button></span>
                   <span class="gallery__active-effect"></span>
                 </div>
 
-                <div tabindex="0" class="gallery__img-block">
-                  <picture>
-                    <img class="gallery__img" src="./styles/img/gallery/gallery-img-4-1024.jpg" alt="">
-                  </picture>
+                <div tabindex="0" data-number="4" class="gallery__img-block">
+                  <img class="gallery__img" src="./styles/img/gallery/gallery-img-4-1024.jpg" alt="">
                   <span class="gallery__hover"><button class="gallery__searcher btn-reset"></button></span>
                   <span class="gallery__active-effect"></span>
                 </div>
               </div>
 
               <div class="swiper-slide">
-                <div tabindex="0" class="gallery__img-block">
-                  <picture>
-                    <img class="gallery__img" src="./styles/img/gallery/gallery-img-5-1024.jpg" alt="">
-                  </picture>
+                <div tabindex="0" data-number="5" class="gallery__img-block">
+                  <img class="gallery__img" src="./styles/img/gallery/gallery-img-5-1024.jpg" alt="">
                   <span class="gallery__hover"><button class="gallery__searcher btn-reset"></button></span>
                   <span class="gallery__active-effect"></span>
                 </div>
 
-                <div tabindex="0" class="gallery__img-block">
-                  <picture>
-                    <img class="gallery__img" src="./styles/img/gallery/gallery-img-6-1024.jpg" alt="">
-                  </picture>
+                <div tabindex="0" data-number="6" class="gallery__img-block">
+                  <img class="gallery__img" src="./styles/img/gallery/gallery-img-6-1024.jpg" alt="">
                   <span class="gallery__hover"><button class="gallery__searcher btn-reset"></button></span>
                   <span class="gallery__active-effect"></span>
                 </div>
@@ -353,7 +340,7 @@
           <div class="gallery__swiper gallery__swiper--3 swiper">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
-                <div tabindex="0" class="gallery__img-block">
+                <div tabindex="0" data-number="1" class="gallery__img-block">
                   <picture>
                     <img class="gallery__img" src="./styles/img/gallery/gallery-img-1-320.jpg" alt="">
                   </picture>
@@ -363,7 +350,7 @@
               </div>
 
               <div class="swiper-slide">
-                <div tabindex="0" class="gallery__img-block">
+                <div tabindex="0" data-number="2" class="gallery__img-block">
                   <picture>
                     <source srcset="./styles/img/gallery/gallery-img-2-768.jpg" media="(max-width: 992px)">
                     <source srcset="./styles/img/gallery/gallery-img-2-1024.jpg" media="(max-width: 1600px)">
@@ -375,7 +362,7 @@
               </div>
 
               <div class="swiper-slide">
-                <div tabindex="0" class="gallery__img-block">
+                <div tabindex="0" data-number="3" class="gallery__img-block">
                   <picture>
                     <img class="gallery__img" src="./styles/img/gallery/gallery-img-3-1024.jpg" alt="">
                   </picture>
@@ -385,7 +372,7 @@
               </div>
 
               <div class="swiper-slide">
-                <div tabindex="0" class="gallery__img-block">
+                <div tabindex="0" data-number="4" class="gallery__img-block">
                   <picture>
                     <img class="gallery__img" src="./styles/img/gallery/gallery-img-4-1024.jpg" alt="">
                   </picture>
@@ -395,7 +382,7 @@
               </div>
 
               <div class="swiper-slide">
-                <div tabindex="0" class="gallery__img-block">
+                <div tabindex="0" data-number="5" class="gallery__img-block">
                   <picture>
                     <img class="gallery__img" src="./styles/img/gallery/gallery-img-5-1024.jpg" alt="">
                   </picture>
@@ -405,7 +392,7 @@
               </div>
 
               <div class="swiper-slide">
-                <div tabindex="0" class="gallery__img-block">
+                <div tabindex="0" data-number="6" class="gallery__img-block">
                   <picture>
                     <img class="gallery__img" src="./styles/img/gallery/gallery-img-6-1024.jpg" alt="">
                   </picture>
@@ -430,10 +417,17 @@
         </div>
       </div>
 
-      <div class="gallery__img-info">
-        <button class="img-info__exit"></button>
+      <div class="gallery__img-info flex">
+        <button class="img-info__exit btn-reset"></button>
         <div class="img-info__picture"></div>
-        <div class="img-info__info"></div>
+        <div class="img-info__info">
+          <div class="img-info__titles">
+            <h3 class="img-info__title text-reset"></h3>
+            <h4 class="img-info__little-title text-reset"></h4>
+            <time class="img-info__date"></time>
+          </div>
+          <p class="img-info__text text-reset"></p>
+        </div>
       </div>
     </section>
 
@@ -471,52 +465,137 @@
         </div>
 
         <div class="catalog__right-panel">
-          <ul class="catalog__ages__list list-reset">
-            <li class="catalog__ages">
-              <button class="catalog__ages-btn btn-reset flex">
-                <span class="catalog__ages-text">C&nbsp;1400 по&nbsp;1499&nbsp;гг</span>
-                <span class="catalog__ages-arrow"></span>
-              </button>
+          <ul class="accordion-container catalog__ages__list list-reset">
+            <li class="ac catalog__ages">
+              <h2 class="ac-header text-reset">
+                <button type="button" class="ac-trigger catalog__ages-btn btn-reset flex">
+                  <span class="catalog__ages-text">C&nbsp;1400 по&nbsp;1499&nbsp;гг</span>
+                  <span class="catalog__ages-arrow"></span>
+                </button>
+              </h2>
+
+              <ul class="ac-panel list-reset flex">
+                <li class="ac-panel__item"><a href="#" class="ac-panel__link link-reset">Бенедетто ди Биндо</a></li>
+                <li class="ac-panel__item"><a href="#" class="ac-panel__link link-reset">Бергоньоне, Амброджо</a></li>
+                <li class="ac-panel__item"><a href="#" class="ac-panel__link link-reset">Биссоло, Франческо</a></li>
+                <li class="ac-panel__item"><a href="#" class="ac-panel__link link-reset">Больтраффио, Джованни</a></li>
+                <li class="ac-panel__item"><a href="#" class="ac-panel__link link-reset">Бонсиньори, Франческо</a></li>
+                <li class="ac-panel__item"><a href="#" class="ac-panel__link link-reset">Боттичини, Рафаэлло</a></li>
+                <li class="ac-panel__item"><a href="#" class="ac-panel__link link-reset">Брамантино</a></li>
+                <li class="ac-panel__item"><a href="#" class="ac-panel__link link-reset">Бреа, Людовико</a></li>
+                <li class="ac-panel__item"><a href="#" class="ac-panel__link link-reset">Бьяджо д’Антонио Туччи</a></li>
+                <li class="ac-panel__item"><a href="#" class="ac-panel__link link-reset">Веккьетта</a></li>
+                <li class="ac-panel__item"><a href="#" class="ac-panel__link link-reset">Андреа Верроккьо</a></li>
+                <li class="ac-panel__item"><a href="#" class="ac-panel__link link-reset">Доменико Гирландайо</a></li>
+                <li class="ac-panel__item"><a href="#" class="ac-panel__link link-reset">Беноццо Гоццоли</a></li>
+                <li class="ac-panel__item"><a href="#" class="ac-panel__link link-reset">Грегорио ди Чекко</a></li>
+                <li class="ac-panel__item"><a href="#" class="ac-panel__link link-reset">Граначчи, Франческо</a></li>
+                <li class="ac-panel__item"><a href="#" class="ac-panel__link link-reset">Джованни да Удине</a></li>
+                <li class="ac-panel__item"><a href="#" class="ac-panel__link link-reset">Джованни ди Паоло</a></li>
+                <li class="ac-panel__item"><a href="#" class="ac-panel__link link-reset">Джорджоне</a></li>
+                <li class="ac-panel__item"><a href="#" class="ac-panel__link link-reset">Парентино, Бернардо</a></li>
+                <li class="ac-panel__item"><a href="#" class="ac-panel__link link-reset">Пезеллино</a></li>
+                <li class="ac-panel__item"><a href="#" class="ac-panel__link link-reset">Пьетро Перуджино</a></li>
+                <li class="ac-panel__item"><a href="#" class="ac-panel__link link-reset">Перуцци, Бальдассаре</a></li>
+                <li class="ac-panel__item"><a href="#" class="ac-panel__link link-reset">Пизанелло</a></li>
+                <li class="ac-panel__item"><a href="#" class="ac-panel__link link-reset">Пинтуриккьо</a></li>
+              </ul>
             </li>
-            <li class="catalog__ages">
-              <button class="catalog__ages-btn btn-reset flex">
-                <span class="catalog__ages-text">C&nbsp;1500 по&nbsp;1599&nbsp;гг</span>
-                <span class="catalog__ages-arrow"></span>
-              </button>
+
+            <li class="ac catalog__ages">
+              <h2 class="ac-header text-reset">
+                <button type="button" class="ac-trigger catalog__ages-btn btn-reset flex">
+                  <span class="catalog__ages-text">C&nbsp;1500 по&nbsp;1599&nbsp;гг</span>
+                  <span class="catalog__ages-arrow"></span>
+                </button>
+              </h2>
+
+              <div class="ac-panel">
+                <p class="ac-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur, beatae amet
+                  doloremque officiis atque nemo. Numquam itaque quis delectus maiores impedit sunt ducimus nam mollitia
+                  odio sit tempora, asperiores pariatur!</p>
+              </div>
             </li>
-            <li class="catalog__ages">
-              <button class="catalog__ages-btn btn-reset flex">
-                <span class="catalog__ages-text">C&nbsp;1600 по&nbsp;1699&nbsp;гг</span>
-                <span class="catalog__ages-arrow"></span>
-              </button>
+
+            <li class="ac catalog__ages">
+              <h2 class="ac-header text-reset">
+                <button type="button" class="ac-trigger catalog__ages-btn btn-reset flex">
+                  <span class="catalog__ages-text">C&nbsp;1600 по&nbsp;1699&nbsp;гг</span>
+                  <span class="catalog__ages-arrow"></span>
+                </button>
+              </h2>
+
+              <div class="ac-panel">
+                <p class="ac-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur, beatae amet
+                  doloremque officiis atque nemo. Numquam itaque quis delectus maiores impedit sunt ducimus nam mollitia
+                  odio sit tempora, asperiores pariatur!</p>
+              </div>
             </li>
-            <li class="catalog__ages">
-              <button class="catalog__ages-btn btn-reset flex">
-                <span class="catalog__ages-text">C&nbsp;1700 по&nbsp;1799&nbsp;гг</span>
-                <span class="catalog__ages-arrow"></span>
-              </button>
+
+            <li class="ac catalog__ages">
+              <h2 class="ac-header text-reset">
+                <button type="button" class="ac-trigger catalog__ages-btn btn-reset flex">
+                  <span class="catalog__ages-text">C&nbsp;1700 по&nbsp;1799&nbsp;гг</span>
+                  <span class="catalog__ages-arrow"></span>
+                </button>
+              </h2>
+
+              <div class="ac-panel">
+                <p class="ac-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur, beatae amet
+                  doloremque officiis atque nemo. Numquam itaque quis delectus maiores impedit sunt ducimus nam mollitia
+                  odio sit tempora, asperiores pariatur!</p>
+              </div>
             </li>
-            <li class="catalog__ages">
-              <button class="catalog__ages-btn btn-reset flex">
-                <span class="catalog__ages-text">C&nbsp;1800 по&nbsp;1899&nbsp;гг</span>
-                <span class="catalog__ages-arrow"></span>
-              </button>
+
+            <li class="ac catalog__ages">
+              <h2 class="ac-header text-reset">
+                <button type="button" class="ac-trigger catalog__ages-btn btn-reset flex">
+                  <span class="catalog__ages-text">C&nbsp;1800 по&nbsp;1899&nbsp;гг</span>
+                  <span class="catalog__ages-arrow"></span>
+                </button>
+              </h2>
+
+              <div class="ac-panel">
+                <p class="ac-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur, beatae amet
+                  doloremque officiis atque nemo. Numquam itaque quis delectus maiores impedit sunt ducimus nam mollitia
+                  odio sit tempora, asperiores pariatur!</p>
+              </div>
             </li>
-            <li class="catalog__ages">
-              <button class="catalog__ages-btn btn-reset flex">
-                <span class="catalog__ages-text">C&nbsp;1900 по&nbsp;1999&nbsp;гг</span>
-                <span class="catalog__ages-arrow"></span>
-              </button>
+
+            <li class="ac catalog__ages">
+              <h2 class="ac-header text-reset">
+                <button type="button" class="ac-trigger catalog__ages-btn btn-reset flex">
+                  <span class="catalog__ages-text">C&nbsp;1900 по&nbsp;1999&nbsp;гг</span>
+                  <span class="catalog__ages-arrow"></span>
+                </button>
+              </h2>
+
+              <div class="ac-panel">
+                <p class="ac-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur, beatae amet
+                  doloremque officiis atque nemo. Numquam itaque quis delectus maiores impedit sunt ducimus nam mollitia
+                  odio sit tempora, asperiores pariatur!</p>
+              </div>
             </li>
-            <li class="catalog__ages">
-              <button class="catalog__ages-btn btn-reset flex">
-                <span class="catalog__ages-text">C&nbsp;2000&nbsp;г</span>
-                <span class="catalog__ages-arrow"></span>
-              </button>
+
+            <li class="ac catalog__ages">
+              <h2 class="ac-header text-reset">
+                <button type="button" class="ac-trigger catalog__ages-btn btn-reset flex">
+                  <span class="catalog__ages-text">C&nbsp;2000&nbsp;г</span>
+                  <span class="catalog__ages-arrow"></span>
+                </button>
+              </h2>
+
+              <div class="ac-panel">
+                <p class="ac-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur, beatae amet
+                  doloremque officiis atque nemo. Numquam itaque quis delectus maiores impedit sunt ducimus nam mollitia
+                  odio sit tempora, asperiores pariatur!</p>
+              </div>
             </li>
+
           </ul>
         </div>
 
+        <!-- Доделать для адаптива -->
         <div class="catalog__bottom-panel">
           <picture class="catalog__picture">
             <source srcset="./styles/img/catalog/picture-1-320.jpg" media="(max-width: 320px)">
@@ -756,6 +835,8 @@
   <script src="js/headerScroll.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
   <script src="js/gallerySwiper.js"></script>
+  <script src="js/galleryInfo.js"></script>
+  <script src="https://unpkg.com/accordion-js@3.3.4/dist/accordion.min.js"></script>
 
 
   <script>
@@ -813,6 +894,10 @@
     });
 
 
+  </script>
+
+  <script>
+    new Accordion(".accordion-container");
   </script>
 </body>
 

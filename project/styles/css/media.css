@@ -222,6 +222,10 @@
     width: calc((100% - 34px) / 2);
   }
 
+  .gallery__img-info {
+    left: calc(50% - 450px);
+  }
+
   /* CATALOG */
 
   .catalog {
@@ -453,6 +457,70 @@
     margin-right: 0;
   } */
 
+  .gallery__img-info {
+    width: 594px;
+    height: 594px;
+    top: -17px;
+    left: calc(50% - 297px);
+  }
+
+  .img-info__titles {
+    margin-bottom: 41px;
+  }
+
+  .img-info__info {
+    width: 230px;
+    padding-bottom: 90px;
+  }
+
+  .img-info__picture {
+    width: 264px;
+  }
+
+  .img-info__title::after {
+    max-width: 230px;
+
+  }
+
+  .img-info__little-title::after {
+    max-width: 230px;
+
+  }
+
+  .img-info__text::after {
+    max-width: 230px;
+
+  }
+
+  .img-info__date::after {
+    max-width: 230px;
+
+  }
+
+  .img-info__picture--1 {
+    background-image: url("../img/gallery/gallery-img-1-1024.jpg");
+  }
+
+  .img-info__picture--2 {
+    background-image: url("../img/gallery/gallery-img-2-1024.jpg");
+  }
+
+  .img-info__picture--3 {
+    background-image: url("../img/gallery/gallery-img-3-1024.jpg");
+  }
+
+  .img-info__picture--4 {
+    background-image: url("../img/gallery/gallery-img-4-1024.jpg");
+  }
+
+  .img-info__picture--5 {
+    background-image: url("../img/gallery/gallery-img-5-1024.jpg");
+  }
+
+  .img-info__picture--6 {
+    background-image: url("../img/gallery/gallery-img-6-1024.jpg");
+  }
+
   /* CATALOG */
 
   .catalog {
@@ -465,6 +533,10 @@
 
   .catalog__right-panel {
     width: calc((100% - 50px) / 2);
+  }
+
+  .catalog__right-panel .ac .ac-panel {
+    max-height: 384px;
   }
 
   /* EVENTS */
@@ -638,6 +710,10 @@
     top: 0;
   }
 
+  .gallery__img-info {
+    top: calc(50% - 297px);
+  }
+
   /* CATALOG */
 
   .catalog {
@@ -679,6 +755,10 @@
 
   .catalog__right-panel {
     width: 100%;
+  }
+
+  .catalog__right-panel .ac .ac-panel {
+    max-height: 288px;
   }
 
   /* EVENTS */
@@ -1021,6 +1101,55 @@
     display: block;
   }
 
+  .gallery__img-info {
+    display: flex;
+    flex-direction: column;
+    width: 290px;
+    height: 600px;
+    top: calc(50% - 200px);
+    left: calc(50% - 145px);
+  }
+
+  .img-info__picture {
+    width: 290px;
+    height: 200px;
+  }
+
+  .img-info__info {
+    box-sizing: border-box;
+    width: 290px;
+    height: 200px;
+    padding: 17px 20px;
+  }
+
+  .img-info__titles {
+    margin-bottom: 17px;
+  }
+
+  .img-info__picture--1 {
+    background-image: url("../img/gallery/gallery-img-1-320.jpg");
+  }
+
+  .img-info__picture--2 {
+    background-image: url("../img/gallery/gallery-img-2-320.jpg");
+  }
+
+  .img-info__picture--3 {
+    background-image: url("../img/gallery/gallery-img-3-320.jpg");
+  }
+
+  .img-info__picture--4 {
+    background-image: url("../img/gallery/gallery-img-4-320.jpg");
+  }
+
+  .img-info__picture--5 {
+    background-image: url("../img/gallery/gallery-img-5-320.jpg");
+  }
+
+  .img-info__picture--6 {
+    background-image: url("../img/gallery/gallery-img-6-1024.jpg");
+  }
+
   /* CATALOG */
 
   .catalog {
@@ -1032,7 +1161,7 @@
   }
 
   .catalog__ages {
-    padding: 20px 0;
+    /* padding: 20px 0; */
   }
 
   .catalog__ages-text {
@@ -1046,6 +1175,10 @@
     height: 30px;
     background-repeat: no-repeat;
     background-size: 30px 30px;
+  }
+
+  .catalog__right-panel .ac .ac-panel {
+    max-height: fit-content;
   }
 
   /* EVENTS */
