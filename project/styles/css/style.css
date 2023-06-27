@@ -1001,8 +1001,13 @@ button {
 }
 
 .catalog__left-panel {
+  display: none;
   width: calc(50% - 50px);
   margin-right: 50px;
+}
+
+.catalog__left-panel--active {
+  display: block;
 }
 
 .catalog__bottom-panel {
@@ -1165,6 +1170,7 @@ button {
   content: "";
   width: 100%;
   height: 100%;
+  top: 0;
   left: 0;
   z-index: -1;
   opacity: 0;
@@ -1209,11 +1215,24 @@ button {
 /* EVENTS */
 
 .events {
+  position: relative;
   max-width: 1600px;
 }
 
 .events__articles {
   position: relative;
+}
+
+.events-swiper .swiper-slide {
+  display: flex;
+}
+
+.events .swiper {
+  position: initial;
+}
+
+.events .events-swiper--2, .events-swiper--3 {
+  display: none;
 }
 
 .events__list-item {
@@ -1257,7 +1276,7 @@ button {
   line-height: 32px;
 }
 
-.events__article {
+.events .events__article {
   flex-direction: column;
   flex-grow: 1;
   justify-content: space-between;
@@ -1266,6 +1285,11 @@ button {
   border: 1px solid #cacaca;
   border-top: none;
   transition: padding .5s ease-in-out;
+}
+
+.events__article--empty {
+  justify-content: center;
+  align-items: center;
 }
 
 .events__link {
@@ -1324,7 +1348,8 @@ button {
   background-image: url("../img/events/arrow.svg");
   background-repeat: no-repeat;
   right: -25px;
-  top: calc(50% - 25px);
+  /* top: calc(50% - 25px); */
+  top: 50%;
   transition: background-image .3s ease-in-out;
 }
 
