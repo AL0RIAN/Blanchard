@@ -1442,29 +1442,36 @@ button {
   color: #333;
 }
 
-.projects__partners {
+.projects .projects__partners {
+  display: flex;
   position: relative;
   align-self: center;
   transition: padding .4s ease-in-out;
 }
 
-.projects__list {
+.projects .projects__list {
+  display: flex;
+  box-sizing: border-box;
   width: 100%;
   height: 150px;
   padding: 0 75px;
   transition: padding .4s ease-in-out;
 }
-
-.projects__list-item {
+ 
+.projects .projects__list-item {
+  box-sizing: border-box;
   position: relative;
   justify-content: center;
-  width: calc((100% - 100px) / 3);
-  height: 100%;
+  /* width: calc((100% - 100px) / 3) !important; */
+  height: 150px;
   margin-right: 50px;
   border: 1px solid #cacaca;
-
   transition: padding .4s ease-in-out;
 }
+
+/* .projects__list-item:nth-child(3n + 1) {
+  margin-left: 45px;
+} */
 
 .project__partner-img {
   background-repeat: no-repeat;
@@ -1473,31 +1480,80 @@ button {
   transition: background-image .3s ease-in-out;
 }
 
-.project__partner-img:nth-of-type(1) {
+.projects-swiper--1 {
+  max-width: 1450px;
+}
+
+#partner-1 {
   background-image: url("../img/projects/partner-1.jpg");
-  background-size: 244px 63px;
 }
 
-.project__partner-img:nth-of-type(2) {
+#partner-2 {
   background-image: url("../img/projects/partner-2.jpg");
-  background-size: 330px 59px;
 }
 
-.project__partner-img:nth-of-type(3) {
+#partner-3 {
   background-image: url("../img/projects/partner-3.jpg");
-  background-size: 229px 53px;
 }
 
-.project__partner-img:nth-of-type(1):hover {
+#partner-4 {
+  background-image: url("../img/projects/partner-4.jpg");
+}
+
+#partner-5 {
+  background-image: url("../img/projects/partner-5.jpg");
+}
+
+#partner-6 {
+  background-image: url("../img/projects/partner-6.jpg");
+}
+
+#partner-7 {
+  background-image: url("../img/projects/partner-7.jpg");
+}
+
+#partner-8 {
+  background-image: url("../img/projects/partner-8.jpg");
+}
+
+#partner-9 {
+  background-image: url("../img/projects/partner-9.jpg");
+}
+
+#partner-1:hover {
   background-image: url("../img/projects/partner-1-color.jpg");
 }
 
-.project__partner-img:nth-of-type(2):hover {
+#partner-2:hover {
   background-image: url("../img/projects/partner-2-color.jpg");
 }
 
-.project__partner-img:nth-of-type(3):hover {
+#partner-3:hover {
   background-image: url("../img/projects/partner-3-color.jpg");
+}
+
+#partner-4:hover {
+  background-image: url("../img/projects/partner-4-color.jpg");
+}
+
+#partner-5:hover {
+  background-image: url("../img/projects/partner-5-color.jpg");
+}
+
+#partner-6:hover {
+  background-image: url("../img/projects/partner-6-color.jpg");
+}
+
+#partner-7:hover {
+  background-image: url("../img/projects/partner-7-color.jpg");
+}
+
+#partner-8:hover {
+  background-image: url("../img/projects/partner-8-color.jpg");
+}
+
+#partner-9:hover {
+  background-image: url("../img/projects/partner-9-color.jpg");
 }
 
 .projects__partner-link {
@@ -1530,15 +1586,16 @@ button {
   width: 30px;
   height: 30px;
   transition: background-image .3s ease-in-out;
+  z-index: 2;
 }
 
-.projects__arrow:first-child {
+.projects__arrow--1 {
   transform: rotate(180deg);
   top: calc(50% - 15px);
   left: 0;
 }
 
-.projects__arrow {
+.projects__arrow--2 {
   top: calc(50% - 15px);
   right: 0;
 }
@@ -1554,6 +1611,10 @@ button {
 
 .projects__arrow:active {
   background-image: url("../img/projects/arrow-active.svg");
+}
+
+.tippy-content {
+  font-family: "OpenSans";
 }
 
 /* CONTACTS */

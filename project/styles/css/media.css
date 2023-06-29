@@ -329,6 +329,7 @@
 
   .projects__list-item {
     width: calc((100% - 50px) / 2);
+    height: 128px;
     margin-right: 50px;
   }
 
@@ -336,16 +337,40 @@
     margin-right: 0;
   }
 
-  .projects__list-item:nth-child(3) {
-    display: none;
-  }
-
-  .project__partner-img:nth-of-type(1) {
+  #partner-1 {
     background-size: 210px 52px;
   }
 
-  .project__partner-img:nth-of-type(2) {
+  #partner-2 {
     background-size: 283px 49px;
+  }
+
+  #partner-3 {
+    background-size: 229px 54px;
+  }
+
+  #partner-4 {
+    background-size: 105px 72px;
+  }
+
+  #partner-5 {
+    background-size: 148px 72px;
+  }
+
+  #partner-6 {
+    background-size: 215px 60px;
+  }
+
+  #partner-7 {
+    background-size: 244px 59px; 
+  }
+
+  #partner-8 {
+    background-size: 158px 69px;
+  }
+
+  #partner-9 {
+    background-size: 196px 52px;
   }
 
   /* CONTACTS */
@@ -843,12 +868,40 @@
     margin-right: 34px;
   }
 
-  .project__partner-img:nth-of-type(1) {
+  #partner-1 {
     background-size: 210px 52px;
   }
 
-  .project__partner-img:nth-of-type(2) {
+  #partner-2 {
     background-size: 216px 38px;
+  }
+
+  #partner-3 {
+    background-size: 195px 45px;
+  }
+
+  #partner-4 {
+    background-size: 105px 72px;
+  }
+
+  #partner-5 { 
+    background-size: 121px 59px;
+  }
+
+  #partner-6 {
+    background-size: 176px 48px;
+  }
+
+  #partner-7 {
+    background-size: 194px 47px;
+  }
+
+  #partner-8 {
+    background-size: 143px 62px;
+  }
+
+  #partner-9 {
+    background-size: 182px 49px;
   }
 
   .projects__text {
@@ -1279,16 +1332,49 @@
 
   .projects__list-item {
     width: 100%;
-    height: 100%;
+    /* height: 100%; */
+    height: 65px;
     margin-right: 0;
   }
 
-  .projects__list-item:nth-child(2) {
+  /* .projects__list-item:nth-child(2) {
     display: none;
+  } */
+
+  #partner-1 {
+    background-size: 105px 25px; 
   }
 
-  .project__partner-img:nth-of-type(1) {
-    background-size: 105px 25px;
+  #partner-2 {
+    background-size: 141px 24px;
+  }
+
+  #partner-3 {
+    background-size: 116px 27px;
+  }
+
+  #partner-4 {
+    background-size: 53px 37px;
+  }
+
+  #partner-5 {
+    background-size: 75px 37px;
+  }
+
+  #partner-6 {
+    background-size: 109px 30px;
+  }
+
+  #partner-7 {
+    background-size: 124px 30px; 
+  }
+
+  #partner-8 {
+    background-size: 80px 35px;
+  }
+
+  #partner-9 {
+    background-size: 100px 27px;
   }
 
   /* CONTACTS */

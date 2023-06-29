@@ -976,15 +976,17 @@
         с&nbsp;не&nbsp;уникальными данными до&nbsp;степени совершённой неузнаваемости, из-за чего возрастает
         их&nbsp;статус бесполезности. Прежде всего, постоянное информационно-пропагандистское
         <span class="projects__tip">
-          <button class="projects__tooltip btn-reset"></button>
+          <button id="tip"
+            data-tippy-content="Прежде всего, постоянное информационно-пропагандистское  обеспечение нашей деятельности однозначно фиксирует необходимость экономической целесообразности принимаемых решений"
+            class="projects__tooltip btn-reset"></button>
         </span>
         обеспечение нашей
         деятельности однозначно фиксирует необходимость экономической целесообразности принимаемых решений. И&nbsp;нет
         сомнений, что действия представителей оппозиции могут быть рассмотрены <span class="projects__tip">
-          <button class="projects__tooltip btn-reset"></button>
+          <button id="tip" data-tippy-content="Tooltip2" class="projects__tooltip btn-reset"></button>
         </span> исключительно в&nbsp;разрезе
         маркетинговых и&nbsp;финансовых <span class="projects__tip">
-          <button class="projects__tooltip btn-reset"></button>
+          <button id="tip" data-tippy-content="Tooltip3" class="projects__tooltip btn-reset"></button>
         </span> предпосылок. Банальные, но&nbsp;неопровержимые выводы,
         а&nbsp;также
         представители современных социальных резервов призывают нас к&nbsp;новым свершениям, которые, в&nbsp;свою
@@ -994,23 +996,133 @@
 
       <h3 class="projects__title text-reset">Партнёры проектов:</h3>
 
-      <div class="projects__partners flex">
-        <button class="projects__arrow btn-reset"></button>
-        <ul class="projects__list list-reset flex">
-          <li class="projects__list-item project__partner-img flex">
-            <a href="#" class="projects__partner-link link-reset"></a>
-          </li>
+      <div class="projects__partners">
+        <div class="swiper projects-swiper--1">
+          <div class="swiper-wrapper">
+            <div id="partner-1" class="swiper-slide projects__list-item project__partner-img flex">
+              <a href="#" class="projects__partner-link link-reset"></a>
+            </div>
 
-          <li class="projects__list-item flex project__partner-img">
-            <a href="#" class="projects__partner-link link-reset"></a>
-          </li>
+            <div id="partner-2" class="swiper-slide projects__list-item flex project__partner-img">
+              <a href="#" class="projects__partner-link link-reset"></a>
+            </div>
 
-          <li class="projects__list-item flex project__partner-img">
-            <a href="#" class="projects__partner-link link-reset"></a>
-          </li>
-        </ul>
+            <div id="partner-3" class="swiper-slide projects__list-item flex project__partner-img">
+              <a href="#" class="projects__partner-link link-reset"></a>
+            </div>
 
-        <button class="projects__arrow btn-reset"> </button>
+            <div id="partner-4" class="swiper-slide projects__list-item flex project__partner-img">
+              <a href="#" class="projects__partner-link link-reset"></a>
+            </div>
+
+            <div id="partner-5" class="swiper-slide projects__list-item flex project__partner-img">
+              <a href="#" class="projects__partner-link link-reset"></a>
+            </div>
+
+            <div id="partner-6" class="swiper-slide projects__list-item flex project__partner-img">
+              <a href="#" class="projects__partner-link link-reset"></a>
+            </div>
+
+            <div id="partner-7" class="swiper-slide projects__list-item flex project__partner-img">
+              <a href="#" class="projects__partner-link link-reset"></a>
+            </div>
+
+            <div id="partner-8" class="swiper-slide projects__list-item flex project__partner-img">
+              <a href="#" class="projects__partner-link link-reset"></a>
+            </div>
+
+            <div id="partner-9" class="swiper-slide projects__list-item flex project__partner-img">
+              <a href="#" class="projects__partner-link link-reset"></a>
+            </div>
+          </div>
+        </div>
+        <button class="projects__arrow projects__arrow--1 btn-reset"></button>
+        <button class="projects__arrow projects__arrow--2 btn-reset"></button>
+      </div>
+
+
+      <div class="projects__partners swiper flex" style="display: none;">
+        <button class="projects__arrow projects__arrow--1 btn-reset"></button>
+        <div class="swiper-wrapper projects__list list-reset flex">
+          <div id="partner-1" class="swiper-slide projects__list-item project__partner-img flex">
+            <a href="#" class="projects__partner-link link-reset"></a>
+          </div>
+
+          <div id="partner-2" class="swiper-slide projects__list-item flex project__partner-img">
+            <a href="#" class="projects__partner-link link-reset"></a>
+          </div>
+
+          <div id="partner-3" class="swiper-slide projects__list-item flex project__partner-img">
+            <a href="#" class="projects__partner-link link-reset"></a>
+          </div>
+
+          <div id="partner-4" class="swiper-slide projects__list-item flex project__partner-img">
+            <a href="#" class="projects__partner-link link-reset"></a>
+          </div>
+
+          <div id="partner-5" class="swiper-slide projects__list-item flex project__partner-img">
+            <a href="#" class="projects__partner-link link-reset"></a>
+          </div>
+
+          <div id="partner-6" class="swiper-slide projects__list-item flex project__partner-img">
+            <a href="#" class="projects__partner-link link-reset"></a>
+          </div>
+
+          <div id="partner-7" class="swiper-slide projects__list-item flex project__partner-img">
+            <a href="#" class="projects__partner-link link-reset"></a>
+          </div>
+
+          <div id="partner-8" class="swiper-slide projects__list-item flex project__partner-img">
+            <a href="#" class="projects__partner-link link-reset"></a>
+          </div>
+
+          <div id="partner-9" class="swiper-slide projects__list-item flex project__partner-img">
+            <a href="#" class="projects__partner-link link-reset"></a>
+          </div>
+
+          <!-- <ul class="projects__list list-reset swiper-slide flex">
+            <li id="partner-1" class="projects__list-item project__partner-img flex">
+              <a href="#" class="projects__partner-link link-reset"></a>
+            </li>
+
+            <li id="partner-2" class="projects__list-item flex project__partner-img">
+              <a href="#" class="projects__partner-link link-reset"></a>
+            </li>
+
+            <li id="partner-3" class="projects__list-item flex project__partner-img">
+              <a href="#" class="projects__partner-link link-reset"></a>
+            </li>
+          </ul>
+
+          <ul class="projects__list list-reset swiper-slide flex">
+            <li id="partner-4" class="projects__list-item project__partner-img flex">
+              <a href="#" class="projects__partner-link link-reset"></a>
+            </li>
+
+            <li id="partner-5" class="projects__list-item flex project__partner-img">
+              <a href="#" class="projects__partner-link link-reset"></a>
+            </li>
+
+            <li id="partner-6" class="projects__list-item flex project__partner-img">
+              <a href="#" class="projects__partner-link link-reset"></a>
+            </li>
+          </ul>
+
+          <ul class="projects__list list-reset swiper-slide flex">
+            <li id="partner-7" class="projects__list-item project__partner-img flex">
+              <a href="#" class="projects__partner-link link-reset"></a>
+            </li>
+
+            <li id="partner-8" class="projects__list-item flex project__partner-img">
+              <a href="#" class="projects__partner-link link-reset"></a>
+            </li>
+
+            <li id="partner-9" class="projects__list-item flex project__partner-img">
+              <a href="#" class="projects__partner-link link-reset"></a>
+            </li>
+          </ul> -->
+        </div>
+        <button class="projects__arrow projects__arrow--2 btn-reset"> </button>
       </div>
     </section>
 
@@ -1098,6 +1210,8 @@
   <script src="js/galleryInfo.js"></script>
   <script src="https://unpkg.com/accordion-js@3.3.4/dist/accordion.min.js"></script>
   <script src="js/tabs.js"></script>
+  <script src="https://unpkg.com/@popperjs/core@2"></script>
+  <script src="https://unpkg.com/tippy.js@6"></script>
 
 
   <script>
@@ -1199,10 +1313,30 @@
         },
       }
     });
+
+    const swiperProjects = new Swiper(".projects-swiper--1", {
+      direction: 'horizontal',
+      // loop: true,
+      slidesPerView: 3,
+      slidesPerGroup: 1,
+      spaceBetween: 50,
+      navigation: {
+        nextEl: '.projects__arrow--2',
+        prevEl: '.projects__arrow--1',
+      },
+    })
   </script>
 
   <script>
     new Accordion(".accordion-container");
+  </script>
+
+  <script>
+    tippy("#tip", {
+      allowHTML: true,
+      hideOnClick: true,
+      trigger: "click",
+    });
   </script>
 </body>
 
