@@ -41,6 +41,10 @@ html {
   scroll-behavior: smooth;
 }
 
+main {
+  overflow-x: hidden;
+}
+
 section {
   margin-left: auto;
   margin-right: auto;
@@ -283,7 +287,8 @@ button {
 
 .header-nav {
   justify-content: space-between;
-  width: 100%;
+  /* width: 100%; */
+  width: 1250px;
 }
 
 .header-nav__list {
@@ -715,7 +720,7 @@ button {
 .gallery__radio:checked~.gallery__custom-radio:after {
   content: url("../img/gallery/radio-dot.svg");
   display: block;
-  top: -7px;
+  top: -7.5px;
   left: 3px;
   width: 4px;
   height: 4px;
@@ -1351,6 +1356,7 @@ button {
   /* top: calc(50% - 25px); */
   top: 50%;
   transition: background-image .3s ease-in-out;
+  z-index: 3;
 }
 
 .events__btn:focus {
@@ -1457,7 +1463,7 @@ button {
   padding: 0 75px;
   transition: padding .4s ease-in-out;
 }
- 
+
 .projects .projects__list-item {
   box-sizing: border-box;
   position: relative;
@@ -1624,9 +1630,10 @@ button {
 }
 
 .contacts__container {
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  width: 1600px;
+  max-width: 1600px;
   margin: 0 auto;
   padding: 38px 0;
   transition: padding .3s ease-in-out;
@@ -1645,7 +1652,29 @@ button {
 }
 
 .contacts__form {
+  position: relative;
   align-items: center;
+}
+
+.contacts__form input[data-validate=name] + div {
+  position: absolute;
+}
+
+.js-validate-error-label {
+  position: absolute;
+  font-family: "OpenSans";
+  font-size: 12px;
+  line-height: 16.34px;
+}
+
+.contacts__form input[data-validate-field=name] + div {
+  top: -16px;
+  left: 26px;
+}
+
+.contacts__form input[data-validate-field=tel] + div {
+  top: -16px;
+  left: calc((100% - 274px) / 2);
 }
 
 .contacts__input {
@@ -1751,6 +1780,11 @@ button {
   outline: 1px solid var(--purple-3);
 }
 
+#map {
+  height: 400px;
+  width: 100%;
+}
+
 /* FOOTER */
 
 .footer {
@@ -1769,6 +1803,25 @@ button {
   display: none;
 }
 
+.footer__social-link {
+  outline: none;
+}
+
 .footer__social-link:not(:last-child) {
   margin-right: 20px;
 }
+
+.footer__social-link svg {
+  fill: #cacaca;
+  transition: fill .3s ease-in-out;
+}
+
+.footer__social-link:hover svg,
+.footer__social-link:focus svg {
+  fill: #fff;
+}
+
+.footer__social-link:active svg {
+  fill: var(--purple-3);
+}
+
