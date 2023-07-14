@@ -20,8 +20,6 @@ function disableBlock(array, number, media) {
 names.forEach(element => element.addEventListener("click", function () {
     var width = window.innerWidth;
 
-    console.log(width);
-
     if (element.dataset.catalogbtn == current) {
         return;
     } else {

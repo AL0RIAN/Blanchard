@@ -52,6 +52,10 @@ section {
   margin-bottom: 74px;
 }
 
+section:last-child {
+  margin-bottom: 0;
+}
+
 button {
   cursor: pointer;
 }
@@ -850,7 +854,7 @@ button {
 }
 
 .gallery__img-block:focus {
-  outline: 3px solid var(--purple-4)
+  outline: 3px solid var(--purple-4);
 }
 
 .gallery__img-block:hover .gallery__hover {
@@ -909,6 +913,11 @@ button {
 
 .img-info__exit:active {
   background-image: url("../img/gallery/cross-active.svg");
+}
+
+.img-info__text-block {
+  overflow-y: auto;
+  max-height: calc(100% - 50px);
 }
 
 .img-info__info {
@@ -1046,6 +1055,7 @@ button {
 }
 
 .catalog__author-text {
+  margin-bottom: 15px;
   font-family: "OpenSans";
   font-weight: 400;
   font-size: 16px;
@@ -1215,6 +1225,55 @@ button {
 .catalog__ages:active .catalog__ages-text {
   color: var(--purple-4);
   background-color: transparent;
+}
+
+.catalog__fine-link {
+  font-family: "OpenSans";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 22px;
+  color: var(--purple-3);
+  transition: color .3s ease-in-out;
+}
+
+.catalog__fine-link:hover,
+.catalog__fine-link:focus {
+  color: var(--purple-2);
+}
+
+.catalog__fine-link:active {
+  color: var(--purple-4);
+}
+
+.catalog__empty-info {
+  flex-direction: column;
+  justify-content: center;
+  max-width: 275px;
+  margin-left: 24px;
+}
+
+.catalog__empty-block {
+  display: block;
+  width: 251px;
+  height: 251px;
+  color: #999;
+}
+
+.catalog__empty-head {
+  font-family: "OpenSans";
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 32px;
+  margin-bottom: 5px;
+}
+
+.catalog__author-text {
+  display: inline-block;
+  margin-bottom: 5px;
+  font-family: "OpenSans";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
 }
 
 /* EVENTS */
@@ -1490,75 +1549,75 @@ button {
   max-width: 1450px;
 }
 
-#partner-1 {
+#partner-1, #partner-1s  {
   background-image: url("../img/projects/partner-1.jpg");
 }
 
-#partner-2 {
+#partner-2, #partner-2s {
   background-image: url("../img/projects/partner-2.jpg");
 }
 
-#partner-3 {
+#partner-3, #partner-3s {
   background-image: url("../img/projects/partner-3.jpg");
 }
 
-#partner-4 {
+#partner-4, #partner-4s {
   background-image: url("../img/projects/partner-4.jpg");
 }
 
-#partner-5 {
+#partner-5, #partner-5s {
   background-image: url("../img/projects/partner-5.jpg");
 }
 
-#partner-6 {
+#partner-6, #partner-6s {
   background-image: url("../img/projects/partner-6.jpg");
 }
 
-#partner-7 {
+#partner-7, #partner-7s {
   background-image: url("../img/projects/partner-7.jpg");
 }
 
-#partner-8 {
+#partner-8, #partner-8s {
   background-image: url("../img/projects/partner-8.jpg");
 }
 
-#partner-9 {
+#partner-9, #partner-9s {
   background-image: url("../img/projects/partner-9.jpg");
 }
 
-#partner-1:hover {
+#partner-1:hover, #partner-1s:hover {
   background-image: url("../img/projects/partner-1-color.jpg");
 }
 
-#partner-2:hover {
+#partner-2:hover, #partner-2s:hover {
   background-image: url("../img/projects/partner-2-color.jpg");
 }
 
-#partner-3:hover {
+#partner-3:hover, #partner-3s:hover {
   background-image: url("../img/projects/partner-3-color.jpg");
 }
 
-#partner-4:hover {
+#partner-4:hover, #partner-4s:hover {
   background-image: url("../img/projects/partner-4-color.jpg");
 }
 
-#partner-5:hover {
+#partner-5:hover, #partner-5s:hover {
   background-image: url("../img/projects/partner-5-color.jpg");
 }
 
-#partner-6:hover {
+#partner-6:hover, #partner-6s:hover {
   background-image: url("../img/projects/partner-6-color.jpg");
 }
 
-#partner-7:hover {
+#partner-7:hover, #partner-7s:hover {
   background-image: url("../img/projects/partner-7-color.jpg");
 }
 
-#partner-8:hover {
+#partner-8:hover, #partner-8s:hover {
   background-image: url("../img/projects/partner-8-color.jpg");
 }
 
-#partner-9:hover {
+#partner-9:hover, #partner-9s:hover {
   background-image: url("../img/projects/partner-9-color.jpg");
 }
 

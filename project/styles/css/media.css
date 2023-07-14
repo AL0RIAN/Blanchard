@@ -544,6 +544,7 @@
   }
 
   .img-info__little-title::after {
+    display: block;
     max-width: 230px;
 
   }
@@ -1230,6 +1231,10 @@
     width: 290px;
     height: 200px;
     padding: 17px 20px;
+  }
+
+  .img-info__text-block {
+    max-height: 277px;
   }
 
   .img-info__titles {

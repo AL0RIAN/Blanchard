@@ -708,6 +708,7 @@
   /* width: 100%; */
   width: 100%;
   /* background-color: #fff; */
+  background-color: rgba(0, 0, 0, 0.9);
   border: 1px solid #ddd;
   top: initial;
   margin-top: -1px;
