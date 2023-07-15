@@ -853,8 +853,10 @@ button {
   background-image: url("../img/gallery/searcher.svg");
 }
 
+
 .gallery__img-block:focus {
   outline: 3px solid var(--purple-4);
+  outline-offset: -2px;
 }
 
 .gallery__img-block:hover .gallery__hover {
@@ -940,6 +942,7 @@ button {
 }
 
 .img-info__little-title::after {
+  display: block;
   content: attr(data-text);
   max-width: 401px;
   font-family: 'Open Sans';
@@ -997,6 +1000,11 @@ button {
 
 .img-info__picture--6 {
   background-image: url("../img/gallery/gallery-img-6.jpg");
+}
+
+.gallery .swiper, .swiper-container {
+  overflow-y: hidden;
+  overflow-x: hidden;
 }
 
 /* CATALOG */
@@ -1195,6 +1203,10 @@ button {
 
 .ac-panel__link:focus::after {
   opacity: 1;
+}
+
+.ac-panel__link:focus {
+  outline: none;
 }
 
 .ac-panel__link:hover {
