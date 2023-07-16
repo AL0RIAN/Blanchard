@@ -150,7 +150,7 @@ button {
 
 .header-burger {
   display: none;
-  z-index: 2;
+  z-index: 3;
 }
 
 .header__burger-menu {
@@ -165,7 +165,7 @@ button {
   background: rgba(0, 0, 0, 0.9);
   transform: translateX(-100%);
   transition: transform .5s ease-in-out, visibility .5s ease-in-out;
-  z-index: 1;
+  z-index: 2;
 }
 
 .header__burger-menu--active {
@@ -181,11 +181,11 @@ button {
   margin: 0 auto;
 }
 
-.header-burger__list {
+.header__burger-list {
   flex-direction: column;
 }
 
-.header-burger__item {
+.header__burger-item {
   font-family: "OpenSans";
   font-weight: 600;
   font-size: 24px;
@@ -193,13 +193,13 @@ button {
   color: #fff;
 }
 
-.header-burger__link {
+.header__burger-link {
   position: relative;
   transition: color .3s ease-in-out;
   z-index: 100;
 }
 
-.header-burger__link::after {
+.header__burger-link::after {
   position: absolute;
   content: "";
   visibility: hidden;
@@ -213,24 +213,24 @@ button {
   transition: background-color .3s ease-in-out, visibility .3s ease-in-out;
 }
 
-.header-burger__link:focus::after {
+.header__burger-link:focus::after {
   background-color: var(--purple-4);
   visibility: visible;
 }
 
-.header-burger__link:hover {
+.header__burger-link:hover {
   color: var(--purple-2);
 }
 
-.header-burger__link:active::after {
+.header__burger-link:active::after {
   background-color: transparent;
 }
 
-.header-burger__link:active {
+.header__burger-link:active {
   color: var(--purple-4);
 }
 
-.header-burger__btn {
+.header__burger-btn {
   position: relative;
   padding: 19px 88px;
   border: 2px solid var(--purple-3);
@@ -279,7 +279,7 @@ button {
   background-size: 17.5px 13px;
 }
 
-.header-searcher__btn {
+.header__searcher-btn {
   display: none;
 }
 
@@ -353,13 +353,13 @@ button {
   justify-content: flex-end;
 }
 
-.header-enter__btn {
+.header__burger-btn {
   position: relative;
   z-index: 1;
   transition: background-color .3s ease-in-out;
 }
 
-.header-enter__btn::after {
+.header__burger-btn::after {
   content: "";
   visibility: hidden;
   position: absolute;
@@ -372,16 +372,16 @@ button {
   transition: background-color .3s ease-in-out, visibility .3s ease-in-out;
 }
 
-.header-enter__btn:focus::after {
+.header__burger-btn:focus::after {
   visibility: visible;
   background-color: var(--purple-4);
 }
 
-.header-enter__btn:focus {
+.header__burger-btn:focus {
   outline: none;
 }
 
-.header-enter__link {
+.header__enter-link {
   font-family: "OpenSans";
   font-weight: 400;
   font-size: 18px;
@@ -395,25 +395,25 @@ button {
   transition: background-image .2s ease-in-out, background-size .3s ease-in-out, color .3s ease-in-out;
 }
 
-.header-enter__btn:focus .header-enter__link:hover {
+.header__burger-btn:focus .header__enter-link:hover {
   color: #fff;
   background-image: url("../img/header/enter.svg");
 }
 
-.header-enter__link:hover {
+.header__enter-link:hover {
   color: var(--purple-2);
   background-image: url("../img/header/enter-2.svg");
   background-size: 17.5px 13px;
 }
 
-.header-enter__link:active {
+.header__enter-link:active {
   color: var(--purple-3);
   background-image: url("../img/header/enter-3.svg");
   background-size: 17.5px 13px;
   background-color: initial;
 }
 
-.header-searcher__wrap {
+.header__searcher-wrap {
   display: none;
 }
 
@@ -900,7 +900,7 @@ button {
   transform: initial;
 }
 
-.img-info__exit {
+.gallery__img-exit {
   position: absolute;
   width: 16px;
   height: 16px;
@@ -910,30 +910,30 @@ button {
   transition: background-image .3s ease-in-out;
 }
 
-.img-info__exit:hover, .img-info__exit:focus {
+.gallery__img-exit:hover, .gallery__img-exit:focus {
   outline: none;
   background-image: url("../img/gallery/cross-hover.svg");
 }
 
-.img-info__exit:active {
+.gallery__img-exit:active {
   background-image: url("../img/gallery/cross-active.svg");
 }
 
-.img-info__text-block {
+.gallery__text-block {
   overflow-y: auto;
   max-height: calc(100% - 50px);
 }
 
-.img-info__info {
+.gallery__info-block {
   padding: 121px 50px;
   width: 401px;
 }
 
-.img-info__titles {
+.gallery__img-titles {
   margin-bottom: 32px;
 }
 
-.img-info__title::after {
+.gallery__info-title::after {
   content: attr(data-text);
   max-width: 401px;
   font-family: 'Open Sans';
@@ -943,7 +943,7 @@ button {
   color: #333333;
 }
 
-.img-info__little-title::after {
+.gallery__little-title::after {
   display: block;
   content: attr(data-text);
   max-width: 401px;
@@ -954,7 +954,7 @@ button {
   color: #333333;
 }
 
-.img-info__text::after {
+.gallery__text-info::after {
   content: attr(data-text);
   max-width: 401px;
   font-family: 'Open Sans';
@@ -963,7 +963,7 @@ button {
   color: #333333;
 }
 
-.img-info__date::after {
+.gallery__info-date::after {
   content: attr(data-text);
   max-width: 401px;
   font-family: 'Open Sans';
@@ -973,34 +973,34 @@ button {
   color: #999999;
 }
 
-.img-info__picture {
+.gallery__img-picture {
   width: 400px;
   height: 100%;
   background-size: cover;
   background-position: center;
 }
 
-.img-info__picture--1 {
+.gallery__img-picture--1 {
   background-image: url("../img/gallery/gallery-img-1.jpg");
 }
 
-.img-info__picture--2 {
+.gallery__img-picture--2 {
   background-image: url("../img/gallery/gallery-img-2.jpg");
 }
 
-.img-info__picture--3 {
+.gallery__img-picture--3 {
   background-image: url("../img/gallery/gallery-img-3.jpg");
 }
 
-.img-info__picture--4 {
+.gallery__img-picture--4 {
   background-image: url("../img/gallery/gallery-img-4.jpg");
 }
 
-.img-info__picture--5 {
+.gallery__img-picture--5 {
   background-image: url("../img/gallery/gallery-img-5.jpg");
 }
 
-.img-info__picture--6 {
+.gallery__img-picture--6 {
   background-image: url("../img/gallery/gallery-img-6.jpg");
 }
 
@@ -1303,7 +1303,7 @@ button {
   position: initial;
 }
 
-.events .events-swiper--2, .events-swiper--3 {
+.events .events-swiper-2, .events-swiper-3 {
   display: none;
 }
 
@@ -1546,14 +1546,14 @@ button {
   margin-left: 45px;
 } */
 
-.project__partner-img {
+.partner-img {
   background-repeat: no-repeat;
   background-position: center;
   background-position: center;
   transition: background-image .3s ease-in-out;
 }
 
-.projects-swiper--1 {
+.projects-swiper-1 {
   max-width: 1450px;
 }
 

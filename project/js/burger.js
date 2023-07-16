@@ -1,7 +1,7 @@
 const burger = document.querySelector(".header-burger");
 const menu = document.querySelector(".header__burger-menu");
 const body = document.getElementById("body");
-const burgerLink = document.querySelectorAll(".header-burger__link");
+const burgerLink = document.querySelectorAll(".header__burger-link");
 
 function classCheck(classList) {
   for (i = 0; i < classList.length; i++) {

@@ -1,15 +1,15 @@
 const btns = document.querySelectorAll(".gallery__img-block");
 const infoBlock = document.querySelector(".gallery__img-info");
-const infoBlockImg = document.querySelector(".img-info__picture");
-const infoTitle = document.querySelector(".img-info__title");
-const infoName = document.querySelector(".img-info__little-title");
-const infoDate = document.querySelector(".img-info__date");
-const infoText = document.querySelector(".img-info__text");
-const exit = document.querySelector(".img-info__exit");
+const infoBlockImg = document.querySelector(".gallery__img-picture");
+const infoTitle = document.querySelector(".gallery__info-title");
+const infoName = document.querySelector(".gallery__little-title");
+const infoDate = document.querySelector(".gallery__info-date");
+const infoText = document.querySelector(".gallery__text-info");
+const exit = document.querySelector(".gallery__img-exit");
 
 const title = ["Казимир Малевич", "Казимир Малевич", "Казимир Малевич", "Казимир Малевич", "Казимир Малевич", "Казимир Малевич"]
 
-const imgName = ["«Торс»", "«Женщина с граблями»", "Уборка ржи»", "«Супрематическая композиция»", "«Женщина с вёдрами»", "«Супрематизм»"]
+const imgName = ["«Торс»", "«Женщина с граблями»", "«Уборка ржи»", "«Супрематическая композиция»", "«Женщина с вёдрами»", "«Супрематизм»"]
 
 const text = [
   "У образа нет лица – только закрашенный темно-розовым цветом овал. Он не имеет рук – только скругленный торс, разные половины которого окрашены в разные цвета – желтый и белый. Фон, на котором изображен торс, тоже неоднороден: он состоит из кусков зеленого, розоватого и синеватого цветов.",
@@ -27,12 +27,12 @@ for (i = 0; i < btns.length; i++) {
     infoBlock.classList.add("gallery__img-info--active");
 
     for (j = 0; j < 6; j++) {
-      if (infoBlockImg.classList[1] == `img-info__picture--${j + 1}`) {
-        infoBlockImg.classList.remove(`img-info__picture--${j + 1}`);
+      if (infoBlockImg.classList[1] == `gallery__img-picture--${j + 1}`) {
+        infoBlockImg.classList.remove(`gallery__img-picture--${j + 1}`);
       }
     }
 
-    infoBlockImg.classList.add(`img-info__picture--${this.dataset.number}`)
+    infoBlockImg.classList.add(`gallery__img-picture--${this.dataset.number}`)
 
     infoText.setAttribute("data-text", text[this.dataset.number - 1]);
     infoTitle.setAttribute("data-text", title[this.dataset.number - 1]);
