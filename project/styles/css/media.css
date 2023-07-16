@@ -617,6 +617,7 @@
 
   .projects {
     max-width: 924px;
+    margin-bottom: 79px;
   }
 
   .projects-swiper-1 {
@@ -670,7 +671,7 @@
 
   .footer__container {
     width: 924px;
-    padding: 40px 0;
+    padding: 37px 0;
   }
 }
 
@@ -1246,8 +1247,16 @@
     padding: 17px 20px;
   }
 
+  .gallery__text {
+    margin-bottom: 30px;
+  }
+
   .gallery__text-block {
     max-height: 277px;
+  }
+
+  .gallery__checkboxes {
+    margin-bottom: 6px;
   }
 
   .gallery__img-titles {
@@ -1376,6 +1385,7 @@
 
   .projects {
     max-width: 290px;
+    margin-bottom: 50px;
   }
 
   .projects__text {
@@ -1469,9 +1479,13 @@
   }
 
   .contacts__title {
-    margin-bottom: 8px;
+    margin-bottom: 4px;
     font-size: 18px;
     line-height: 25px;
+  }
+
+  .contacts__social-title {
+    margin-bottom: 10.5px;
   }
 
   .contacts__text {
