@@ -75,6 +75,8 @@
   }
 
   .header-searcher__block {
+    display: flex;
+    align-items: center;
     box-sizing: border-box;
     position: relative;
     background-color: #000;
@@ -85,7 +87,7 @@
     position: absolute;
     align-items: center;
     right: 0;
-    top: 5px;
+    top: 13px;
     transform: translateY(-50vh);
     transition: transform .3s ease;
   }
@@ -244,7 +246,7 @@
 
   .events .events__articles .events__list-item {
     width: calc((100% - 54px) / 3);
-    margin-right: 27px;
+    /* margin-right: 27px; */
   }
 
   .events__list-item--empty {
@@ -320,6 +322,7 @@
 
   .projects {
     max-width: 1500px;
+    margin-bottom: 49px;
   }
 
   .projects__list {
@@ -605,10 +608,11 @@
 
   .events {
     max-width: 924px;
+    margin-bottom: 80px;
   }
 
   .events__list {
-    margin-bottom: 26px;
+    margin-bottom: 29px;
   }
 
   /* PROJECTS */
@@ -628,8 +632,9 @@
     align-items: start;
     max-width: 924px;
     margin: 0 auto;
-    padding: 43px 0;
-    padding-top: 53px;
+    /* padding: 43px 0; */
+    padding-top: 43px;
+    padding-bottom: 37px;
     transition: padding .3s ease-in-out;
   }
 
@@ -784,6 +789,7 @@
 
   .catalog {
     max-width: 668px;
+    margin-bottom: 49px;
   }
 
   .catalog__panels {
@@ -825,6 +831,7 @@
 
   .catalog__right-panel {
     width: 100%;
+    margin-bottom: -5px;
   }
 
   .catalog__right-panel .ac .ac-panel {
@@ -836,6 +843,7 @@
   .events {
     max-width: 668px;
     padding: 14px 0 48px 0;
+    margin-bottom: 32px;
   }
 
   .events .events__list-item {
@@ -918,7 +926,7 @@
   }
 
   .projects__text {
-    margin-bottom: 33px;
+    margin-bottom: 28px;
   }
 
   .projects__title {
@@ -1015,8 +1023,8 @@
   }
 
   .header__top-container {
-    max-width: 290px;
-    padding: 12px 0;
+    max-width: 265px;
+    padding: 8px 0;
   }
 
   .header-logo__logo {
@@ -1131,14 +1139,14 @@
   }
 
   .hero__titile {
-    margin-bottom: 16px;
+    margin-bottom: 0;
     font-size: 32px;
     line-height: 44px;
     text-align: center;
   }
 
   .hero__text {
-    margin-bottom: 20px;
+    margin-bottom: 58px;
     font-weight: 400;
     font-size: 12px;
     line-height: 16px;
@@ -1155,12 +1163,14 @@
 
   .about-us {
     max-width: 290px;
+    margin-bottom: 42px;
   }
 
   /* GALLERY */
 
   .gallery {
     height: 800px;
+    margin-bottom: 50px;
   }
 
   .gallery__container {
@@ -1269,6 +1279,7 @@
 
   .catalog {
     max-width: 290px;
+    margin-bottom: 35px;
   }
 
   .catalog__text {
@@ -1288,6 +1299,7 @@
   .catalog__ages-arrow {
     width: 30px;
     height: 30px;
+    top: 10px;
     background-repeat: no-repeat;
     background-size: 30px 30px;
   }
@@ -1296,11 +1308,28 @@
     max-height: fit-content;
   }
 
+  .catalog__right-panel .ac .ac-header {
+    padding: 12px 0;
+  }
+
+  .catalog__right-panel .is-active .ac-header {
+    margin-bottom: 20px;
+  }
+
+  .catalog__right-panel .is-active .ac-panel {
+    margin-bottom: 20px;
+  }
+
+  .catalog__author-date {
+    margin-bottom: 12px;
+  }
+
   /* EVENTS */
 
   .events {
     max-width: 290px;
     padding: 0;
+    margin-bottom: 50px;
   }
 
   .events__list {
@@ -1313,6 +1342,10 @@
     margin: 0;
   }
 
+  .events .events__articles .events__list-item {
+    margin-right: 0;
+  }
+
   /* .events__list-item:nth-child(2) {
     display: none;
   } */
@@ -1322,6 +1355,7 @@
   }
 
   .events .events__article {
+    min-height: 416px;
     padding: 17px 18px 49px 23px;
   }
 
@@ -1348,6 +1382,7 @@
   }
 
   .projects__title {
+    margin-bottom: 12px;
     font-size: 18px;
   }
 
@@ -1411,6 +1446,10 @@
     height: 65px;
   }
 
+  #map {
+    height: 320px;
+  }
+
   /* CONTACTS */
 
   .contacts {
@@ -1427,6 +1466,7 @@
   }
 
   .contacts__title {
+    margin-bottom: 8px;
     font-size: 18px;
     line-height: 25px;
   }
@@ -1439,6 +1479,7 @@
   .contacts__form {
     flex-direction: column;
     align-items: flex-start;
+    margin-bottom: 23px;
   }
 
   .contacts__input {
@@ -1454,7 +1495,8 @@
 
   .contacts__btn:nth-of-type(2) {
     display: block;
-    width: initial;
+    /* width: initial; */
+    width: 128px;
     height: 40px;
     font-weight: 700;
     font-size: 12px;
@@ -1509,6 +1551,10 @@
   .footer__logo {
     width: 97px;
     height: 22px;
+  }
+
+  #map {
+    margin-bottom: 15px;
   }
 
 }
