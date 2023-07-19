@@ -102,6 +102,77 @@
           <nav class="header-menu flex">
             <ul class="header-menu__list list-reset flex">
               <li class="header-menu__item">
+                <button class="header-menu__btn btn-reset" onclick="myFunction('realism', 0)">Реализм</button>
+                <span class="header-menu__arrow"></span>
+                <div id="realism" class="header-menu__wrapper">
+                  <div class="header-menu__dropdown">
+                    <button id="tintoretto" class="header-menu__btn-link btn-reset">Тинторетто</button>
+                    <button id="friedrich" class="header-menu__btn-link btn-reset">Фридрих</button>
+                    <button id="leonardo" class="header-menu__btn-link btn-reset">Леонардо</button>
+                    <button id="verrocchio" class="header-menu__btn-link btn-reset">Верроккьо</button>
+                    <button id="template1" class="header-menu__btn-link btn-reset">Тинторетто</button>
+                  </div>
+                </div>
+              </li>
+              <li class="header-menu__item">
+                <button class="header-menu__btn btn-reset"
+                  onclick="myFunction('impressionism', 1)">Импрессионизм</button>
+                <span class="header-menu__arrow"></span>
+                <div id="impressionism" class="header-menu__wrapper">
+                  <div class="header-menu__dropdown">
+                    <button id="monet" class="header-menu__btn-link btn-reset">Моне</button>
+                    <button id="sisley" class="header-menu__btn-link btn-reset">Сислей</button>
+                    <button id="мane" class="header-menu__btn-link btn-reset">Мане</button>
+                    <button id="renoir" class="header-menu__btn-link btn-reset">Ренуар</button>
+                    <button id="template2" class="header-menu__btn-link btn-reset">Моне</button>
+                  </div>
+                </div>
+              </li>
+              <li class="header-menu__item">
+                <button class="header-menu__btn btn-reset"
+                  onclick="myFunction('post-impressionism', 2)">Постимпрессионизм</button>
+                <span class="header-menu__arrow"></span>
+                <div id="post-impressionism" class="header-menu__wrapper">
+                  <div class="header-menu__dropdown">
+                    <button id="gogh" class="header-menu__btn-link btn-reset">Ван Гог</button>
+                    <button id="cezanne" class="header-menu__btn-link btn-reset">Сезанн</button>
+                    <button id="gauguin" class="header-menu__btn-link btn-reset">Гоген</button>
+                    <button id="sulfur" class="header-menu__btn-link btn-reset">Сёра</button>
+                    <button id="template3" class="header-menu__btn-link btn-reset">Ван Гог</button>
+                  </div>
+                </div>
+              </li>
+              <li class="header-menu__item">
+                <button class="header-menu__btn btn-reset"
+                  onclick="myFunction('vanguard', 3)">Авангард</button>
+                <span class="header-menu__arrow"></span>
+                <div id="vanguard" class="header-menu__wrapper">
+                  <div class="header-menu__dropdown">
+                    <button id="kandinsky" class="header-menu__btn-link btn-reset">Кандинский</button>
+                    <button id="marinetti" class="header-menu__btn-link btn-reset">Маринетти</button>
+                    <button id="malevich" class="header-menu__btn-link btn-reset">Малевич</button>
+                    <button id="picasso" class="header-menu__btn-link btn-reset">Пикассо</button>
+                    <button id="template4" class="header-menu__btn-link btn-reset">Кандинский</button>
+                  </div>
+                </div>
+              </li>
+              <li class="header-menu__item">
+                <button class="header-menu__btn btn-reset"
+                  onclick="myFunction('futurism', 4)">Футуризм</button>
+                <span class="header-menu__arrow"></span>
+                <div id="futurism" class="header-menu__wrapper">
+                  <div class="header-menu__dropdown">
+                    <button id="carra" class="header-menu__btn-link btn-reset">Карра</button>
+                    <button id="pratella" class="header-menu__btn-link btn-reset">Прателла</button>
+                    <button id="severini" class="header-menu__btn-link btn-reset">Северини</button>
+                    <button id="balla" class="header-menu__btn-link btn-reset">Балла</button>
+                    <button id="template5" class="header-menu__btn-link btn-reset">Карра</button>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <!-- <ul class="header-menu__list list-reset flex">
+              <li class="header-menu__item">
                 <select class="header-menu__select" name="realism" id="realism">
                   <option value="" selected>Реализм</option>
                   <option value="Тинторетто">Тинторетто</option>
@@ -154,8 +225,7 @@
                 </select>
                 <span class="select-focus"></span>
               </li>
-            </ul>
-
+            </ul> -->
             <form action="/" class="header-form flex">
               <button class="header-form__btn btn-reset flex">
                 <img src="styles/img/header/search_menu.svg" alt="">
@@ -1652,10 +1722,43 @@
 
     function alphaValidate() {
       const string = document.querySelector("#contacts-name");
-      console.log(string.value);
       var rus = /^[а-я]*$/i;
       var eng = /^[a-z]*$/i;
       return (string.value.match(rus) || string.value.match(eng))
+    }
+  </script>
+
+  <script>
+    function myFunction(id, arrowIndex) {
+      document.getElementById(id).classList.toggle("header-menu__wrapper--active");
+      var arrows = document.querySelectorAll(".header-menu__arrow");
+
+      for (i = 0; i < arrows[arrowIndex].classList.length; i++) {
+        if (arrows[arrowIndex].classList[i] == "header-menu__arrow--active") {
+          arrows[arrowIndex].classList.remove("header-menu__arrow--active");
+          return;
+        }
+      }
+      arrows[arrowIndex].classList.add("header-menu__arrow--active");
+    }
+
+    window.onclick = function (event) {
+      var arrows = document.querySelectorAll(".header-menu__arrow");
+      if (!event.target.matches('.header-menu__btn')) {
+
+        for (i = 0; i < arrows.length; i++) {
+          arrows[i].classList.remove("header-menu__arrow--active");
+        }
+
+        var dropdowns = document.getElementsByClassName("header-menu__wrapper");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('header-menu__wrapper--active')) {
+            openDropdown.classList.remove('header-menu__wrapper--active');
+          }
+        }
+      }
     }
   </script>
 </body>
