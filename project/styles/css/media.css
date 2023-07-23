@@ -23,7 +23,7 @@
 
   .header__top {
     justify-content: space-between;
-    margin-bottom: 105px;
+    /* margin-bottom: 105px; */
   }
 
   .header__top-container {
@@ -100,7 +100,7 @@
     box-sizing: border-box;
     width: 218px;
     margin-right: 24px;
-    font-family: "OpenSans";
+    /* font-family: "OpenSans"; */
     border: none;
     border-bottom: 1px solid #fff;
     background-color: black;
@@ -135,12 +135,12 @@
 
   .header-burger__line {
     display: block;
-    height: 3.65px;
+    height: 4px;
     transition: transform .3s ease-in-out;
   }
 
   .header-burger__line:not(:last-child) {
-    margin-bottom: 8.5px;
+    margin-bottom: 9px;
   }
 
   .header-burger__line:nth-child(1) {
@@ -340,40 +340,49 @@
     margin-right: 0;
   }
 
-  #partner-1 {
-    background-size: 210px 52px;
+  [data-partner="1--active"], [data-partner="1"] {
+    width: 210px;
+    height: 52px;
   }
 
-  #partner-2 {
-    background-size: 283px 49px;
+  [data-partner="2--active"], [data-partner="2"] {
+    width: 283px;
+    height: 49px;
   }
 
-  #partner-3 {
-    background-size: 229px 54px;
+  [data-partner="3--active"], [data-partner="3"] {
+    width: 229px;
+    height: 54px;
   }
 
-  #partner-4 {
-    background-size: 105px 72px;
+  [data-partner="4--active"], [data-partner="4"] {
+    width: 105px;
+    height: 72px;
   }
 
-  #partner-5 {
-    background-size: 148px 72px;
+  [data-partner="5--active"], [data-partner="5"] {
+    width: 148px;
+    height: 72px;
   }
 
-  #partner-6 {
-    background-size: 215px 60px;
+  [data-partner="6--active"], [data-partner="6"] {
+    width: 215px;
+    height: 60px;
   }
 
-  #partner-7 {
-    background-size: 244px 59px;
+  [data-partner="7--active"], [data-partner="7"] {
+    width: 244px;
+    height: 59px;
   }
 
-  #partner-8 {
-    background-size: 158px 69px;
+  [data-partner="8--active"], [data-partner="8"] {
+    width: 158px;
+    height: 69px;
   }
 
-  #partner-9 {
-    background-size: 196px 52px;
+  [data-partner="9--active"], [data-partner="9"] {
+    width: 196px;
+    height: 52px;
   }
 
   .projects-swiper-1 {
@@ -426,6 +435,7 @@
   }
 
   .hero__titile {
+    margin-top: 105px;
     margin-bottom: -11px;
   }
 
@@ -463,7 +473,7 @@
     margin-bottom: 115px;
   }
 
-  .gallery__custom-radio {
+  .gallery__custom-checkbox {
     left: -2px;
   }
 
@@ -472,7 +482,7 @@
   }
 
   .gallery__btn-text {
-    margin: 0 19px;
+    /* margin: 0 19px; */
   }
 
   /* .gallery__btn-text span {
@@ -602,6 +612,11 @@
     max-height: 384px;
   }
 
+  .catalog__right-panel .ac .ac-trigger::before {
+    height: calc(100% + 24px);
+    top: -12px;
+  }
+
   /* EVENTS */
 
   .events {
@@ -634,7 +649,6 @@
     /* padding: 43px 0; */
     padding-top: 43px;
     padding-bottom: 37px;
-    transition: padding .3s ease-in-out;
   }
 
   .contacts__address {
@@ -664,7 +678,7 @@
   }
 
   .contacts__social-link:not(:last-child) {
-    margin-right: 16.6px;
+    margin-right: 17px;
   }
 
   /* FOOTER */
@@ -889,40 +903,49 @@
     margin-right: 34px;
   }
 
-  #partner-1 {
-    background-size: 210px 52px;
+  [data-partner="1--active"], [data-partner="1"] {
+    width: 210px;
+    height: 52px;
   }
 
-  #partner-2 {
-    background-size: 216px 38px;
+  [data-partner="2--active"], [data-partner="2"] {
+    width: 216px;
+    height: 38px;
   }
 
-  #partner-3 {
-    background-size: 195px 45px;
+  [data-partner="3--active"], [data-partner="3"] {
+    width: 195px;
+    height: 45px;
   }
 
-  #partner-4 {
-    background-size: 105px 72px;
+  [data-partner="4--active"], [data-partner="4"] {
+    width: 105px;
+    height: 72px;
   }
 
-  #partner-5 {
-    background-size: 121px 59px;
+  [data-partner="5--active"], [data-partner="5"] {
+    width: 121px;
+    height: 59px;
   }
 
-  #partner-6 {
-    background-size: 176px 48px;
+  [data-partner="6--active"], [data-partner="6"] {
+    width: 176px;
+    height: 48px;
   }
 
-  #partner-7 {
-    background-size: 194px 47px;
+  [data-partner="7--active"], [data-partner="7"] {
+    width: 194px;
+    height: 47px;
   }
 
-  #partner-8 {
-    background-size: 143px 62px;
+  [data-partner="8--active"], [data-partner="8"] {
+    width: 143px;
+    height: 62px;
   }
 
-  #partner-9 {
-    background-size: 182px 49px;
+  [data-partner="9--active"], [data-partner="9"] {
+    width: 182px;
+    height: 49px;
   }
 
   .projects__text {
@@ -974,7 +997,7 @@
   .contacts__btn {
     box-sizing: border-box;
     width: 314px;
-    padding: 12.5px 25.5px;
+    padding: 13px 26px;
   }
 
   .contacts__title {
@@ -1019,7 +1042,7 @@
   }
 
   .header__top {
-    margin-bottom: 30px;
+    /* margin-bottom: 30px; */
   }
 
   .header__top-container {
@@ -1064,7 +1087,7 @@
   }
 
   .header-burger--active .header-burger__line:not(:last-child) {
-    margin-bottom: 8.5px;
+    margin-bottom: 9px;
   }
 
   .header-burger--active .header-burger__line:nth-child(2) {
@@ -1143,6 +1166,7 @@
   }
 
   .hero__titile {
+    margin-top: 30px;
     margin-bottom: 0;
     font-size: 32px;
     line-height: 44px;
@@ -1158,7 +1182,7 @@
   }
 
   .hero__btn {
-    padding: 11px 16px 14.45px 19px;
+    padding: 11px 16px 14px 19px;
     font-size: 12px;
     line-height: 16px;
   }
@@ -1308,12 +1332,13 @@
     line-height: 32px;
   }
 
-  .catalog__ages-arrow {
+  .catalog__ages-arrow svg {
     width: 30px;
     height: 30px;
+  }
+
+  .catalog__ages-arrow {
     top: 10px;
-    background-repeat: no-repeat;
-    background-size: 30px 30px;
   }
 
   .catalog__right-panel .ac .ac-panel {
@@ -1411,44 +1436,49 @@
     margin-right: 0;
   }
 
-  /* .projects__list-item:nth-child(2) {
-    display: none;
-  } */
-
-  #partner-1 {
-    background-size: 105px 25px;
+  [data-partner="1--active"], [data-partner="1"] {
+    width: 105px;
+    height: 25px;
   }
 
-  #partner-2 {
-    background-size: 141px 24px;
+  [data-partner="2--active"], [data-partner="2"] {
+    width: 141px;
+    height: 24px;
   }
 
-  #partner-3 {
-    background-size: 116px 27px;
+  [data-partner="3--active"], [data-partner="3"] {
+    width: 116px;
+    height: 27px;
   }
 
-  #partner-4 {
-    background-size: 53px 37px;
+  [data-partner="4--active"], [data-partner="4"] {
+    width: 53px;
+    height: 37px;
   }
 
-  #partner-5 {
-    background-size: 75px 37px;
+  [data-partner="5--active"], [data-partner="5"] {
+    width: 75px;
+    height: 37px;
   }
 
-  #partner-6 {
-    background-size: 109px 30px;
+  [data-partner="6--active"], [data-partner="6"] {
+    width: 109px;
+    height: 30px;
   }
 
-  #partner-7 {
-    background-size: 124px 30px;
+  [data-partner="7--active"], [data-partner="7"] {
+    width: 124px;
+    height: 30px;
   }
 
-  #partner-8 {
-    background-size: 80px 35px;
+  [data-partner="8--active"], [data-partner="8"] {
+    width: 80px;
+    height: 35px;
   }
 
-  #partner-9 {
-    background-size: 100px 27px;
+  [data-partner="9--active"], [data-partner="9"] {
+    width: 100px;
+    height: 27px;
   }
 
   .projects-swiper-1 {
@@ -1459,7 +1489,7 @@
     height: 65px;
   }
 
-  #map {
+  .contacts__map {
     height: 320px;
   }
 
@@ -1485,7 +1515,7 @@
   }
 
   .contacts__social-title {
-    margin-bottom: 10.5px;
+    margin-bottom: 11px;
   }
 
   .contacts__text {
@@ -1570,8 +1600,7 @@
     height: 22px;
   }
 
-  #map {
+  .contacts__map {
     margin-bottom: 15px;
   }
-
 }
