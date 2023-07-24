@@ -29,7 +29,8 @@
 
     <header class="header">
       <div class="header__top">
-        <div class="header__top-container  flex">
+        <div class="header__top-container flex">
+
           <button class="header-burger btn-reset">
             <span class="header-burger__line header-burger__line--active"></span>
             <span class="header-burger__line"></span>
@@ -64,7 +65,7 @@
             </div>
           </div>
 
-          <div class="header-logo flex">
+          <div class="header-logo">
             <img class="header-logo__logo" src="styles/img/header/logo.svg" alt="Логотип">
           </div>
 
@@ -96,6 +97,7 @@
             </div>
           </div>
         </div>
+
       </div>
 
       <div class="header__bottom">
@@ -127,7 +129,9 @@
               <li class="header-menu__item">
                 <button class="header-menu__btn btn-reset"
                   onclick="myFunction('impressionism', 1)">Импрессионизм</button>
-                <span class="header-menu__arrow"></span>
+                <span class="header-menu__arrow">                  <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M11 1L6 6.00001L0.999997 1" stroke="" />
+                  </svg></span>
                 <div id="impressionism" class="header-menu__wrapper">
                   <ul class="header-menu__dropdown list-reset">
                     <li data-artist="monet" class="header-menu__dropdown-item"><a href="#" tabindex="0" id="monet"
@@ -146,7 +150,9 @@
               <li class="header-menu__item">
                 <button class="header-menu__btn btn-reset"
                   onclick="myFunction('post-impressionism', 2)">Постимпрессионизм</button>
-                <span class="header-menu__arrow"></span>
+                <span class="header-menu__arrow">                  <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M11 1L6 6.00001L0.999997 1" stroke="" />
+                  </svg></span>
                 <div id="post-impressionism" class="header-menu__wrapper">
                   <ul class="header-menu__dropdown list-reset">
                     <li data-artist="gogh" class="header-menu__dropdown-item"><a href="#" tabindex="0" id="gogh"
@@ -164,7 +170,9 @@
               </li>
               <li class="header-menu__item">
                 <button class="header-menu__btn btn-reset" onclick="myFunction('vanguard', 3)">Авангард</button>
-                <span class="header-menu__arrow"></span>
+                <span class="header-menu__arrow">                  <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M11 1L6 6.00001L0.999997 1" stroke="" />
+                  </svg></span>
                 <div id="vanguard" class="header-menu__wrapper">
                   <ul class="header-menu__dropdown list-reset">
                     <li data-artist="kandinsky" class="header-menu__dropdown-item"><a href="#" tabindex="0"
@@ -182,7 +190,9 @@
               </li>
               <li class="header-menu__item">
                 <button class="header-menu__btn btn-reset" onclick="myFunction('futurism', 4)">Футуризм</button>
-                <span class="header-menu__arrow"></span>
+                <span class="header-menu__arrow">                  <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M11 1L6 6.00001L0.999997 1" stroke="" />
+                  </svg></span>
                 <div id="futurism" class="header-menu__wrapper">
                   <ul class="header-menu__dropdown list-reset">
                     <li data-artist="carra" class="header-menu__dropdown-item"><a href="#" tabindex="0" id="carra"
@@ -212,7 +222,7 @@
 
     <section class="hero">
       <h2 class="hero__titile text-reset">
-        Прикоснитесь к прекрасному
+        Прикоснитесь к&nbsp;прекрасному
       </h2>
       <p class="hero__text text-reset">
         Мы&nbsp;вынуждены отталкиваться от&nbsp;того, что реализация намеченных плановых заданий создаёт предпосылки для
@@ -1765,7 +1775,7 @@
           slidesPerGroup: 1,
           spaceBetween: 0,
         },
-        577: {
+        697: {
           slidesPerView: 2,
           slidesPerGroup: 1,
           spaceBetween: 34,
@@ -1791,7 +1801,7 @@
           slidesPerGroup: 1,
           spaceBetween: 34,
         },
-        577: {
+        697: {
           slidesPerView: 2,
           slidesPerGroup: 1,
           spaceBetween: 34,

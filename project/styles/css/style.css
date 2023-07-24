@@ -117,6 +117,7 @@ button {
   margin-bottom: 80px;
   background-repeat: no-repeat;
   background-size: cover;
+  padding-bottom: 119px;
 }
 
 .hh-container .swiper {
@@ -128,14 +129,17 @@ button {
 
 [data-headerimg="header-slide1"] {
   background-image: url("../img/hero/birmingham-museums-trust.jpg");
+  background-size: cover;
 }
 
 [data-headerimg="header-slide2"] {
   background-image: url("../img/hero/birmingham-museums-trust-2.jpg");
+  background-size: cover;
 }
 
 [data-headerimg="header-slide3"] {
   background-image: url("../img/hero/birmingham-museums-trust-3.jpg");
+  background-size: cover;
 }
 
 .header__top {
@@ -147,7 +151,7 @@ button {
 .header__top-container {
   max-width: 1600px;
   margin: 0 auto;
-  padding: 30px 0;
+  padding: 30px 15px;
 }
 
 .header-burger {
@@ -415,7 +419,7 @@ button {
 .header__bottom-container {
   max-width: 1600px;
   margin: 0 auto;
-  padding: 21px 0 21px 0;
+  padding: 21px 15px;
 }
 
 .header-menu__list {
@@ -786,7 +790,9 @@ button {
 .hero {
   max-width: 1600px;
   margin: 0 auto;
-  padding-bottom: 122px;
+  /* padding-bottom: 122px; */
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .hero__titile {
@@ -884,6 +890,8 @@ button {
 .about-us {
   max-width: 1600px;
   margin-bottom: 70px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .about-us__title {
@@ -909,6 +917,8 @@ button {
   max-width: 1600px;
   margin: 0 auto;
   padding-bottom: 80px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .gallery__left-panel {
@@ -1240,7 +1250,7 @@ button {
 }
 
 .gallery__img-info {
-  transform: translateX(calc(-100vh - 900px));
+  transform: translateX(calc(-200vh - 900px));
   position: absolute;
   width: 900px;
   height: 500px;
@@ -1377,6 +1387,8 @@ button {
 .catalog {
   max-width: 1600px;
   margin-bottom: 75px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .catalog__title {
@@ -1460,7 +1472,12 @@ button {
   padding: 33px 0;
   border-top: 1px solid #cacaca;
   /* border-bottom: 1px solid #cacaca; */
+  /* border-bottom: 1px solid transparent; */
   transition: border-color .3s ease-in-out;
+}
+
+.catalog__right-panel .ac:last-child {
+  border-bottom: 1px solid #cacaca;
 }
 
 .catalog__right-panel .is-active .ac-header {
@@ -1564,10 +1581,22 @@ button {
   height: calc(100% + 66px);
   left: 0;
   top: -33px;
-  border-bottom: 1px solid rgb(202, 202, 202);
+  border-bottom: 1px solid transparent;
   transition: border-color .3s ease-in-out;
   z-index: 2;
 }
+
+/* .catalog__right-panel .ac .ac-trigger:last-child::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: calc(100% + 66px);
+  left: 0;
+  top: -33px;
+  border-bottom: 1px solid #cacaca;
+  transition: border-color .3s ease-in-out;
+  z-index: 2;
+} */
 
 .catalog__right-panel .ac:hover .ac-trigger::before  {
   border-bottom-color: var(--purple-3);
@@ -1587,6 +1616,7 @@ button {
 }
 
 .catalog__right-panel .ac .ac-panel {
+  position: relative;
   flex-direction: column;
   flex-wrap: wrap;
   max-height: 288px;
@@ -1724,6 +1754,8 @@ button {
   position: relative;
   max-width: 1600px;
   margin-bottom: 68px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .events__articles {
@@ -1905,6 +1937,8 @@ button {
 .projects {
   max-width: 1600px;
   margin-bottom: 77px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .projects__text {
@@ -2035,6 +2069,8 @@ button {
 
 .projects-swiper-1 {
   max-width: 1450px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 [data-partner="1--active"],
@@ -2176,6 +2212,8 @@ button {
   /* padding: 38px 0; */
   padding-top: 34px;
   padding-bottom: 32px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .contacts__address {
@@ -2353,7 +2391,7 @@ button {
   justify-content: space-between;
   width: 1600px;
   margin: 0 auto;
-  padding: 45px 0;
+  padding: 45px 15px;
 }
 
 .footer__container:nth-child(2) {
