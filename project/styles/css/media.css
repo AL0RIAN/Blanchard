@@ -29,7 +29,7 @@
   .header__top-container {
     justify-content: space-between;
     max-width: 1500px;
-    padding: 29px 0;
+    padding: 29px 15px;
   }
 
   .header-logo {
@@ -192,7 +192,7 @@
 
   .hero {
     max-width: 1500px;
-    padding-bottom: 114px;
+    /* padding-bottom: 114px; */
   }
 
   .hero__text {
@@ -397,7 +397,7 @@
 
   .contacts__container {
     max-width: 1500px;
-    padding: 43px 0;
+    padding: 43px 15px;
   }
 
   /* FOOTER */
@@ -416,6 +416,7 @@
 
   .hh-container {
     height: 768px;
+    padding-bottom: 0;
   }
 
   /* HEADER */
@@ -462,6 +463,8 @@
     max-width: 924px;
     height: 560px;
     padding: 0;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 
   .gallery__titile {
@@ -613,8 +616,8 @@
   }
 
   .catalog__right-panel .ac .ac-trigger::before {
-    height: calc(100% + 24px);
-    top: -12px;
+    height: calc(100% + 41px);
+    top: -9px;
   }
 
   /* EVENTS */
@@ -685,7 +688,7 @@
 
   .footer__container {
     width: 924px;
-    padding: 37px 0;
+    padding: 37px 15px;
   }
 }
 
@@ -758,7 +761,7 @@
     display: flex;
     flex-direction: column;
     max-width: 668px;
-    padding: 80px 0;
+    padding: 80px 15px;
   }
 
   .gallery__left-panel {
@@ -856,7 +859,7 @@
 
   .events {
     max-width: 668px;
-    padding: 14px 0 48px 0;
+    padding: 14px 15px 48px 15px;
     margin-bottom: 32px;
   }
 
@@ -1016,7 +1019,7 @@
   }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 696px) {
   /* OTHER */
 
   section {
@@ -1047,7 +1050,12 @@
 
   .header__top-container {
     max-width: 283px;
-    padding: 8px 0;
+    padding: 8px 5px;
+  }
+
+  .header__bottom-container {
+    padding-left: 5px;
+    padding-right: 5px;
   }
 
   .header-logo__logo {
@@ -1162,7 +1170,7 @@
     align-items: center;
     justify-content: center;
     max-width: 290px;
-    padding: 0;
+    padding: 0 5px;
   }
 
   .hero__titile {
@@ -1192,6 +1200,8 @@
   .about-us {
     max-width: 290px;
     margin-bottom: 42px;
+    padding-left: 5px;
+    padding-right: 5px;
   }
 
   /* GALLERY */
@@ -1203,7 +1213,7 @@
 
   .gallery__container {
     max-width: 290px;
-    padding: 50px 0;
+    padding: 50px 5px;
   }
 
   .gallery__left-panel {
@@ -1223,24 +1233,12 @@
     margin-bottom: 20px;
   }
 
-  /* .gallery__img-block:nth-child(2) {
-    display: none;
-  } */
-
-  /* .gallery__arrows:nth-of-type(1) {
-    display: none;
-  } */
-
   .gallery__arrows {
     display: flex;
     width: 100%;
     justify-content: center;
     margin: 0;
   }
-
-  /* .gallery__btn-text::after {
-    content: "1 / 6";
-  } */
 
   .gallery .gallery__swiper--2 {
     display: none;
@@ -1316,14 +1314,12 @@
   .catalog {
     max-width: 290px;
     margin-bottom: 35px;
+    padding-left: 5px;
+    padding-right: 5px;
   }
 
   .catalog__text {
     display: none;
-  }
-
-  .catalog__ages {
-    /* padding: 20px 0; */
   }
 
   .catalog__ages-text {
@@ -1361,12 +1357,19 @@
     margin-bottom: 12px;
   }
 
+  .catalog__right-panel .ac .ac-trigger::before {
+    height: calc(100% + 21px);
+    top: -9px;
+  }
+
   /* EVENTS */
 
   .events {
     max-width: 290px;
     padding: 0;
     margin-bottom: 50px;
+    padding-left: 5px;
+    padding-right: 5px;
   }
 
   .events__list {
@@ -1411,6 +1414,8 @@
   .projects {
     max-width: 290px;
     margin-bottom: 50px;
+    padding-left: 5px;
+    padding-right: 5px;
   }
 
   .projects__text {
@@ -1483,6 +1488,8 @@
 
   .projects-swiper-1 {
     max-width: 197px;
+    padding-left: 5px;
+    padding-right: 5px;
   }
 
   .projects .projects__list-item {
@@ -1502,6 +1509,8 @@
   .contacts__container {
     max-width: 290px;
     padding: 0;
+    padding-left: 5px;
+    padding-right: 5px;
   }
 
   .contacts__address {
@@ -1579,7 +1588,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px 0;
+    padding: 20px 15px;
   }
 
   .footer__social-link {
@@ -1593,6 +1602,8 @@
 
   .footer__container {
     width: 120px;
+    padding-left: 5px;
+    padding-right: 5px;
   }
 
   .footer__logo {
@@ -1601,6 +1612,6 @@
   }
 
   .contacts__map {
-    margin-bottom: 15px;
+    /* margin-bottom: 15px; */
   }
 }
