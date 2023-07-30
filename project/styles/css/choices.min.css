@@ -1,7 +1,5 @@
 .choices {
-  /* position: relative; */
   overflow: hidden;
-  /* margin-bottom: 24px; */
   font-size: 16px
 }
 
@@ -249,7 +247,8 @@
   /* width: 100%; */
   /* background-color: #fff; */
   /* border: 1px solid #ddd; */
-  background-color: rgba(0, 0, 0, 0.5);;
+  background-color: rgba(0, 0, 0, 0.5);
+  ;
   /* top: 100%; */
   top: 50px;
   margin-top: -1px;
@@ -473,192 +472,125 @@
 }
 
 .choices__list--dropdown .choices__item[data-value="Тинторетто"],
-.choices__list[aria-expanded] .choices__item[data-value="Тинторетто"]  {
+.choices__list[aria-expanded] .choices__item[data-value="Тинторетто"] {
   background-image: url("../img/header/select-tintoretto.jpg");
 }
 
 .choices__list--dropdown .choices__item[data-value="Фридрих"],
-.choices__list[aria-expanded] .choices__item[data-value="Фридрих"]  {
+.choices__list[aria-expanded] .choices__item[data-value="Фридрих"] {
   background-image: url("../img/header/select-friedrich.jpg");
 }
 
 .choices__list--dropdown .choices__item[data-value="Леонардо"],
-.choices__list[aria-expanded] .choices__item[data-value="Леонардо"]  {
+.choices__list[aria-expanded] .choices__item[data-value="Леонардо"] {
   background-image: url("../img/header/select-leonardo.jpg");
 }
 
 .choices__list--dropdown .choices__item[data-value="Верроккьо"],
-.choices__list[aria-expanded] .choices__item[data-value="Верроккьо"]  {
+.choices__list[aria-expanded] .choices__item[data-value="Верроккьо"] {
   background-image: url("../img/header/select-verrocchio.jpg");
 }
 
 .choices__list--dropdown .choices__item[data-value="Моне"],
-.choices__list[aria-expanded] .choices__item[data-value="Моне"]  {
+.choices__list[aria-expanded] .choices__item[data-value="Моне"] {
   background-image: url("../img/header/select-mone.jpg");
 }
 
 .choices__list--dropdown .choices__item[data-value="Сислей"],
-.choices__list[aria-expanded] .choices__item[data-value="Сислей"]  {
+.choices__list[aria-expanded] .choices__item[data-value="Сислей"] {
   background-image: url("../img/header/select-sisley.jpg");
 }
 
 .choices__list--dropdown .choices__item[data-value="Мане"],
-.choices__list[aria-expanded] .choices__item[data-value="Мане"]  {
+.choices__list[aria-expanded] .choices__item[data-value="Мане"] {
   background-image: url("../img/header/select-mane.jpg");
 }
 
 .choices__list--dropdown .choices__item[data-value="Ренуар"],
-.choices__list[aria-expanded] .choices__item[data-value="Ренуар"]  {
+.choices__list[aria-expanded] .choices__item[data-value="Ренуар"] {
   background-image: url("../img/header/select-renoir.jpg");
 }
 
 .choices__list--dropdown .choices__item[data-value="ВанГог"],
-.choices__list[aria-expanded] .choices__item[data-value="ВанГог"]  {
+.choices__list[aria-expanded] .choices__item[data-value="ВанГог"] {
   background-image: url("../img/header/select-van.jpg");
 }
 
 .choices__list--dropdown .choices__item[data-value="Сезанн"],
-.choices__list[aria-expanded] .choices__item[data-value="Сезанн"]  {
+.choices__list[aria-expanded] .choices__item[data-value="Сезанн"] {
   background-image: url("../img/header/select-cezanne.jpg");
 }
 
 .choices__list--dropdown .choices__item[data-value="Гоген"],
-.choices__list[aria-expanded] .choices__item[data-value="Гоген"]  {
+.choices__list[aria-expanded] .choices__item[data-value="Гоген"] {
   background-image: url("../img/header/select-gauguin.jpg");
 }
 
 .choices__list--dropdown .choices__item[data-value="Сёра"],
-.choices__list[aria-expanded] .choices__item[data-value="Сёра"]  {
+.choices__list[aria-expanded] .choices__item[data-value="Сёра"] {
   background-image: url("../img/header/select-sulfur.jpg");
 }
 
 .choices__list--dropdown .choices__item[data-value="Кандинский"],
-.choices__list[aria-expanded] .choices__item[data-value="Кандинский"]  {
+.choices__list[aria-expanded] .choices__item[data-value="Кандинский"] {
   background-image: url("../img/header/select-kandinsky.jpg");
 }
 
 .choices__list--dropdown .choices__item[data-value="Маринетти"],
-.choices__list[aria-expanded] .choices__item[data-value="Маринетти"]  {
+.choices__list[aria-expanded] .choices__item[data-value="Маринетти"] {
   background-image: url("../img/header/select-marinetti.jpg");
 }
 
 .choices__list--dropdown .choices__item[data-value="Малевич"],
-.choices__list[aria-expanded] .choices__item[data-value="Малевич"]  {
+.choices__list[aria-expanded] .choices__item[data-value="Малевич"] {
   background-image: url("../img/header/select-malevich.jpg");
 }
 
 .choices__list--dropdown .choices__item[data-value="Пикассо"],
-.choices__list[aria-expanded] .choices__item[data-value="Пикассо"]  {
+.choices__list[aria-expanded] .choices__item[data-value="Пикассо"] {
   background-image: url("../img/header/select-picasso.jpg");
 }
 
 .choices__list--dropdown .choices__item[data-value="Карра"],
-.choices__list[aria-expanded] .choices__item[data-value="Карра"]  {
+.choices__list[aria-expanded] .choices__item[data-value="Карра"] {
   background-image: url("../img/header/select-carra.jpg");
 }
 
 .choices__list--dropdown .choices__item[data-value="Прателла"],
-.choices__list[aria-expanded] .choices__item[data-value="Прателла"]  {
+.choices__list[aria-expanded] .choices__item[data-value="Прателла"] {
   background-image: url("../img/header/select-pratella.jpg");
 }
 
 .choices__list--dropdown .choices__item[data-value="Северини"],
-.choices__list[aria-expanded] .choices__item[data-value="Северини"]  {
+.choices__list[aria-expanded] .choices__item[data-value="Северини"] {
   background-image: url("../img/header/select-severini.jpg");
 }
 
 .choices__list--dropdown .choices__item[data-value="Балла"],
-.choices__list[aria-expanded] .choices__item[data-value="Балла"]  {
+.choices__list[aria-expanded] .choices__item[data-value="Балла"] {
   background-image: url("../img/header/select-balla.jpg");
-}
-
-/* HEADER SIMPLE BAR */
-
-.simplebar-content-wrapper {
-  scrollbar-width: auto;
-  -ms-overflow-style: auto;
-}
-
-.simplebar-content-wrapper::-webkit-scrollbar,
-.simplebar-hide-scrollbar::-webkit-scrollbar {
-  display: initial;
-  width: initial;
-  height: initial;
-}
-
-.simplebar-track.simplebar-horizontal {
-  display: none;
-}
-
-
-.simplebar-track.simplebar-vertical {
-  opacity: 0;
-}
-
-.is-open .simplebar-track.simplebar-vertical {
-  opacity: 1;
-  right: -19px;
-  width: 2px;
-  background-color: #000;
-}
-
-.is-open .simplebar-scrollbar:before {
-  opacity: 1;
-  width: 2px;
-  background-color: #fff;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  transition: initial;
-}
-
-.is-open:hover .simplebar-scrollbar:before {
-  opacity: 1;
 }
 
 /* GALLERY */
 
-.gallery__filter .choices {
+.choices {
   position: relative;
 }
 
-.gallery__filter .choices[data-type*=select-one]::after {
+.choices[data-type*=select-one]::after {
   right: 15px;
 }
 
-
-.gallery__filter .choices__list--single {
+.choices__list--single {
   display: inline-block;
-  /* padding: 4px 16px 4px 4px;
-  width: 100% */
 }
 
-.gallery__filter [dir=rtl] .choices__list--single {
-  /* padding-right: 4px;
-  padding-left: 16px */
-}
-
-
-.gallery__filter .choices[data-type*=select-one] .choices__inner {
-  /* padding-bottom: 7.5px */
-}
-
-.gallery__filter .choices__inner {
+.choices__inner {
   box-sizing: border-box;
   display: inline-block;
-  /* vertical-align: top; */
-  /* width: 100%; */
-  /* background-color: #f9f9f9; */
-  /* padding: 7.5px 7.5px 3.75px; */
-  /* border: 1px solid #ddd; */
-  /* border-radius: 2.5px; */
-  /* font-size: 14px; */
-  /* min-height: 44px; */
-  /* overflow: hidden */
   width: 400px;
   height: 40px;
   margin-top: 12px;
-  /* margin-bottom: 186px; */
   padding: 0px 15px;
   font-family: "OpenSans";
   font-weight: 400;
@@ -672,25 +604,26 @@
   transition: width .3s ease-in-out, background-color .3s ease-in-out;
 }
 
-.gallery__filter .choices__inner:hover {
+.choices__inner:hover {
   background-color: rgba(255, 255, 255, 0.2);
 }
 
-.gallery__filter .choices:focus .choices__inner {
+.choices:focus .choices__inner {
   background-color: rgba(255, 255, 255, 0.2);
 }
 
-.gallery__filter .choices__list--dropdown .choices__item, .choices__list[aria-expanded] .choices__item {
+.choices__list--dropdown .choices__item,
+.choices__list[aria-expanded] .choices__item {
   color: #999;
   transition: color .3s ease-in-out;
 }
 
-.gallery__filter .choices__list--dropdown .choices__item:hover , .choices__list[aria-expanded] .choices__item:hover {
+.choices__list--dropdown .choices__item:hover,
+.choices__list[aria-expanded] .choices__item:hover {
   color: #fff;
 }
 
-.gallery__filter .choices[data-type*=select-one] .choices__input {
-  /* display: block; */
+.choices[data-type*=select-one] .choices__input {
   display: none;
   width: 100%;
   padding: 10px;
@@ -699,15 +632,13 @@
   margin: 0
 }
 
-.gallery__filter .choices__list--dropdown,
-.gallery__filter .choices__list[aria-expanded] {
+.choices__list--dropdown,
+.choices__list[aria-expanded] {
   box-sizing: border-box;
   visibility: hidden;
   z-index: 1;
   position: absolute;
-  /* width: 100%; */
   width: 100%;
-  /* background-color: #fff; */
   background-color: rgba(0, 0, 0, 0.9);
   border: 1px solid #ddd;
   top: initial;
@@ -719,21 +650,39 @@
   will-change: visibility;
 }
 
-.gallery__filter .choices__list--dropdown .choices__item--selectable.is-highlighted,
-.gallery__filter .choices__list[aria-expanded] .choices__item--selectable.is-highlighted {
+.choices__list--dropdown .choices__item--selectable.is-highlighted,
+.choices__list[aria-expanded] .choices__item--selectable.is-highlighted {
   background-color: rgba(255, 255, 255, 0.2);
 }
 
-.gallery__filter .choices__list--dropdown .choices__item--selectable.is-highlighted::after,
-.gallery__filter .choices__list[aria-expanded] .choices__item--selectable.is-highlighted::after {
+.choices__list--dropdown .choices__item--selectable.is-highlighted::after,
+.choices__list[aria-expanded] .choices__item--selectable.is-highlighted::after {
   display: none;
   opacity: .5
 }
 
-.gallery__filter .is-active.choices__list--dropdown, .gallery__filter .is-active.choices__list[aria-expanded] {
+.is-active.choices__list--dropdown,
+.is-active.choices__list[aria-expanded] {
   visibility: visible;
 }
 
-.gallery__filter .choices__list--dropdown .choices__item, .choices__list[aria-expanded] .choices__item {
+.choices__list--dropdown .choices__item,
+.choices__list[aria-expanded] .choices__item {
   margin: initial;
+}
+
+/* MY CODE */
+.choices {
+  position: relative;
+}
+
+/* MY CODE */
+@media (max-width: 1600px) {
+  .choices {
+    width: 280px;
+  }
+
+  .choices__inner {
+    width: 280px;
+  }
 }

@@ -8,9 +8,9 @@
   <link rel="stylesheet" href="styles/css/normalize.css">
   <link rel="stylesheet" href="styles/css/style.css">
   <link rel="stylesheet" href="styles/css/choices.min.css">
-  <link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
-  <link rel="stylesheet" href="https://unpkg.com/accordion-js@3.3.4/dist/accordion.min.css">
+  <link rel="stylesheet" href="styles/css/simplebar.css">
+  <link rel="stylesheet" href="styles/css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="styles/css/accordion.min.css">
   <link rel="stylesheet" href="styles/css/media.css">
   <title>Blanchard</title>
   <link rel="icon" type="image/x-icon" href="./styles/img/Blanchard.svg">
@@ -32,7 +32,7 @@
       <div class="header__top">
         <div class="header__top-container flex">
           <button class="header-burger btn-reset">
-            <span class="header-burger__line header-burger__line--active"></span>
+            <span class="header-burger__line"></span>
             <span class="header-burger__line"></span>
             <span class="header-burger__line"></span>
           </button>
@@ -58,14 +58,14 @@
 
               <button class="header__burger-btn btn-reset"
                 onclick="window.location.href='https://go.skillbox.ru/education/my';">
-                <span class="header__enter-link">
+                <span class="header__burger-enter-link">
                   Войти
                 </span>
               </button>
             </div>
           </div>
 
-          <div class="header-logo">
+          <div class="header-logo flex">
             <img class="header-logo__logo" src="styles/img/header/logo.svg" alt="Логотип">
           </div>
 
@@ -295,7 +295,7 @@
         <div class="gallery__right-panel">
           <div class="gallery__swiper gallery__swiper--1 swiper">
             <div class="gallery__arrows flex">
-              <button class="gallery__btn btn-reset swiper-button-prev" data-pages="2" data-index="0">
+              <button class="gallery__btn gallery__btn-prev btn-reset swiper-button-prev" data-pages="2" data-index="0">
                 <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
                   <path
                     d="M15 30C23.2843 30 30 23.2843 30 15C30 6.71573 23.2843 -1.01779e-06 15 -6.55671e-07C6.71573 -2.93554e-07 2.93554e-07 6.71573 6.55671e-07 15C1.01779e-06 23.2843 6.71573 30 15 30Z">
@@ -310,7 +310,7 @@
                 <span class="gallery__btn-span gallery__btn-span--active ">1 / 2</span>
                 <span class="gallery__btn-span">2 / 2</span>
               </div>
-              <button class="gallery__btn btn-reset swiper-button-next" data-pages="2" data-index="0">
+              <button class="gallery__btn gallery__btn-next btn-reset swiper-button-next" data-pages="2" data-index="0">
                 <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
                   <path
                     d="M15 30C23.2843 30 30 23.2843 30 15C30 6.71573 23.2843 -1.01779e-06 15 -6.55671e-07C6.71573 -2.93554e-07 2.93554e-07 6.71573 6.55671e-07 15C1.01779e-06 23.2843 6.71573 30 15 30Z"
@@ -324,7 +324,7 @@
             </div>
 
             <div class="swiper-wrapper">
-              <div class="swiper-slide">
+              <div class="swiper-slide gallery-slide">
                 <div tabindex="0" data-number="1" class="gallery__img-block">
                   <img class="gallery__img" src="./styles/img/gallery/gallery-img-1.jpg" alt="Картина 'Торс'">
                   <span tabindex="0" class="gallery__hover"><button class="gallery__searcher btn-reset"></button></span>
@@ -345,7 +345,7 @@
                 </div>
               </div>
 
-              <div class="swiper-slide">
+              <div class="swiper-slide gallery-slide">
                 <div tabindex="0" data-number="4" class="gallery__img-block">
                   <img class="gallery__img" src="./styles/img/gallery/gallery-img-4.jpg"
                     alt="Картина 'Супрематическая композиция'">
@@ -371,7 +371,7 @@
 
           <div class="gallery__swiper gallery__swiper--2 swiper">
             <div class="gallery__arrows flex">
-              <button class="gallery__btn btn-reset swiper-button-prev" data-pages="3" data-index="1">
+              <button class="gallery__btn gallery__btn-prev btn-reset swiper-button-prev" data-pages="3" data-index="1">
                 <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
                   <path
                     d="M15 30C23.2843 30 30 23.2843 30 15C30 6.71573 23.2843 -1.01779e-06 15 -6.55671e-07C6.71573 -2.93554e-07 2.93554e-07 6.71573 6.55671e-07 15C1.01779e-06 23.2843 6.71573 30 15 30Z">
@@ -387,7 +387,7 @@
                 <span class="gallery__btn-span">2 / 3</span>
                 <span class="gallery__btn-span">3 / 3</span>
               </div>
-              <button class="gallery__btn btn-reset swiper-button-next" data-pages="3" data-index="1">
+              <button class="gallery__btn gallery__btn-next btn-reset swiper-button-next" data-pages="3" data-index="1">
                 <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
                   <path
                     d="M15 30C23.2843 30 30 23.2843 30 15C30 6.71573 23.2843 -1.01779e-06 15 -6.55671e-07C6.71573 -2.93554e-07 2.93554e-07 6.71573 6.55671e-07 15C1.01779e-06 23.2843 6.71573 30 15 30Z">
@@ -401,7 +401,7 @@
             </div>
 
             <div class="swiper-wrapper">
-              <div class="swiper-slide">
+              <div class="swiper-slide gallery-slide">
                 <div tabindex="0" data-number="1" class="gallery__img-block">
                   <img class="gallery__img" src="./styles/img/gallery/gallery-img-1-1024.jpg" alt="Картина 'Торс'">
                   <span tabindex="0" class="gallery__hover"><button class="gallery__searcher btn-reset"></button></span>
@@ -416,7 +416,7 @@
                 </div>
               </div>
 
-              <div class="swiper-slide">
+              <div class="swiper-slide gallery-slide">
                 <div tabindex="0" data-number="3" class="gallery__img-block">
                   <img class="gallery__img" src="./styles/img/gallery/gallery-img-3-1024.jpg"
                     alt="Картина 'Уборка ржи'">
@@ -432,7 +432,7 @@
                 </div>
               </div>
 
-              <div class="swiper-slide">
+              <div class="swiper-slide gallery-slide">
                 <div tabindex="0" data-number="5" class="gallery__img-block">
                   <img class="gallery__img" src="./styles/img/gallery/gallery-img-5-1024.jpg"
                     alt="Картина 'Женщина с вёдрами'">
@@ -453,7 +453,7 @@
 
           <div class="gallery__swiper gallery__swiper--3 swiper">
             <div class="swiper-wrapper">
-              <div class="swiper-slide">
+              <div class="swiper-slide gallery-slide">
                 <div tabindex="0" data-number="1" class="gallery__img-block">
                   <picture>
                     <img class="gallery__img" src="./styles/img/gallery/gallery-img-1-320.jpg" alt="Картина 'Торс'">
@@ -463,7 +463,7 @@
                 </div>
               </div>
 
-              <div class="swiper-slide">
+              <div class="swiper-slide gallery-slide">
                 <div tabindex="0" data-number="2" class="gallery__img-block">
                   <picture>
                     <source srcset="./styles/img/gallery/gallery-img-2-768.jpg" media="(max-width: 992px)">
@@ -476,7 +476,7 @@
                 </div>
               </div>
 
-              <div class="swiper-slide">
+              <div class="swiper-slide gallery-slide">
                 <div tabindex="0" data-number="3" class="gallery__img-block">
                   <picture>
                     <img class="gallery__img" src="./styles/img/gallery/gallery-img-3-1024.jpg"
@@ -487,7 +487,7 @@
                 </div>
               </div>
 
-              <div class="swiper-slide">
+              <div class="swiper-slide gallery-slide">
                 <div tabindex="0" data-number="4" class="gallery__img-block">
                   <picture>
                     <img class="gallery__img" src="./styles/img/gallery/gallery-img-4-1024.jpg"
@@ -498,7 +498,7 @@
                 </div>
               </div>
 
-              <div class="swiper-slide">
+              <div class="swiper-slide gallery-slide">
                 <div tabindex="0" data-number="5" class="gallery__img-block">
                   <picture>
                     <img class="gallery__img" src="./styles/img/gallery/gallery-img-5-1024.jpg"
@@ -509,7 +509,7 @@
                 </div>
               </div>
 
-              <div class="swiper-slide">
+              <div class="swiper-slide gallery-slide">
                 <div tabindex="0" data-number="6" class="gallery__img-block">
                   <picture>
                     <img class="gallery__img" src="./styles/img/gallery/gallery-img-6-1024.jpg"
@@ -521,7 +521,7 @@
               </div>
             </div>
             <div class="gallery__arrows flex">
-              <button class="gallery__btn btn-reset swiper-button-prev" data-pages="6" data-index="2">
+              <button class="gallery__btn gallery__btn-prev btn-reset swiper-button-prev" data-pages="6" data-index="2">
                 <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
                   <path
                     d="M15 30C23.2843 30 30 23.2843 30 15C30 6.71573 23.2843 -1.01779e-06 15 -6.55671e-07C6.71573 -2.93554e-07 2.93554e-07 6.71573 6.55671e-07 15C1.01779e-06 23.2843 6.71573 30 15 30Z">
@@ -540,7 +540,7 @@
                 <span class="gallery__btn-span">5 / 6</span>
                 <span class="gallery__btn-span">6 / 6</span>
               </div>
-              <button class="gallery__btn btn-reset swiper-button-next" data-pages="6" data-index="2">
+              <button class="gallery__btn gallery__btn-next btn-reset swiper-button-next" data-pages="6" data-index="2">
                 <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
                   <path
                     d="M15 30C23.2843 30 30 23.2843 30 15C30 6.71573 23.2843 -1.01779e-06 15 -6.55671e-07C6.71573 -2.93554e-07 2.93554e-07 6.71573 6.55671e-07 15C1.01779e-06 23.2843 6.71573 30 15 30Z">
@@ -1024,7 +1024,7 @@
 
         <article class="events__articles events-swiper-1 swiper">
           <ul class="events__list flex list-reset swiper-wrapper">
-            <li class="events__list-item flex swiper-slide">
+            <li class="events__list-item flex swiper-slide events-slide">
               <picture>
                 <source srcset="./styles/img/events/events-1-320.jpg" media="(max-width: 576px)">
                 <source srcset="./styles/img/events/events-1-768.jpg" media="(max-width: 992px)">
@@ -1050,7 +1050,7 @@
 
               </div>
             </li>
-            <li class="events__list-item flex swiper-slide">
+            <li class="events__list-item flex swiper-slide events-slide">
               <picture>
                 <source srcset="./styles/img/events/events-2-768.jpg" media="(max-width: 992px)">
                 <source srcset="./styles/img/events/events-2-1024.jpg" media="(max-width: 1200px)">
@@ -1074,9 +1074,8 @@
 
               </div>
             </li>
-            <li class="events__list-item flex swiper-slide">
+            <li class="events__list-item flex swiper-slide events-slide">
               <picture>
-                <!-- <source srcset="./styles/img/events/events-3-768.jpg" media="(max-width: 992px)"> -->
                 <source srcset="./styles/img/events/events-3-1024.jpg" media="(max-width: 1200px)">
                 <img class="events__img" src="./styles/img/events/events-3.jpg" alt="Событие 3">
               </picture>
@@ -1098,10 +1097,9 @@
 
               </div>
             </li>
-            <li class="events__list-item flex swiper-slide">
+            <li class="events__list-item flex swiper-slide events-slide">
               <picture>
                 <source srcset="./styles/img/events/events-4-320.jpg" media="(max-width: 576px)">
-                <!-- <source srcset="./styles/img/events/events-4-768.jpg" media="(max-width: 992px)"> -->
                 <source srcset="./styles/img/events/events-4-1024.jpg" media="(max-width: 1200px)">
                 <img class="events__img" src="./styles/img/events/events-4.jpg" alt="Событие 4">
               </picture>
@@ -1124,9 +1122,8 @@
 
               </div>
             </li>
-            <li class="events__list-item flex swiper-slide">
+            <li class="events__list-item flex swiper-slide events-slide">
               <picture>
-                <!-- <source srcset="./styles/img/events/events-5-768.jpg" media="(max-width: 992px)"> -->
                 <source srcset="./styles/img/events/events-5-1024.jpg" media="(max-width: 1200px)">
                 <img class="events__img" src="./styles/img/events/events-5.jpg" alt="Событие 5">
               </picture>
@@ -1147,7 +1144,7 @@
 
               </div>
             </li>
-            <li class="events__list-item events__list-item--empty flex swiper-slide">
+            <li class="events__list-item events__list-item--empty flex swiper-slide events-slide">
               <picture>
                 <img class="events__img" src="./styles/img/events/empty-event.jpg" alt="Новость не найдена">
               </picture>
