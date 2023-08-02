@@ -48,7 +48,6 @@ const swiperEvents1 = new Swiper(".events-swiper-1", {
 });
 
 const swiperEvents2 = new Swiper(".events-swiper-2", {
-  // direction: 'horizontal',
   allowTouchMove: true,
   autoplay: {
     disableOnInteraction: true,
@@ -63,7 +62,7 @@ const swiperEvents2 = new Swiper(".events-swiper-2", {
       slidesPerGroup: 1,
       spaceBetween: 0,
     },
-    697: {
+    481: {
       slidesPerView: 2,
       slidesPerGroup: 1,
       spaceBetween: 34,

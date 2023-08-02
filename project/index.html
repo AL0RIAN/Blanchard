@@ -214,7 +214,7 @@
               </li>
             </ul>
             <form action="/" class="header-form flex">
-              <button class="header-form__btn btn-reset flex">
+              <button aria-label="Поиск" class="header-form__btn btn-reset flex">
                 <img src="styles/img/header/search_menu.svg" alt="Поиск">
               </button>
               <input class="header-form__input" type="text" id="searching" name="search" placeholder="Поиск по сайту">
@@ -264,7 +264,7 @@
           <h2 class="gallery__titile section-title  text-reset">Галерея</h2>
 
           <form action="#" class="gallery__filter flex">
-            <label class="gallery__text text-reset">Фильтр:
+            <label class="gallery__text text-reset"><span class="gallery__text-span">Фильтр:</span>
               <select class="gallery__select" name="filter" id="filter">
                 <option class="gallery__option" value="Живопись" selected>Живопись</option>
                 <option class="gallery__option" value="Рисунок">Рисунок</option>
@@ -274,18 +274,18 @@
 
             <div class="gallery__checkboxes flex">
               <label class="gallery__label">
-                XIX век
                 <input type="checkbox" class="gallery__checkbox" name="ages" value="XIX век" checked="checked">
+                <span class="gallery__checkbox-text">XIX век</span>
                 <span class="gallery__custom-checkbox"></span>
               </label>
               <label class="gallery__label">
-                XX век
                 <input type="checkbox" class="gallery__checkbox" name="ages" value="XX век">
+                <span class="gallery__checkbox-text">XX век</span>
                 <span class="gallery__custom-checkbox"></span>
               </label>
               <label class="gallery__label">
-                Современность
                 <input type="checkbox" class="gallery__checkbox" name="ages" value="Современность">
+                <span class="gallery__checkbox-text">Современность</span>
                 <span class="gallery__custom-checkbox"></span>
               </label>
             </div>
@@ -327,20 +327,20 @@
               <div class="swiper-slide gallery-slide">
                 <div tabindex="0" data-number="1" class="gallery__img-block">
                   <img class="gallery__img" src="./styles/img/gallery/gallery-img-1.jpg" alt="Картина 'Торс'">
-                  <span tabindex="0" class="gallery__hover"><button class="gallery__searcher btn-reset"></button></span>
+                  <button class="gallery__hover btn-reset"><span class="gallery__searcher"></span></button>
                   <span class="gallery__active-effect"></span>
                 </div>
 
                 <div tabindex="0" data-number="2" class="gallery__img-block">
                   <img class="gallery__img" src="./styles/img/gallery/gallery-img-2.jpg"
                     alt="Картина 'Женщина с граблями'">
-                  <span tabindex="0" class="gallery__hover"><button class="gallery__searcher btn-reset"></button></span>
+                  <button class="gallery__hover btn-reset"><span class="gallery__searcher"></span></button>
                   <span class="gallery__active-effect"></span>
                 </div>
 
                 <div tabindex="0" data-number="3" class="gallery__img-block">
                   <img class="gallery__img" src="./styles/img/gallery/gallery-img-3.jpg" alt="Картина 'Уборка ржи'">
-                  <span tabindex="0" class="gallery__hover"><button class="gallery__searcher btn-reset"></button></span>
+                  <button class="gallery__hover btn-reset"><span class="gallery__searcher"></span></button>
                   <span class="gallery__active-effect"></span>
                 </div>
               </div>
@@ -349,20 +349,20 @@
                 <div tabindex="0" data-number="4" class="gallery__img-block">
                   <img class="gallery__img" src="./styles/img/gallery/gallery-img-4.jpg"
                     alt="Картина 'Супрематическая композиция'">
-                  <span tabindex="0" class="gallery__hover"><button class="gallery__searcher btn-reset"></button></span>
+                  <button class="gallery__hover btn-reset"><span class="gallery__searcher"></span></button>
                   <span class="gallery__active-effect"></span>
                 </div>
 
                 <div tabindex="0" data-number="5" class="gallery__img-block">
                   <img class="gallery__img" src="./styles/img/gallery/gallery-img-5.jpg"
                     alt="Картина 'Женщина с вёдрами'">
-                  <span tabindex="0" class="gallery__hover"><button class="gallery__searcher btn-reset"></button></span>
+                  <button class="gallery__hover btn-reset"><span class="gallery__searcher"></span></button>
                   <span class="gallery__active-effect"></span>
                 </div>
 
                 <div tabindex="0" data-number="6" class="gallery__img-block">
                   <img class="gallery__img" src="./styles/img/gallery/gallery-img-6.jpg" alt="Картина 'Супрематизм'">
-                  <span tabindex="0" class="gallery__hover"><button class="gallery__searcher btn-reset"></button></span>
+                  <button class="gallery__hover btn-reset"><span class="gallery__searcher"></span></button>
                   <span class="gallery__active-effect"></span>
                 </div>
               </div>
@@ -404,14 +404,14 @@
               <div class="swiper-slide gallery-slide">
                 <div tabindex="0" data-number="1" class="gallery__img-block">
                   <img class="gallery__img" src="./styles/img/gallery/gallery-img-1-1024.jpg" alt="Картина 'Торс'">
-                  <span tabindex="0" class="gallery__hover"><button class="gallery__searcher btn-reset"></button></span>
+                  <button class="gallery__hover btn-reset"><span class="gallery__searcher"></span></button>
                   <span class="gallery__active-effect"></span>
                 </div>
 
                 <div tabindex="0" data-number="2" class="gallery__img-block">
                   <img class="gallery__img" src="./styles/img/gallery/gallery-img-2-1024.jpg"
                     alt="Картина 'Женщина с граблями'">
-                  <span tabindex="0" class="gallery__hover"><button class="gallery__searcher btn-reset"></button></span>
+                  <button class="gallery__hover btn-reset"><span class="gallery__searcher"></span></button>
                   <span class="gallery__active-effect"></span>
                 </div>
               </div>
@@ -420,14 +420,14 @@
                 <div tabindex="0" data-number="3" class="gallery__img-block">
                   <img class="gallery__img" src="./styles/img/gallery/gallery-img-3-1024.jpg"
                     alt="Картина 'Уборка ржи'">
-                  <span tabindex="0" class="gallery__hover"><button class="gallery__searcher btn-reset"></button></span>
+                  <button class="gallery__hover btn-reset"><span class="gallery__searcher"></span></button>
                   <span class="gallery__active-effect"></span>
                 </div>
 
                 <div tabindex="0" data-number="4" class="gallery__img-block">
                   <img class="gallery__img" src="./styles/img/gallery/gallery-img-4-1024.jpg"
                     alt="Картина 'Супрематическая композиция'">
-                  <span tabindex="0" class="gallery__hover"><button class="gallery__searcher btn-reset"></button></span>
+                  <button class="gallery__hover btn-reset"><span class="gallery__searcher"></span></button>
                   <span class="gallery__active-effect"></span>
                 </div>
               </div>
@@ -436,14 +436,14 @@
                 <div tabindex="0" data-number="5" class="gallery__img-block">
                   <img class="gallery__img" src="./styles/img/gallery/gallery-img-5-1024.jpg"
                     alt="Картина 'Женщина с вёдрами'">
-                  <span tabindex="0" class="gallery__hover"><button class="gallery__searcher btn-reset"></button></span>
+                  <button class="gallery__hover btn-reset"><span class="gallery__searcher"></span></button>
                   <span class="gallery__active-effect"></span>
                 </div>
 
                 <div tabindex="0" data-number="6" class="gallery__img-block">
                   <img class="gallery__img" src="./styles/img/gallery/gallery-img-6-1024.jpg"
                     alt="Картина 'Супрематизм'">
-                  <span tabindex="0" class="gallery__hover"><button class="gallery__searcher btn-reset"></button></span>
+                  <button class="gallery__hover btn-reset"><span class="gallery__searcher"></span></button>
                   <span class="gallery__active-effect"></span>
                 </div>
               </div>
@@ -458,7 +458,7 @@
                   <picture>
                     <img class="gallery__img" src="./styles/img/gallery/gallery-img-1-320.jpg" alt="Картина 'Торс'">
                   </picture>
-                  <span tabindex="0" class="gallery__hover"><button class="gallery__searcher btn-reset"></button></span>
+                  <button class="gallery__hover btn-reset"><span class="gallery__searcher"></span></button>
                   <span class="gallery__active-effect"></span>
                 </div>
               </div>
@@ -471,7 +471,7 @@
                     <img class="gallery__img" src="./styles/img/gallery/gallery-img-2-1024.jpg"
                       alt="Картина 'Женщина с граблями'">
                   </picture>
-                  <span tabindex="0" class="gallery__hover"><button class="gallery__searcher btn-reset"></button></span>
+                  <button class="gallery__hover btn-reset"><span class="gallery__searcher"></span></button>
                   <span class="gallery__active-effect"></span>
                 </div>
               </div>
@@ -482,7 +482,7 @@
                     <img class="gallery__img" src="./styles/img/gallery/gallery-img-3-1024.jpg"
                       alt="Картина 'Уборка ржи'">
                   </picture>
-                  <span tabindex="0" class="gallery__hover"><button class="gallery__searcher btn-reset"></button></span>
+                  <button class="gallery__hover btn-reset"><span class="gallery__searcher"></span></button>
                   <span class="gallery__active-effect"></span>
                 </div>
               </div>
@@ -493,7 +493,7 @@
                     <img class="gallery__img" src="./styles/img/gallery/gallery-img-4-1024.jpg"
                       alt="Картина 'Супрематическая композиция'">
                   </picture>
-                  <span tabindex="0" class="gallery__hover"><button class="gallery__searcher btn-reset"></button></span>
+                  <button class="gallery__hover btn-reset"><span class="gallery__searcher"></span></button>
                   <span class="gallery__active-effect"></span>
                 </div>
               </div>
@@ -504,7 +504,7 @@
                     <img class="gallery__img" src="./styles/img/gallery/gallery-img-5-1024.jpg"
                       alt="Картина 'Женщина с вёдрами'">
                   </picture>
-                  <span tabindex="0" class="gallery__hover"><button class="gallery__searcher btn-reset"></button></span>
+                  <button class="gallery__hover btn-reset"><span class="gallery__searcher"></span></button>
                   <span class="gallery__active-effect"></span>
                 </div>
               </div>
@@ -515,7 +515,7 @@
                     <img class="gallery__img" src="./styles/img/gallery/gallery-img-6-1024.jpg"
                       alt="Картина 'Супрематизм'">
                   </picture>
-                  <span tabindex="0" class="gallery__hover"><button class="gallery__searcher btn-reset"></button></span>
+                  <button class="gallery__hover btn-reset"><span class="gallery__searcher"></span></button>
                   <span class="gallery__active-effect"></span>
                 </div>
               </div>
@@ -689,57 +689,73 @@
                   </button>
                 </h2>
 
-                <ul class="ac-panel list-reset flex">
-                  <li class="ac-panel__item"><button data-catalogbtn="none" class="ac-panel__link btn-reset">Бенедетто
-                      ди Биндо</button></li>
-                  <li class="ac-panel__item"><button data-catalogbtn="none" class="ac-panel__link btn-reset">Бергоньоне,
-                      Амброджо</button></li>
-                  <li class="ac-panel__item"><button data-catalogbtn="none" class="ac-panel__link btn-reset">Биссоло,
-                      Франческо</button></li>
-                  <li class="ac-panel__item"><button data-catalogbtn="none"
-                      class="ac-panel__link btn-reset">Больтраффио,
-                      Джованни</button></li>
-                  <li class="ac-panel__item"><button data-catalogbtn="none" class="ac-panel__link btn-reset">Бонсиньори,
-                      Франческо</button></li>
-                  <li class="ac-panel__item"><button data-catalogbtn="none" class="ac-panel__link btn-reset">Боттичини,
-                      Рафаэлло</button></li>
-                  <li class="ac-panel__item"><button data-catalogbtn="none"
-                      class="ac-panel__link btn-reset">Брамантино</button></li>
-                  <li class="ac-panel__item"><button data-catalogbtn="none" class="ac-panel__link btn-reset">Бреа,
-                      Людовико</button></li>
-                  <li class="ac-panel__item"><button data-catalogbtn="none" class="ac-panel__link btn-reset">Бьяджо
-                      д’Антонио Туччи</button></li>
-                  <li class="ac-panel__item"><button data-catalogbtn="none"
-                      class="ac-panel__link btn-reset">Веккьетта</button></li>
-                  <li class="ac-panel__item"><button class="ac-panel__link btn-reset"
-                      data-catalogbtn="Андреа дель Верроккьо">Андреа Верроккьо</button></li>
-                  <li class="ac-panel__item"><button class="ac-panel__link ac-panel__link--active btn-reset"
-                      data-catalogbtn="Доменико Гирландайо">Доменико Гирландайо</button></li>
-                  <li class="ac-panel__item"><button class="ac-panel__link btn-reset"
-                      data-catalogbtn="Лоренцо ди Креди">Лоренцо ди Креди</button></li>
-                  <li class="ac-panel__item"><button data-catalogbtn="none" class="ac-panel__link btn-reset">Грегорио
-                      ди Чекко</button></li>
-                  <li class="ac-panel__item"><button data-catalogbtn="none" class="ac-panel__link btn-reset">Граначчи,
-                      Франческо</button></li>
-                  <li class="ac-panel__item"><button data-catalogbtn="none" class="ac-panel__link btn-reset">Джованни
-                      да Удине</button></li>
-                  <li class="ac-panel__item"><button data-catalogbtn="none" class="ac-panel__link btn-reset">Джованни
-                      ди Паоло</button></li>
-                  <li class="ac-panel__item"><button data-catalogbtn="none"
-                      class="ac-panel__link btn-reset">Джорджоне</button></li>
-                  <li class="ac-panel__item"><button data-catalogbtn="none" class="ac-panel__link btn-reset">Парентино,
-                      Бернардо</button></li>
-                  <li class="ac-panel__item"><button data-catalogbtn="none"
-                      class="ac-panel__link btn-reset">Пезеллино</button></li>
-                  <li class="ac-panel__item"><button data-catalogbtn="none" class="ac-panel__link btn-reset">Пьетро
-                      Перуджино</button></li>
-                  <li class="ac-panel__item"><button data-catalogbtn="none" class="ac-panel__link btn-reset">Перуцци,
-                      Бальдассаре</button></li>
-                  <li class="ac-panel__item"><button data-catalogbtn="none"
-                      class="ac-panel__link btn-reset">Пизанелло</button></li>
-                  <li class="ac-panel__item"><button data-catalogbtn="none"
-                      class="ac-panel__link btn-reset">Пинтуриккьо</button></li>
-                </ul>
+                <div class="ac-panel">
+                  <ul class="catalog__artist-list ac-panel__item list-reset flex">
+                    <li class="catalog__artist-name"><button data-catalogbtn="none"
+                        class="ac-panel__link btn-reset">Бенедетто
+                        ди Биндо</button></li>
+                    <li class="catalog__artist-name"><button data-catalogbtn="none"
+                        class="ac-panel__link btn-reset">Бергоньоне,
+                        Амброджо</button></li>
+                    <li class="catalog__artist-name"><button data-catalogbtn="none"
+                        class="ac-panel__link btn-reset">Биссоло,
+                        Франческо</button></li>
+                    <li class="catalog__artist-name"><button data-catalogbtn="none"
+                        class="ac-panel__link btn-reset">Больтраффио,
+                        Джованни</button></li>
+                    <li class="catalog__artist-name"><button data-catalogbtn="none"
+                        class="ac-panel__link btn-reset">Бонсиньори,
+                        Франческо</button></li>
+                    <li class="catalog__artist-name"><button data-catalogbtn="none"
+                        class="ac-panel__link btn-reset">Боттичини,
+                        Рафаэлло</button></li>
+                    <li class="catalog__artist-name"><button data-catalogbtn="none"
+                        class="ac-panel__link btn-reset">Брамантино</button></li>
+                    <li class="catalog__artist-name"><button data-catalogbtn="none"
+                        class="ac-panel__link btn-reset">Бреа,
+                        Людовико</button></li>
+                    <li class="catalog__artist-name"><button data-catalogbtn="none"
+                        class="ac-panel__link btn-reset">Бьяджо
+                        д’Антонио Туччи</button></li>
+                    <li class="catalog__artist-name"><button data-catalogbtn="none"
+                        class="ac-panel__link btn-reset">Веккьетта</button></li>
+                    <li class="catalog__artist-name"><button class="ac-panel__link btn-reset"
+                        data-catalogbtn="Андреа дель Верроккьо">Андреа Верроккьо</button></li>
+                    <li class="catalog__artist-name"><button class="ac-panel__link ac-panel__link--active btn-reset"
+                        data-catalogbtn="Доменико Гирландайо">Доменико Гирландайо</button></li>
+                    <li class="catalog__artist-name"><button class="ac-panel__link btn-reset"
+                        data-catalogbtn="Лоренцо ди Креди">Лоренцо ди Креди</button></li>
+                    <li class="catalog__artist-name"><button data-catalogbtn="none"
+                        class="ac-panel__link btn-reset">Грегорио
+                        ди Чекко</button></li>
+                    <li class="catalog__artist-name"><button data-catalogbtn="none"
+                        class="ac-panel__link btn-reset">Граначчи,
+                        Франческо</button></li>
+                    <li class="catalog__artist-name"><button data-catalogbtn="none"
+                        class="ac-panel__link btn-reset">Джованни
+                        да Удине</button></li>
+                    <li class="catalog__artist-name"><button data-catalogbtn="none"
+                        class="ac-panel__link btn-reset">Джованни
+                        ди Паоло</button></li>
+                    <li class="catalog__artist-name"><button data-catalogbtn="none"
+                        class="ac-panel__link btn-reset">Джорджоне</button></li>
+                    <li class="catalog__artist-name"><button data-catalogbtn="none"
+                        class="ac-panel__link btn-reset">Парентино,
+                        Бернардо</button></li>
+                    <li class="catalog__artist-name"><button data-catalogbtn="none"
+                        class="ac-panel__link btn-reset">Пезеллино</button></li>
+                    <li class="catalog__artist-name"><button data-catalogbtn="none"
+                        class="ac-panel__link btn-reset">Пьетро
+                        Перуджино</button></li>
+                    <li class="catalog__artist-name"><button data-catalogbtn="none"
+                        class="ac-panel__link btn-reset">Перуцци,
+                        Бальдассаре</button></li>
+                    <li class="catalog__artist-name"><button data-catalogbtn="none"
+                        class="ac-panel__link btn-reset">Пизанелло</button></li>
+                    <li class="catalog__artist-name"><button data-catalogbtn="none"
+                        class="ac-panel__link btn-reset">Пинтуриккьо</button></li>
+                  </ul>
+                </div>
               </li>
 
               <li class="ac catalog__ages">
@@ -1026,10 +1042,11 @@
           <ul class="events__list flex list-reset swiper-wrapper">
             <li class="events__list-item flex swiper-slide events-slide">
               <picture>
-                <source srcset="./styles/img/events/events-1-320.jpg" media="(max-width: 576px)">
-                <source srcset="./styles/img/events/events-1-768.jpg" media="(max-width: 992px)">
-                <source srcset="./styles/img/events/events-1-1024.jpg" media="(max-width: 1200px)">
-                <img class="events__img" src="./styles/img/events/events-1.jpg" alt="Событие 1">
+                <source srcset="./styles/img/events/events-1-320.jpg" media="(max-width: 480px)">
+                <source srcset="./styles/img/events/events-1-768.jpg" media="(max-width: 768px)">
+                <source srcset="./styles/img/events/events-1-1024.jpg" media="(max-width: 1024px)">
+                <img class="events__img" src="./styles/img/events/events-1.jpg"
+                  alt="Событие 1: Книжная гравюра в живом восприятии">
               </picture>
 
               <div class="events__article flex">
@@ -1053,8 +1070,9 @@
             <li class="events__list-item flex swiper-slide events-slide">
               <picture>
                 <source srcset="./styles/img/events/events-2-768.jpg" media="(max-width: 992px)">
-                <source srcset="./styles/img/events/events-2-1024.jpg" media="(max-width: 1200px)">
-                <img class="events__img" src="./styles/img/events/events-2.jpg" alt="Событие 2">
+                <source srcset="./styles/img/events/events-2-1024.jpg" media="(max-width: 1024px)">
+                <img class="events__img" src="./styles/img/events/events-2.jpg"
+                  alt="Событие 2: Открытая дискуссия. Дмитрий Петров и Сергей Ильин.">
               </picture>
 
               <div class="events__article flex">
@@ -1076,8 +1094,8 @@
             </li>
             <li class="events__list-item flex swiper-slide events-slide">
               <picture>
-                <source srcset="./styles/img/events/events-3-1024.jpg" media="(max-width: 1200px)">
-                <img class="events__img" src="./styles/img/events/events-3.jpg" alt="Событие 3">
+                <source srcset="./styles/img/events/events-3-1024.jpg" media="(max-width: 1024px)">
+                <img class="events__img" src="./styles/img/events/events-3.jpg" alt="Событие 3: Выставка Формация 2020">
               </picture>
 
               <div class="events__article flex">
@@ -1099,9 +1117,10 @@
             </li>
             <li class="events__list-item flex swiper-slide events-slide">
               <picture>
-                <source srcset="./styles/img/events/events-4-320.jpg" media="(max-width: 576px)">
-                <source srcset="./styles/img/events/events-4-1024.jpg" media="(max-width: 1200px)">
-                <img class="events__img" src="./styles/img/events/events-4.jpg" alt="Событие 4">
+                <source srcset="./styles/img/events/events-4-320.jpg" media="(max-width: 480px)">
+                <source srcset="./styles/img/events/events-4-1024.jpg" media="(max-width: 1024px)">
+                <img class="events__img" src="./styles/img/events/events-4.jpg"
+                  alt="Событие 4: Джон Винзор. Фотографии из серии Метафора">
               </picture>
 
               <div class="events__article flex">
@@ -1124,8 +1143,9 @@
             </li>
             <li class="events__list-item flex swiper-slide events-slide">
               <picture>
-                <source srcset="./styles/img/events/events-5-1024.jpg" media="(max-width: 1200px)">
-                <img class="events__img" src="./styles/img/events/events-5.jpg" alt="Событие 5">
+                <source srcset="./styles/img/events/events-5-1024.jpg" media="(max-width: 1024x)">
+                <img class="events__img" src="./styles/img/events/events-5.jpg"
+                  alt="Событие 5: XXIV Международная биеннале молодого искусства">
               </picture>
 
               <div class="events__article flex">
@@ -1174,10 +1194,11 @@
           <div class="events__list flex swiper-wrapper">
             <div class="events__list-item flex swiper-slide">
               <picture>
-                <source srcset="./styles/img/events/events-1-320.jpg" media="(max-width: 576px)">
+                <source srcset="./styles/img/events/events-1-320.jpg" media="(max-width: 480px)">
                 <source srcset="./styles/img/events/events-1-768.jpg" media="(max-width: 992px)">
-                <source srcset="./styles/img/events/events-1-1024.jpg" media="(max-width: 1200px)">
-                <img class="events__img" src="./styles/img/events/events-1.jpg" alt="Событие 1">
+                <source srcset="./styles/img/events/events-1-1024.jpg" media="(max-width: 1024px)">
+                <img class="events__img" src="./styles/img/events/events-1.jpg"
+                  alt="Событие 1: Книжная гравюра в живом восприятии">
               </picture>
 
               <div class="events__article flex">
@@ -1200,10 +1221,11 @@
             </div>
             <div class="events__list-item flex swiper-slide">
               <picture>
-                <source srcset="./styles/img/events/events-2-320.jpg" media="(max-width: 576px)">
+                <source srcset="./styles/img/events/events-2-320.jpg" media="(max-width: 480px)">
                 <source srcset="./styles/img/events/events-2-768.jpg" media="(max-width: 992px)">
-                <source srcset="./styles/img/events/events-2-1024.jpg" media="(max-width: 1200px)">
-                <img class="events__img" src="./styles/img/events/events-2.jpg" alt="Событие 2">
+                <source srcset="./styles/img/events/events-2-1024.jpg" media="(max-width: 1024px)">
+                <img class="events__img" src="./styles/img/events/events-2.jpg"
+                  alt="Событие 2: Открытая дискуссия. Дмитрий Петров и Сергей Ильин.">
               </picture>
 
               <div class="events__article flex">
@@ -1225,10 +1247,10 @@
             </div>
             <div class="events__list-item flex swiper-slide">
               <picture>
-                <source srcset="./styles/img/events/events-3-320.jpg" media="(max-width: 576px)">
+                <source srcset="./styles/img/events/events-3-320.jpg" media="(max-width: 480px)">
                 <source srcset="./styles/img/events/events-3-992.jpg" media="(max-width: 992px)">
-                <source srcset="./styles/img/events/events-3-1024.jpg" media="(max-width: 1200px)">
-                <img class="events__img" src="./styles/img/events/events-3.jpg" alt="Событие 3">
+                <source srcset="./styles/img/events/events-3-1024.jpg" media="(max-width: 1024px)">
+                <img class="events__img" src="./styles/img/events/events-3.jpg" alt="Событие 3: Выставка Формация 2020">
               </picture>
 
               <div class="events__article flex">
@@ -1250,10 +1272,11 @@
             </div>
             <div class="events__list-item flex swiper-slide">
               <picture>
-                <source srcset="./styles/img/events/events-4-320.jpg" media="(max-width: 576px)">
+                <source srcset="./styles/img/events/events-4-320.jpg" media="(max-width: 480px)">
                 <source srcset="./styles/img/events/events-4-992.jpg" media="(max-width: 992px)">
-                <source srcset="./styles/img/events/events-4-1024.jpg" media="(max-width: 1200px)">
-                <img class="events__img" src="./styles/img/events/events-4.jpg" alt="Событие 4">
+                <source srcset="./styles/img/events/events-4-1024.jpg" media="(max-width: 1024px)">
+                <img class="events__img" src="./styles/img/events/events-4.jpg"
+                  alt="Событие 4: Джон Винзор. Фотографии из серии Метафора">
               </picture>
 
               <div class="events__article flex">
@@ -1276,10 +1299,11 @@
             </div>
             <div class="events__list-item flex swiper-slide">
               <picture>
-                <source srcset="./styles/img/events/events-5-320.jpg" media="(max-width: 576px)">
+                <source srcset="./styles/img/events/events-5-320.jpg" media="(max-width: 480px)">
                 <source srcset="./styles/img/events/events-5-992.jpg" media="(max-width: 992px)">
-                <source srcset="./styles/img/events/events-5-1024.jpg" media="(max-width: 1200px)">
-                <img class="events__img" src="./styles/img/events/events-5.jpg" alt="Событие 5">
+                <source srcset="./styles/img/events/events-5-1024.jpg" media="(max-width: 1024px)">
+                <img class="events__img" src="./styles/img/events/events-5.jpg"
+                  alt="Событие 5: XXIV Международная биеннале молодого искусства">
               </picture>
 
               <div class="events__article flex">
@@ -1315,8 +1339,8 @@
           с&nbsp;не&nbsp;уникальными данными до&nbsp;степени совершённой неузнаваемости, из-за чего возрастает
           их&nbsp;статус бесполезности. Прежде всего, постоянное информационно-пропагандистское
           <span class="projects__tip">
-            <button id="tip"
-              data-tippy-content="Прежде всего, постоянное информационно-пропагандистское  обеспечение нашей деятельности однозначно фиксирует необходимость экономической целесообразности принимаемых решений"
+            <button id="tip" aria-label="Кнопка со всплывающей подсказкой"
+              data-tippy-content="Пример современных тенденций&nbsp;&mdash; современная методология разработки"
               class="projects__tooltip btn-reset"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                 viewBox="0 0 16 16" fill="none">
                 <path
@@ -1330,7 +1354,9 @@
           обеспечение нашей
           деятельности однозначно фиксирует необходимость экономической целесообразности принимаемых решений. И&nbsp;нет
           сомнений, что действия представителей оппозиции могут быть рассмотрены <span class="projects__tip">
-            <button id="tip2" data-tippy-content="Tooltip2" class="projects__tooltip btn-reset">
+            <button id="tip2" aria-label="Кнопка со всплывающей подсказкой"
+              data-tippy-content="Приятно, граждане, наблюдать, как сделанные на&nbsp;базе аналитики выводы вызывают у&nbsp;вас эмоции"
+              class="projects__tooltip btn-reset">
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
                 <path
                   d="M15.5 8C15.5 12.1421 12.1421 15.5 8 15.5C3.85786 15.5 0.5 12.1421 0.5 8C0.5 3.85786 3.85786 0.5 8 0.5C12.1421 0.5 15.5 3.85786 15.5 8Z"
@@ -1342,7 +1368,8 @@
             </button>
           </span> исключительно в&nbsp;разрезе
           маркетинговых и&nbsp;финансовых <span class="projects__tip">
-            <button id="tip3" data-tippy-content="Tooltip3" class="projects__tooltip btn-reset">
+            <button id="tip3" aria-label="Кнопка со всплывающей подсказкой"
+              data-tippy-content="В стремлении повысить качество" class="projects__tooltip btn-reset">
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
                 <path
                   d="M15.5 8C15.5 12.1421 12.1421 15.5 8 15.5C3.85786 15.5 0.5 12.1421 0.5 8C0.5 3.85786 3.85786 0.5 8 0.5C12.1421 0.5 15.5 3.85786 15.5 8Z"
@@ -1365,56 +1392,50 @@
           <div class="swiper projects-swiper-1">
             <div class="swiper-wrapper">
               <div class="swiper-slide projects__list-item partner-img flex">
-                <img data-partner="1" src="./styles/img/projects/partner-1.jpg" alt="Партнер 1">
-                <img data-partner="1--active" src="./styles/img/projects/partner-1-color.jpg" alt="Партнер 1">
+                <img data-partner="1--active" src="./styles/img/projects/partner-1-color.jpg"
+                  alt="Freelands Foundation">
                 <a href="#" class="projects__partner-link link-reset"></a>
               </div>
 
               <div class="swiper-slide projects__list-item flex partner-img">
-                <img data-partner="2" src="./styles/img/projects/partner-2.jpg" alt="Партнер 2">
-                <img data-partner="2--active" src="./styles/img/projects/partner-2-color.jpg" alt="Партнер 2">
+                <img data-partner="2--active" src="./styles/img/projects/partner-2-color.jpg"
+                  alt="Institute for Contemporary Art">
                 <a href="#" class="projects__partner-link link-reset"></a>
               </div>
 
               <div class="swiper-slide projects__list-item flex partner-img">
-                <img data-partner="3" src="./styles/img/projects/partner-3.jpg" alt="Партнер 3">
-                <img data-partner="3--active" src="./styles/img/projects/partner-3-color.jpg" alt="Партнер 3">
+                <img data-partner="3--active" src="./styles/img/projects/partner-3-color.jpg"
+                  alt="Workhouse - Arts Center">
                 <a href="#" class="projects__partner-link link-reset"></a>
               </div>
 
               <div class="swiper-slide projects__list-item flex partner-img">
-                <img data-partner="4" src="./styles/img/projects/partner-4.jpg" alt="Партнер 4">
-                <img data-partner="4--active" src="./styles/img/projects/partner-4-color.jpg" alt="Партнер 4">
+                <img data-partner="4--active" src="./styles/img/projects/partner-4-color.jpg" alt="1849">
                 <a href="#" class="projects__partner-link link-reset"></a>
               </div>
 
               <div class="swiper-slide projects__list-item flex partner-img">
-                <img data-partner="5" src="./styles/img/projects/partner-5.jpg" alt="Партнер 5">
-                <img data-partner="5--active" src="./styles/img/projects/partner-5-color.jpg" alt="Партнер 5">
+                <img data-partner="5--active" src="./styles/img/projects/partner-5-color.jpg" alt="HISCOX">
                 <a href="#" class="projects__partner-link link-reset"></a>
               </div>
 
               <div class="swiper-slide projects__list-item flex partner-img">
-                <img data-partner="6" src="./styles/img/projects/partner-6.jpg" alt="Партнер 6">
-                <img data-partner="6--active" src="./styles/img/projects/partner-6-color.jpg" alt="Партнер 6">
+                <img data-partner="6--active" src="./styles/img/projects/partner-6-color.jpg" alt="Camden arts centre">
                 <a href="#" class="projects__partner-link link-reset"></a>
               </div>
 
               <div class="swiper-slide projects__list-item flex partner-img">
-                <img data-partner="7" src="./styles/img/projects/partner-7.jpg" alt="Партнер 7">
-                <img data-partner="7--active" src="./styles/img/projects/partner-7-color.jpg" alt="Партнер 7">
+                <img data-partner="7--active" src="./styles/img/projects/partner-7-color.jpg" alt="Stassen ">
                 <a href="#" class="projects__partner-link link-reset"></a>
               </div>
 
               <div class="swiper-slide projects__list-item flex partner-img">
-                <img data-partner="8" src="./styles/img/projects/partner-8.jpg" alt="Партнер 8">
-                <img data-partner="8--active" src="./styles/img/projects/partner-8-color.jpg" alt="Партнер 8">
+                <img data-partner="8--active" src="./styles/img/projects/partner-8-color.jpg" alt="WATTS">
                 <a href="#" class="projects__partner-link link-reset"></a>
               </div>
 
               <div class="swiper-slide projects__list-item flex partner-img">
-                <img data-partner="9" src="./styles/img/projects/partner-9.jpg" alt="Партнер 9">
-                <img data-partner="9--active" src="./styles/img/projects/partner-9-color.jpg" alt="Партнер 9">
+                <img data-partner="9--active" src="./styles/img/projects/partner-9-color.jpg" alt="eSAD">
                 <a href="#" class="projects__partner-link link-reset"></a>
               </div>
             </div>

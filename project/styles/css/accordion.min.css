@@ -104,7 +104,6 @@
 
 /* MY CODE */
 .is-active .ac-header {
-  margin-bottom: 25px;
   border-color: var(--purple-4);
 }
 
@@ -136,7 +135,7 @@
   width: 100%;
   height: calc(100% + 66px);
   left: 0;
-  top: -33px;
+  bottom: -33px;
   border-bottom: 1px solid transparent;
   transition: border-color .3s ease-in-out;
   z-index: 2;
@@ -169,7 +168,7 @@
 }
 
 /* MY CODE */
-.ac .ac-panel {
+.ac .atalog__artist-list {
   position: relative;
   flex-direction: column;
   flex-wrap: wrap;
@@ -182,38 +181,26 @@
 }
 
 /* MY CODE */
-.is-active .ac-panel {
-  margin-bottom: 25px;
-}
-
-/* MY CODE */
-@media (max-width: 1200px) {
-  .ac .ac-panel {
-    max-height: 384px;
+@media (max-width: 1024px) {
+  .catalog__artist-list {
+    max-height: 434px;
   }
 }
 
-@media (max-width: 992px) {
-  .ac .ac-panel {
-    max-height: 288px;
+@media (max-width: 768px) {
+  .catalog__artist-list {
+    max-height: 338px;
   }
 }
 
-@media (max-width: 696px) {
-  .ac .ac-panel {
+@media (max-width: 480px) {
+  .catalog__artist-list {
+    padding: 20px 0;
     max-height: fit-content;
   }
 
   .ac .ac-header {
     padding: 12px 0;
-  }
-
-  .is-active .ac-header {
-    margin-bottom: 20px;
-  }
-
-  .is-active .ac-panel {
-    margin-bottom: 20px;
   }
 
   .ac .ac-panel svg:nth-child(1) {
@@ -226,7 +213,7 @@
   }
 
   .ac .ac-trigger::before {
-    height: calc(100% + 21px);
-    top: -9px;
+    height: calc(100% + 26px);
+    bottom: -13px;
   }
 }

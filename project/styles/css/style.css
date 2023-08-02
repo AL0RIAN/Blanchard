@@ -74,8 +74,6 @@ main {
 section {
   margin-left: auto;
   margin-right: auto;
-  /* margin-bottom: 80px; */
-  /* margin-bottom: 74px; */
 }
 
 h1 {
@@ -145,6 +143,10 @@ button {
   padding-bottom: 119px;
 }
 
+.header {
+  margin-bottom: 63px;
+}
+
 [data-headerimg="header-slide1"] {
   background-image: url("../img/hero/birmingham-museums-trust.jpg");
   background-size: cover;
@@ -164,13 +166,13 @@ button {
   position: relative;
   align-items: center;
   background-color: #000;
-  padding: 0 15px;
+  /* padding: 0 15px; */
 }
 
 .header__top-container {
-  max-width: 1600px;
+  max-width: 1630px;
   margin: 0 auto;
-  padding: 30px 0;
+  padding: 30px 15px;
 }
 
 .header-burger {
@@ -213,7 +215,6 @@ button {
 }
 
 .header__burger-item {
-  /* font-family: "OpenSans"; */
   font-weight: 600;
   font-size: 24px;
   line-height: 64px;
@@ -294,7 +295,6 @@ button {
 
 .header-nav {
   justify-content: space-between;
-  /* width: 100%; */
   width: 1250px;
 }
 
@@ -308,7 +308,6 @@ button {
 
 .header-nav__link {
   position: relative;
-  /* font-family: "OpenSans"; */
   font-weight: 600;
   font-size: 18px;
   line-height: 25px;
@@ -823,7 +822,6 @@ button {
 .header-form__input {
   background-color: transparent;
   border: none;
-  /* font-family: "OpenSans"; */
   font-size: 18px;
   line-height: 25px;
   color: #fff;
@@ -832,7 +830,6 @@ button {
 }
 
 .header-form__input::placeholder {
-  /* font-family: "OpenSans"; */
   font-size: 18px;
   line-height: 25px;
   color: #fff;
@@ -854,7 +851,6 @@ button {
 /* HERO */
 
 .hero {
-  /* padding-bottom: 122px; */
   padding-left: 15px;
   padding-right: 15px;
 }
@@ -866,8 +862,6 @@ button {
 
 .hero__titile {
   max-width: 597px;
-  margin-top: 63px;
-  /* font-family: "OpenSans"; */
   font-weight: 700;
   font-size: 72px;
   line-height: 98px;
@@ -877,7 +871,6 @@ button {
 .hero__text {
   max-width: 556px;
   margin-bottom: 89px;
-  /* font-family: "OpenSans"; */
   font-weight: 700;
   font-size: 18px;
   line-height: 30px;
@@ -1012,19 +1005,21 @@ button {
 
 .gallery__text {
   display: block;
-  /* font-family: "OpenSans"; */
   font-weight: 600;
   font-size: 16px;
   line-height: 32px;
   color: #fff;
 }
 
+.gallery__text-span {
+  display: block;
+  margin-bottom: 12px;
+}
+
 .gallery__select {
   width: 400px;
-  margin-top: 12px;
   margin-bottom: 186px;
   padding: 5px 15px;
-  /* font-family: "OpenSans"; */
   font-weight: 400;
   font-size: 16px;
   line-height: 32px;
@@ -1055,20 +1050,36 @@ button {
   position: relative;
   cursor: pointer;
   padding-left: 24px;
-  /* font-family: "OpenSans"; */
   font-weight: 400;
   font-size: 16px;
   color: #fff;
 }
 
+.gallery__label:hover .gallery__custom-checkbox {
+  border: 1px solid var(--purple-2);
+}
+
 .gallery__label:not(:last-child) {
-  /* margin-bottom: 20px; */
   margin-bottom: 14px;
 }
 
+.gallery__checkbox-text {
+  transition: color .3s ease-in-out;
+}
+
 .gallery__checkbox {
+  position: absolute;
+  left: 0;
   opacity: 0;
   cursor: pointer;
+}
+
+.gallery__checkbox:focus~span {
+  color: var(--purple-2);
+}
+
+.gallery__checkbox:focus~.gallery__custom-checkbox {
+  border: 1px solid var(--purple-2)
 }
 
 .gallery__custom-checkbox {
@@ -1284,7 +1295,7 @@ button {
 
 .gallery__img-info {
   box-sizing: content-box;
-  transform: translateX(-150vh);
+  transform: translateX(-150vh) scale(0);
   position: absolute;
   width: 900px;
   height: 500px;
@@ -1309,7 +1320,6 @@ button {
   right: 20px;
   top: 20px;
   fill: #000;
-  /* background-image: url("../img/gallery/cross.svg"); */
   transition: fill .3s ease-in-out;
 }
 
@@ -1344,7 +1354,6 @@ button {
 .gallery__info-title::after {
   content: attr(data-text);
   max-width: 401px;
-  /* font-family: "OpenSans"; */
   font-weight: 600;
   font-size: 24px;
   line-height: 33px;
@@ -1355,7 +1364,6 @@ button {
   display: block;
   content: attr(data-text);
   max-width: 401px;
-  /* font-family: "OpenSans"; */
   font-weight: 600;
   font-size: 16px;
   line-height: 22px;
@@ -1365,7 +1373,6 @@ button {
 .gallery__text-info::after {
   content: attr(data-text);
   max-width: 401px;
-  /* font-family: "OpenSans"; */
   font-size: 16px;
   line-height: 22px;
   color: #333333;
@@ -1374,7 +1381,6 @@ button {
 .gallery__info-date::after {
   content: attr(data-text);
   max-width: 401px;
-  /* font-family: "OpenSans"; */
   font-weight: 400;
   font-size: 12px;
   line-height: 16px;
@@ -1508,6 +1514,10 @@ button {
   transition: background-color .3s ease-in-out, color .3s ease-in-out;
 }
 
+.catalog__empty-ac {
+  padding: 25px 0;
+}
+
 .catalog__ages-arrow {
   position: absolute;
   right: 0;
@@ -1548,7 +1558,15 @@ button {
   transform: rotate(180deg);
 }
 
-.ac-panel__item {
+.catalog__artist-list {
+  position: relative;
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-height: 338px;
+  padding: 25px 0;
+}
+
+.catalog__artist-name  {
   position: relative;
   width: fit-content;
   font-style: normal;
@@ -1722,6 +1740,7 @@ button {
 .events__img {
   display: block;
   max-width: 100%;
+  width: 100%;
 }
 
 .events__date {
@@ -1979,7 +1998,6 @@ button {
   background-repeat: no-repeat;
   background-position: center;
   background-position: center;
-  transition: background-image .3s ease-in-out;
 }
 
 .projects-swiper-1 {
@@ -1989,6 +2007,7 @@ button {
 }
 
 [data-partner="1--active"],
+[data-partner="1--active"],
 [data-partner="2--active"],
 [data-partner="3--active"],
 [data-partner="4--active"],
@@ -1997,10 +2016,12 @@ button {
 [data-partner="7--active"],
 [data-partner="8--active"],
 [data-partner="9--active"] {
-  display: none;
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  opacity: .5;
+  transition: filter .3s ease-in-out, opacity .3s ease-in-out;
 }
 
-.projects__list-item:hover [data-partner="1--active"],
 .projects__list-item:hover [data-partner="1--active"],
 .projects__list-item:hover [data-partner="2--active"],
 .projects__list-item:hover [data-partner="3--active"],
@@ -2010,19 +2031,9 @@ button {
 .projects__list-item:hover [data-partner="7--active"],
 .projects__list-item:hover [data-partner="8--active"],
 .projects__list-item:hover [data-partner="9--active"] {
-  display: block;
-}
-
-.projects__list-item:hover [data-partner="1"],
-.projects__list-item:hover [data-partner="2"],
-.projects__list-item:hover [data-partner="3"],
-.projects__list-item:hover [data-partner="4"],
-.projects__list-item:hover [data-partner="5"],
-.projects__list-item:hover [data-partner="6"],
-.projects__list-item:hover [data-partner="7"],
-.projects__list-item:hover [data-partner="8"],
-.projects__list-item:hover [data-partner="9"] {
-  display: none;
+  filter: grayscale(0%);
+  -webkit-filter: grayscale(0%);
+  opacity: 1;
 }
 
 .projects__partner-link {
@@ -2120,6 +2131,19 @@ button {
   right: 0;
 }
 
+.tippy-box {
+  text-align: center;
+  padding: 7px 9px;
+  font-size: 12px;
+  font-weight: 600;
+  background-color: var(--purple-3);
+  border-radius: 0;
+}
+
+.tippy-arrow {
+  color: var(--purple-3);
+}
+
 /* CONTACTS */
 
 .contacts__top {
@@ -2134,7 +2158,6 @@ button {
   align-items: center;
   max-width: 1600px;
   margin: 0 auto;
-  /* padding: 38px 0; */
   padding-top: 34px;
   padding-bottom: 32px;
 }
@@ -2144,7 +2167,6 @@ button {
 }
 
 .contacts__title {
-  /* font-family: "OpenSans"; */
   font-weight: 600;
   font-size: 24px;
   line-height: 32px;
@@ -2213,7 +2235,6 @@ button {
   padding: 13px 35px;
   border: 2px solid var(--purple-3);
   border-radius: 100px;
-  /* font-family: "OpenSans"; */
   font-weight: 700;
   font-size: 18px;
   line-height: 25px;
