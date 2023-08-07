@@ -193,7 +193,7 @@
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 576px) {
   .catalog__artist-list {
     padding: 20px 0;
     max-height: fit-content;

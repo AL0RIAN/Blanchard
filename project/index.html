@@ -18,7 +18,7 @@
 </head>
 
 <body id="body">
-  <h1>Blanchard - ваш проводник в искусство</h1>
+  <h1 class="main-title">Blanchard - ваш проводник в искусство</h1>
   <div class="hh-container">
     <div class="hh-swiper swiper">
       <div class="swiper-wrapper">
@@ -40,7 +40,7 @@
           <div class="header__burger-menu">
             <div class="header__burger-container flex">
               <nav class="header__burger-nav flex">
-                <ul class="header__burger-list list-reset flex">
+                <ul  class="header__burger-list list-reset flex">
                   <li class="header__burger-item"><a class="header__burger-link link-reset" href="#about-us">О нас</a>
                   </li>
                   <li class="header__burger-item"><a class="header__burger-link link-reset" href="#gallery">Галерея</a>
@@ -89,12 +89,12 @@
             <button class="header__searcher-btn btn-reset flex">
               <img class="header__searcher" src="styles/img/header/Search.svg" alt="Поиск">
             </button>
+          </div>
 
-            <div class="header__searcher-wrap flex">
-              <input type="text" class="header__searcher-input">
-              <button class="header__searcher-cross btn-reset">
-              </button>
-            </div>
+          <div class="header__searcher-wrap searcher-small flex">
+            <input type="text" class="header__searcher-input">
+            <button class="header__searcher-cross btn-reset">
+            </button>
           </div>
         </div>
 
@@ -105,14 +105,14 @@
           <div class="header-menu flex">
             <ul class="header-menu__list list-reset flex">
               <li class="header-menu__item">
-                <button class="header-menu__btn btn-reset" onclick="myFunction('realism', 0)">Реализм</button>
+                <button aria-label="Список художников Реализма" class="header-menu__btn btn-reset" onclick="myFunction('realism', 0)">Реализм</button>
                 <span class="header-menu__arrow">
                   <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M11 1L6 6.00001L0.999997 1" stroke="" />
                   </svg>
                 </span>
                 <div id="realism" class="header-menu__wrapper">
-                  <ul class="header-menu__dropdown list-reset">
+                  <ul  class="header-menu__dropdown list-reset">
                     <li data-artist="tintoretto" class="header-menu__dropdown-item"><a href="#" tabindex="0"
                         id="tintoretto" class="header-menu__btn-link link-reset">Тинторетто</a></li>
                     <li data-artist="friedrich" class="header-menu__dropdown-item"><a href="#" tabindex="0"
@@ -127,7 +127,7 @@
                 </div>
               </li>
               <li class="header-menu__item">
-                <button class="header-menu__btn btn-reset"
+                <button aria-label="Список художников Импрессионизма" class="header-menu__btn btn-reset"
                   onclick="myFunction('impressionism', 1)">Импрессионизм</button>
                 <span class="header-menu__arrow"> <svg width="12" height="7" viewBox="0 0 12 7" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
@@ -149,7 +149,7 @@
                 </div>
               </li>
               <li class="header-menu__item">
-                <button class="header-menu__btn btn-reset"
+                <button aria-label="Список художников Постимпрессионизма" class="header-menu__btn btn-reset"
                   onclick="myFunction('post-impressionism', 2)">Постимпрессионизм</button>
                 <span class="header-menu__arrow"> <svg width="12" height="7" viewBox="0 0 12 7" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
@@ -171,7 +171,7 @@
                 </div>
               </li>
               <li class="header-menu__item">
-                <button class="header-menu__btn btn-reset" onclick="myFunction('vanguard', 3)">Авангард</button>
+                <button aria-label="Список художников Авангарда" class="header-menu__btn btn-reset" onclick="myFunction('vanguard', 3)">Авангард</button>
                 <span class="header-menu__arrow"> <svg width="12" height="7" viewBox="0 0 12 7" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
                     <path d="M11 1L6 6.00001L0.999997 1" stroke="" />
@@ -192,7 +192,7 @@
                 </div>
               </li>
               <li class="header-menu__item">
-                <button class="header-menu__btn btn-reset" onclick="myFunction('futurism', 4)">Футуризм</button>
+                <button aria-label="Список художников Футуризма" class="header-menu__btn btn-reset" onclick="myFunction('futurism', 4)">Футуризм</button>
                 <span class="header-menu__arrow"> <svg width="12" height="7" viewBox="0 0 12 7" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
                     <path d="M11 1L6 6.00001L0.999997 1" stroke="" />
@@ -224,10 +224,10 @@
       </div>
     </header>
 
-    <section class="hero">
+    <section class="section hero">
       <div class="hero-container">
         <h2 class="hero__titile text-reset">
-          Прикоснитесь к&nbsp;прекрасному
+          Прикоснитесь к прекрасному
         </h2>
         <p class="hero__text text-reset">
           Мы&nbsp;вынуждены отталкиваться от&nbsp;того, что реализация намеченных плановых заданий создаёт предпосылки
@@ -240,7 +240,7 @@
   </div>
 
   <main>
-    <section id="about-us" class="about-us">
+    <section id="about-us" class="section about-us">
       <div class="about-us-container">
         <h2 class="about-us__title section-title text-reset">О нас</h2>
         <p class="about-us__text section-text text-reset flex">
@@ -258,7 +258,7 @@
       </div>
     </section>
 
-    <section id="gallery" class="gallery">
+    <section id="gallery" class="section gallery">
       <div class="gallery__container flex">
         <div class="gallery__left-panel">
           <h2 class="gallery__titile section-title  text-reset">Галерея</h2>
@@ -327,20 +327,20 @@
               <div class="swiper-slide gallery-slide">
                 <div tabindex="0" data-number="1" class="gallery__img-block">
                   <img class="gallery__img" src="./styles/img/gallery/gallery-img-1.jpg" alt="Картина 'Торс'">
-                  <button class="gallery__hover btn-reset"><span class="gallery__searcher"></span></button>
+                  <button tabindex="1" aria-label="Показать информацию о картине" class="gallery__hover btn-reset"><span class="gallery__searcher"></span></button>
                   <span class="gallery__active-effect"></span>
                 </div>
 
                 <div tabindex="0" data-number="2" class="gallery__img-block">
                   <img class="gallery__img" src="./styles/img/gallery/gallery-img-2.jpg"
                     alt="Картина 'Женщина с граблями'">
-                  <button class="gallery__hover btn-reset"><span class="gallery__searcher"></span></button>
+                  <button tabindex="1" aria-label="Показать информацию о картине" class="gallery__hover btn-reset"><span class="gallery__searcher"></span></button>
                   <span class="gallery__active-effect"></span>
                 </div>
 
                 <div tabindex="0" data-number="3" class="gallery__img-block">
                   <img class="gallery__img" src="./styles/img/gallery/gallery-img-3.jpg" alt="Картина 'Уборка ржи'">
-                  <button class="gallery__hover btn-reset"><span class="gallery__searcher"></span></button>
+                  <button tabindex="1" aria-label="Показать информацию о картине" class="gallery__hover btn-reset"><span class="gallery__searcher"></span></button>
                   <span class="gallery__active-effect"></span>
                 </div>
               </div>
@@ -349,20 +349,20 @@
                 <div tabindex="0" data-number="4" class="gallery__img-block">
                   <img class="gallery__img" src="./styles/img/gallery/gallery-img-4.jpg"
                     alt="Картина 'Супрематическая композиция'">
-                  <button class="gallery__hover btn-reset"><span class="gallery__searcher"></span></button>
+                  <button tabindex="1" aria-label="Показать информацию о картине" class="gallery__hover btn-reset"><span class="gallery__searcher"></span></button>
                   <span class="gallery__active-effect"></span>
                 </div>
 
                 <div tabindex="0" data-number="5" class="gallery__img-block">
                   <img class="gallery__img" src="./styles/img/gallery/gallery-img-5.jpg"
                     alt="Картина 'Женщина с вёдрами'">
-                  <button class="gallery__hover btn-reset"><span class="gallery__searcher"></span></button>
+                  <button tabindex="1" aria-label="Показать информацию о картине" class="gallery__hover btn-reset"><span class="gallery__searcher"></span></button>
                   <span class="gallery__active-effect"></span>
                 </div>
 
                 <div tabindex="0" data-number="6" class="gallery__img-block">
                   <img class="gallery__img" src="./styles/img/gallery/gallery-img-6.jpg" alt="Картина 'Супрематизм'">
-                  <button class="gallery__hover btn-reset"><span class="gallery__searcher"></span></button>
+                  <button tabindex="1" aria-label="Показать информацию о картине" class="gallery__hover btn-reset"><span class="gallery__searcher"></span></button>
                   <span class="gallery__active-effect"></span>
                 </div>
               </div>
@@ -404,14 +404,14 @@
               <div class="swiper-slide gallery-slide">
                 <div tabindex="0" data-number="1" class="gallery__img-block">
                   <img class="gallery__img" src="./styles/img/gallery/gallery-img-1-1024.jpg" alt="Картина 'Торс'">
-                  <button class="gallery__hover btn-reset"><span class="gallery__searcher"></span></button>
+                  <button tabindex="1" aria-label="Показать информацию о картине" class="gallery__hover btn-reset"><span class="gallery__searcher"></span></button>
                   <span class="gallery__active-effect"></span>
                 </div>
 
                 <div tabindex="0" data-number="2" class="gallery__img-block">
                   <img class="gallery__img" src="./styles/img/gallery/gallery-img-2-1024.jpg"
                     alt="Картина 'Женщина с граблями'">
-                  <button class="gallery__hover btn-reset"><span class="gallery__searcher"></span></button>
+                  <button tabindex="1" aria-label="Показать информацию о картине" class="gallery__hover btn-reset"><span class="gallery__searcher"></span></button>
                   <span class="gallery__active-effect"></span>
                 </div>
               </div>
@@ -420,14 +420,14 @@
                 <div tabindex="0" data-number="3" class="gallery__img-block">
                   <img class="gallery__img" src="./styles/img/gallery/gallery-img-3-1024.jpg"
                     alt="Картина 'Уборка ржи'">
-                  <button class="gallery__hover btn-reset"><span class="gallery__searcher"></span></button>
+                  <button tabindex="1" aria-label="Показать информацию о картине" class="gallery__hover btn-reset"><span class="gallery__searcher"></span></button>
                   <span class="gallery__active-effect"></span>
                 </div>
 
                 <div tabindex="0" data-number="4" class="gallery__img-block">
                   <img class="gallery__img" src="./styles/img/gallery/gallery-img-4-1024.jpg"
                     alt="Картина 'Супрематическая композиция'">
-                  <button class="gallery__hover btn-reset"><span class="gallery__searcher"></span></button>
+                  <button tabindex="1" aria-label="Показать информацию о картине" class="gallery__hover btn-reset"><span class="gallery__searcher"></span></button>
                   <span class="gallery__active-effect"></span>
                 </div>
               </div>
@@ -436,14 +436,14 @@
                 <div tabindex="0" data-number="5" class="gallery__img-block">
                   <img class="gallery__img" src="./styles/img/gallery/gallery-img-5-1024.jpg"
                     alt="Картина 'Женщина с вёдрами'">
-                  <button class="gallery__hover btn-reset"><span class="gallery__searcher"></span></button>
+                  <button tabindex="1" aria-label="Показать информацию о картине" class="gallery__hover btn-reset"><span class="gallery__searcher"></span></button>
                   <span class="gallery__active-effect"></span>
                 </div>
 
                 <div tabindex="0" data-number="6" class="gallery__img-block">
                   <img class="gallery__img" src="./styles/img/gallery/gallery-img-6-1024.jpg"
                     alt="Картина 'Супрематизм'">
-                  <button class="gallery__hover btn-reset"><span class="gallery__searcher"></span></button>
+                  <button tabindex="1" aria-label="Показать информацию о картине" class="gallery__hover btn-reset"><span class="gallery__searcher"></span></button>
                   <span class="gallery__active-effect"></span>
                 </div>
               </div>
@@ -458,7 +458,7 @@
                   <picture>
                     <img class="gallery__img" src="./styles/img/gallery/gallery-img-1-320.jpg" alt="Картина 'Торс'">
                   </picture>
-                  <button class="gallery__hover btn-reset"><span class="gallery__searcher"></span></button>
+                  <button tabindex="1" aria-label="Показать информацию о картине" class="gallery__hover btn-reset"><span class="gallery__searcher"></span></button>
                   <span class="gallery__active-effect"></span>
                 </div>
               </div>
@@ -471,7 +471,7 @@
                     <img class="gallery__img" src="./styles/img/gallery/gallery-img-2-1024.jpg"
                       alt="Картина 'Женщина с граблями'">
                   </picture>
-                  <button class="gallery__hover btn-reset"><span class="gallery__searcher"></span></button>
+                  <button tabindex="1" aria-label="Показать информацию о картине" class="gallery__hover btn-reset"><span class="gallery__searcher"></span></button>
                   <span class="gallery__active-effect"></span>
                 </div>
               </div>
@@ -482,7 +482,7 @@
                     <img class="gallery__img" src="./styles/img/gallery/gallery-img-3-1024.jpg"
                       alt="Картина 'Уборка ржи'">
                   </picture>
-                  <button class="gallery__hover btn-reset"><span class="gallery__searcher"></span></button>
+                  <button tabindex="1" aria-label="Показать информацию о картине" class="gallery__hover btn-reset"><span class="gallery__searcher"></span></button>
                   <span class="gallery__active-effect"></span>
                 </div>
               </div>
@@ -493,7 +493,7 @@
                     <img class="gallery__img" src="./styles/img/gallery/gallery-img-4-1024.jpg"
                       alt="Картина 'Супрематическая композиция'">
                   </picture>
-                  <button class="gallery__hover btn-reset"><span class="gallery__searcher"></span></button>
+                  <button tabindex="1" aria-label="Показать информацию о картине" class="gallery__hover btn-reset"><span class="gallery__searcher"></span></button>
                   <span class="gallery__active-effect"></span>
                 </div>
               </div>
@@ -504,7 +504,7 @@
                     <img class="gallery__img" src="./styles/img/gallery/gallery-img-5-1024.jpg"
                       alt="Картина 'Женщина с вёдрами'">
                   </picture>
-                  <button class="gallery__hover btn-reset"><span class="gallery__searcher"></span></button>
+                  <button tabindex="1" aria-label="Показать информацию о картине" class="gallery__hover btn-reset"><span class="gallery__searcher"></span></button>
                   <span class="gallery__active-effect"></span>
                 </div>
               </div>
@@ -515,7 +515,7 @@
                     <img class="gallery__img" src="./styles/img/gallery/gallery-img-6-1024.jpg"
                       alt="Картина 'Супрематизм'">
                   </picture>
-                  <button class="gallery__hover btn-reset"><span class="gallery__searcher"></span></button>
+                  <button tabindex="1" aria-label="Показать информацию о картине" class="gallery__hover btn-reset"><span class="gallery__searcher"></span></button>
                   <span class="gallery__active-effect"></span>
                 </div>
               </div>
@@ -580,7 +580,7 @@
       </div>
     </section>
 
-    <section id="catalog" class="catalog">
+    <section id="catalog" class="section catalog">
       <div class="catalog-container">
         <h2 class="catalog__title section-title text-reset">
           Каталог
@@ -1033,7 +1033,7 @@
       </div>
     </section>
 
-    <section id="events" class="events">
+    <section id="events" class="section events">
       <div class="events-container">
 
         <h2 class="section-title text-reset">События</h2>
@@ -1143,7 +1143,7 @@
             </li>
             <li class="events__list-item flex swiper-slide events-slide">
               <picture>
-                <source srcset="./styles/img/events/events-5-1024.jpg" media="(max-width: 1024x)">
+                <source srcset="./styles/img/events/events-5-1024.jpg" media="(max-width: 1024px)">
                 <img class="events__img" src="./styles/img/events/events-5.jpg"
                   alt="Событие 5: XXIV Международная биеннале молодого искусства">
               </picture>
@@ -1166,7 +1166,8 @@
             </li>
             <li class="events__list-item events__list-item--empty flex swiper-slide events-slide">
               <picture>
-                <img class="events__img" src="./styles/img/events/empty-event.jpg" alt="Новость не найдена">
+                <source srcset="./styles/img/events/empty-event.svg" media="(max-width: 1920px)">
+                <img class="events__img events__img-empty" src="./styles/img/events/empty-event.svg" alt="Новость не найдена">
               </picture>
 
               <div class="events__article events__article--empty flex">
@@ -1191,10 +1192,10 @@
 
 
         <article class="events__articles events-swiper-2 swiper">
-          <div class="events__list flex swiper-wrapper">
-            <div class="events__list-item flex swiper-slide">
+          <ul class="events__list flex list-reset swiper-wrapper">
+            <li class="events__list-item flex swiper-slide">
               <picture>
-                <source srcset="./styles/img/events/events-1-320.jpg" media="(max-width: 480px)">
+                <source srcset="./styles/img/events/events-1-320.jpg" media="(max-width: 576px)">
                 <source srcset="./styles/img/events/events-1-768.jpg" media="(max-width: 992px)">
                 <source srcset="./styles/img/events/events-1-1024.jpg" media="(max-width: 1024px)">
                 <img class="events__img" src="./styles/img/events/events-1.jpg"
@@ -1208,20 +1209,22 @@
                     <span>с&nbsp;<time datetime="03-20">20&nbsp;марта</time> по <time
                         datetime="04-30">&nbsp;30&nbsp;апреля</time></span>
                   </p>
-                  <h3 class="events__title text-reset">Книжная гравюра в живом восприятии</h3>
-                  <p class="events__text text-reset">
-                    Один из&nbsp;ведущих флорентийских художников Кватроченто, основатель художественной династии,
-                    которую
-                    продолжили его брат Давид и&nbsp;сын Ридольфо
-                  </p>
+                  <div class="events__article-content">
+                    <h3 class="events__title text-reset">Книжная гравюра в живом восприятии</h3>
+                    <p class="events__text text-reset">
+                      Один из&nbsp;ведущих флорентийских художников Кватроченто, основатель художественной династии,
+                      которую
+                      продолжили его брат Давид и&nbsp;сын Ридольфо
+                    </p>
+                  </div>
                 </div>
                 <a href="#" class="events__link link-reset">Подробнее</a>
 
               </div>
-            </div>
-            <div class="events__list-item flex swiper-slide">
+            </li>
+            <li class="events__list-item flex swiper-slide">
               <picture>
-                <source srcset="./styles/img/events/events-2-320.jpg" media="(max-width: 480px)">
+                <source srcset="./styles/img/events/events-2-320.jpg" media="(max-width: 576px)">
                 <source srcset="./styles/img/events/events-2-768.jpg" media="(max-width: 992px)">
                 <source srcset="./styles/img/events/events-2-1024.jpg" media="(max-width: 1024px)">
                 <img class="events__img" src="./styles/img/events/events-2.jpg"
@@ -1234,20 +1237,23 @@
                     ММОМА<br>
                     <span><time datetime="2023-03-24T19:00">24&nbsp;марта 19:00</time></span>
                   </p>
-                  <h3 class="events__title text-reset">&laquo;Открытая дискуссия&raquo;. Дмитрий Петров и&nbsp;Сергей
-                    Ильин.</h3>
-                  <p class="events__text text-reset">
-                    Высокий уровень вовлечения представителей целевой аудитории является чётким доказательством простого
-                    факта
-                  </p>
+                  <div class="events__article-content">
+                    <h3 class="events__title text-reset">&laquo;Открытая дискуссия&raquo;. Дмитрий Петров и&nbsp;Сергей
+                      Ильин.</h3>
+                    <p class="events__text text-reset">
+                      Высокий уровень вовлечения представителей целевой аудитории является чётким доказательством
+                      простого
+                      факта
+                    </p>
+                  </div>
                 </div>
                 <a href="#" class="events__link link-reset">Подробнее</a>
 
               </div>
-            </div>
-            <div class="events__list-item flex swiper-slide">
+            </li>
+            <li class="events__list-item flex swiper-slide">
               <picture>
-                <source srcset="./styles/img/events/events-3-320.jpg" media="(max-width: 480px)">
+                <source srcset="./styles/img/events/events-3-320.jpg" media="(max-width: 576px)">
                 <source srcset="./styles/img/events/events-3-992.jpg" media="(max-width: 992px)">
                 <source srcset="./styles/img/events/events-3-1024.jpg" media="(max-width: 1024px)">
                 <img class="events__img" src="./styles/img/events/events-3.jpg" alt="Событие 3: Выставка Формация 2020">
@@ -1260,19 +1266,21 @@
                     <span>с&nbsp;<time datetime="03-31">31&nbsp;марта</time> по &nbsp;<time
                         datetime="04-21">21&nbsp;апреля</time></span>
                   </p>
-                  <h3 class="events__title text-reset">Выставка &laquo;Формация 2020&raquo;</h3>
-                  <p class="events__text text-reset">
-                    Идейные соображения высшего порядка, а&nbsp;также современная методология разработки играет важную
-                    роль в&nbsp;формировании глубокомысленных рассуждений
-                  </p>
+                  <div class="events__article-content">
+                    <h3 class="events__title text-reset">Выставка &laquo;Формация 2020&raquo;</h3>
+                    <p class="events__text text-reset">
+                      Идейные соображения высшего порядка, а&nbsp;также современная методология разработки играет важную
+                      роль в&nbsp;формировании глубокомысленных рассуждений
+                    </p>
+                  </div>
                 </div>
                 <a href="#" class="events__link link-reset">Подробнее</a>
 
               </div>
-            </div>
-            <div class="events__list-item flex swiper-slide">
+            </li>
+            <li class="events__list-item flex swiper-slide">
               <picture>
-                <source srcset="./styles/img/events/events-4-320.jpg" media="(max-width: 480px)">
+                <source srcset="./styles/img/events/events-4-320.jpg" media="(max-width: 576px)">
                 <source srcset="./styles/img/events/events-4-992.jpg" media="(max-width: 992px)">
                 <source srcset="./styles/img/events/events-4-1024.jpg" media="(max-width: 1024px)">
                 <img class="events__img" src="./styles/img/events/events-4.jpg"
@@ -1286,20 +1294,23 @@
                     <span>с&nbsp;<time datetime="04-08">8&nbsp;апреля</time> по &nbsp;<time
                         datetime="05-20">20&nbsp;мая</time></span>
                   </p>
-                  <h3 class="events__title text-reset">Джон Винзор. Фотографии из&nbsp;серии &laquo;Метафора&raquo;</h3>
-                  <p class="events__text text-reset">
-                    Один из&nbsp;ведущих флорентийских художников Кватроченто, основатель художественной династии,
-                    которую
-                    продолжили его брат Давид и&nbsp;сын Ридольфо
-                  </p>
+                  <div class="events__article-content">
+                    <h3 class="events__title text-reset">Джон Винзор. Фотографии из&nbsp;серии &laquo;Метафора&raquo;
+                    </h3>
+                    <p class="events__text text-reset">
+                      Один из&nbsp;ведущих флорентийских художников Кватроченто, основатель художественной династии,
+                      которую
+                      продолжили его брат Давид и&nbsp;сын Ридольфо
+                    </p>
+                  </div>
                 </div>
                 <a href="#" class="events__link link-reset">Подробнее</a>
 
               </div>
-            </div>
-            <div class="events__list-item flex swiper-slide">
+            </li>
+            <li class="events__list-item flex swiper-slide">
               <picture>
-                <source srcset="./styles/img/events/events-5-320.jpg" media="(max-width: 480px)">
+                <source srcset="./styles/img/events/events-5-320.jpg" media="(max-width: 576px)">
                 <source srcset="./styles/img/events/events-5-992.jpg" media="(max-width: 992px)">
                 <source srcset="./styles/img/events/events-5-1024.jpg" media="(max-width: 1024px)">
                 <img class="events__img" src="./styles/img/events/events-5.jpg"
@@ -1313,24 +1324,24 @@
                     <span>с&nbsp;<time datetime="03-30">30&nbsp;марта</time> по &nbsp;<time
                         datetime="04-30">30&nbsp;апреля</time></span>
                   </p>
-                  <h3 class="events__title text-reset">XXIV Международная биеннале молодого искусства</h3>
-                  <p class="events__text text-reset">
-                    Внезапно, реплицированные с&nbsp;зарубежных источников, современные исследования
-                  </p>
+                  <div class="events__article-content">
+                    <h3 class="events__title text-reset">XXIV Международная биеннале молодого искусства</h3>
+                    <p class="events__text text-reset">
+                      Внезапно, реплицированные с&nbsp;зарубежных источников, современные исследования
+                    </p>
+                  </div>
                 </div>
                 <a href="#" class="events__link link-reset">Подробнее</a>
 
               </div>
-            </div>
-          </div>
-
-          <!-- <div class="events__dot-list list-reset flex"></div> -->
+            </li>
+          </ul>
           <div class="events__dot-list"></div>
         </article>
       </div>
     </section>
 
-    <section id="projects" class="projects">
+    <section id="projects" class="section projects">
       <div class="projects-container">
         <h2 class="section-title text-reset">Проекты</h2>
         <p class="projects__text section-text text-reset">
@@ -1460,7 +1471,7 @@
       </div>
     </section>
 
-    <section id="contacts" class="contacts">
+    <section id="contacts" class="section contacts">
       <div class="contacts__top">
         <div class="contacts__container flex">
           <div class="contacts__left">
@@ -1472,10 +1483,12 @@
 
 
           <form id="contacts-form" class="contacts__form flex" action="#">
-            <input aria-label="Ввод имени" id="contacts-name" class="contacts__input" name="name" type="text"
-              placeholder="Имя*" data-validate-field="name">
-            <input aria-label="Ввод телефона" id="contacts-number" class="contacts__input" name="tel" type="tel"
-              placeholder="Телефон*" data-validate-field="tel" data-validate-rules="phone">
+            <div class="contacts__inputs flex">
+              <input aria-label="Ввод имени" id="contacts-name" class="contacts__input" name="name" type="text"
+                placeholder="Имя*" data-validate-field="name">
+              <input aria-label="Ввод телефона" id="contacts-number" class="contacts__input" name="tel" type="tel"
+                placeholder="Телефон*" data-validate-field="tel" data-validate-rules="phone">
+            </div>
             <button class="contacts__btn btn-reset" type="submit">Заказать обратный звонок</button>
             <button class="contacts__btn btn-reset" type="submit">Заказать</button>
           </form>

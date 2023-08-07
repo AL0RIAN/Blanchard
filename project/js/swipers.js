@@ -62,7 +62,7 @@ const swiperEvents2 = new Swiper(".events-swiper-2", {
       slidesPerGroup: 1,
       spaceBetween: 0,
     },
-    481: {
+    577: {
       slidesPerView: 2,
       slidesPerGroup: 1,
       spaceBetween: 34,
@@ -77,7 +77,6 @@ const swiperEvents2 = new Swiper(".events-swiper-2", {
 
 const swiperProjects = new Swiper(".projects-swiper-1", {
   direction: 'horizontal',
-  // loop: true,
   navigation: {
     nextEl: '.projects__arrow--2',
     prevEl: '.projects__arrow--1',
@@ -106,3 +105,15 @@ const swiperProjects = new Swiper(".projects-swiper-1", {
   }
 
 })
+
+var nextBtns = document.querySelectorAll('[aria-label="Next slide"]');
+var prevBtns = document.querySelectorAll('[aria-label="Previous slide"]');
+
+function ariaChagne(elementList, newAria) {
+  for (i = 0; i < elementList.length; i++) {
+    elementList[i].ariaLabel = newAria;
+  }
+}
+
+ariaChagne(nextBtns, "вперёд");
+ariaChagne(prevBtns, "назад");
