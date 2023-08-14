@@ -16,7 +16,6 @@
   }
 
   .header__top-container {
-    position: relative;
     justify-content: space-between;
     max-width: 1500px;
     padding: 29px 0;
@@ -1189,16 +1188,19 @@
   }
 
   .header__burger-enter-link::before {
-    content: url("../img/header/emter-s.svg");
+    content: "";
     left: -13px;
+    background-image: url("../img/header/emter-s.svg");
   }
 
   .header__burger-btn:hover .header__burger-enter-link::before {
-    content: url("../img/header/enter-2s.svg");
+    content: "";
+    background-image: url("../img/header/enter-2s.svg");
   }
 
   .header__burger-btn:active .header__burger-enter-link::before {
-    content: url("../img/header/enter-3s.svg");
+    content: "";
+    background-image: url("../img/header/enter-3s.svg");
   }
 
   .header-searcher img {

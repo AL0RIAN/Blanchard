@@ -376,36 +376,53 @@ body {
 }
 
 .header__burger-enter-link::before {
-  content: url("../img/header/enter.svg");
+  content: "";
   position: absolute;
+  width: 13px;
+  height: 13px;
   fill: #fff;
   z-index: 2;
   left: -18px;
+  top: 6px;
+  background-image: url("../img/header/enter.svg");
+  background-repeat: no-repeat;
+  transition: background-image .3s ease-in-out;
 }
 
 .header__enter-link::before {
-  content: url("../img/header/enter.svg");
+  content: "";
   position: absolute;
+  width: 13px;
+  height: 13px;
   fill: #fff;
-  top: 0;
+  top: 6px;
   left: -18px;
   z-index: 2;
+  background-image: url("../img/header/enter.svg");
+  background-repeat: no-repeat;
+  transition: width .3s ease-in-out, background-image .3s ease-in-out;
 }
 
 .header__enter-link:hover::before {
-  content: url("../img/header/enter-2.svg");
+  content: "";
+  width: 18px;
+  background-image: url("../img/header/enter-2.svg");
 }
 
 .header__enter-link:active::before {
-  content: url("../img/header/enter-3.svg");
+  content: "";
+  width: 18px;
+  background-image: url("../img/header/enter-3.svg");
 }
 
 .header__burger-btn:hover .header__burger-enter-link::before {
-  content: url("../img/header/enter-2.svg");
+  width: 18px;
+  background-image: url("../img/header/enter-2.svg");
 }
 
 .header__burger-btn:active .header__burger-enter-link::before {
-  content: url("../img/header/enter-3.svg");
+  width: 18px;
+  background-image: url("../img/header/enter-3.svg");
 }
 
 .header__enter-link:hover {

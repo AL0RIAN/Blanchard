@@ -1,6 +1,6 @@
 const burger = document.querySelector(".header-burger");
 const menu = document.querySelector(".header__burger-menu");
-const body = document.getElementById("body");
+const body = document.getElementById("html");
 const burgerLink = document.querySelectorAll(".header__burger-link");
 const burgerLines = document.querySelectorAll(".header-burger__line");
 
